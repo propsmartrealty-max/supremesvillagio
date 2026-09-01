@@ -96,37 +96,36 @@ export default function FeaturesSliderSection() {
   }, []);
 
   return (
-    <section id="amenities" ref={containerRef} className="h-[100dvh] w-full bg-cream text-charcoal overflow-hidden flex flex-col justify-center relative">
-      <div className="absolute top-24 left-6 md:left-12 lg:left-24 z-10 max-w-2xl">
-        <h2 className="text-xs uppercase tracking-widest text-gold-dark dark:text-gold font-bold mb-3 flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-gold inline-block" /> Chapter III: Amenities
+    <section id="amenities" ref={containerRef} className="h-[100dvh] w-full bg-cream text-charcoal overflow-hidden flex flex-col justify-between pt-24 pb-12 relative">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 z-10 max-w-4xl shrink-0">
+        <h2 className="text-xs uppercase tracking-widest text-primary font-bold mb-2 flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-primary inline-block" /> Chapter III: Amenities
         </h2>
-        <h3 className="text-3xl md:text-5xl font-heading font-light leading-tight">
-          Everything You Need, <br />
-          <span className="italic text-charcoal-light font-normal text-gold-gradient">Exactly Where You Want It</span>
+        <h3 className="text-2xl md:text-4xl lg:text-5xl font-heading font-light leading-tight text-charcoal">
+          Everything You Need, <span className="italic font-normal text-primary">Exactly Where You Want It</span>
         </h3>
       </div>
 
-      <div ref={sliderRef} className="flex gap-8 md:gap-12 px-6 md:px-12 lg:px-24 mt-40 pb-24 items-center w-max">
+      <div ref={sliderRef} className="flex gap-6 md:gap-10 px-6 md:px-12 lg:px-24 items-center w-max my-auto">
         {FEATURES.map((feature, idx) => (
           <div 
             key={idx}
-            className={`w-[320px] md:w-[420px] flex-shrink-0 bg-white dark:bg-charcoal-card border border-charcoal/10 dark:border-white/10 border-t-4 ${feature.borderTop} p-8 md:p-10 h-[380px] flex flex-col justify-between shadow-xl hover:shadow-2xl hover:border-gold hover:-translate-y-3 transition-all duration-500 rounded-sm group relative overflow-hidden`}
+            className={`w-[300px] md:w-[380px] flex-shrink-0 bg-white border border-charcoal/15 border-t-4 ${feature.borderTop} p-6 md:p-8 h-[300px] md:h-[320px] flex flex-col justify-between shadow-lg hover:shadow-2xl hover:border-primary hover:-translate-y-2 transition-all duration-500 rounded-sm group relative`}
           >
             <div>
-              <div className="flex items-center justify-between mb-6">
-                <span className={`text-[11px] uppercase tracking-widest font-semibold px-3 py-1 rounded-full border ${feature.tagColor}`}>
+              <div className="flex items-center justify-between mb-3">
+                <span className={`text-[11px] uppercase tracking-widest font-semibold px-3 py-0.5 rounded-full border ${feature.tagColor}`}>
                   {feature.tag}
                 </span>
-                <span className="text-4xl font-heading text-charcoal/15 dark:text-white/15 group-hover:text-gold transition-colors duration-500 font-light">
+                <span className="text-3xl font-heading text-charcoal/20 group-hover:text-primary transition-colors duration-500 font-light">
                   0{idx + 1}
                 </span>
               </div>
-              <h4 className="text-2xl font-heading text-charcoal dark:text-cream mb-4 group-hover:text-gold transition-colors duration-500 font-medium leading-snug">
+              <h4 className="text-xl md:text-2xl font-heading text-charcoal mb-2 group-hover:text-primary transition-colors duration-500 font-medium leading-snug">
                 {feature.title}
               </h4>
             </div>
-            <p className="text-charcoal-light/80 dark:text-stone font-light leading-relaxed text-sm">
+            <p className="text-charcoal/80 font-light leading-relaxed text-sm">
               {feature.desc}
             </p>
           </div>
