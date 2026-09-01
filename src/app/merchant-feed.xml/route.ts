@@ -1,4 +1,4 @@
-export const runtime = 'edge';
+export const dynamic = 'force-static';
 import { generateSeoSlugs, generateSeoDataFromSlug } from '@/lib/seo-data';
 
 export async function GET() {

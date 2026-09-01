@@ -1,4 +1,4 @@
-export const runtime = 'edge';
+export const dynamic = 'force-static';
 import { getAllPosts } from '@/lib/markdown';
 
 export async function GET() {

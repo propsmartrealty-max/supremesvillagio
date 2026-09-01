@@ -1,5 +1,4 @@
-export const runtime = 'edge';
-export const runtime = "edge";
+export const dynamic = 'force-static';
 export async function GET() {
   const baseUrl = 'https://www.supremesvillagio.com';
   const lastModified = new Date().toISOString();

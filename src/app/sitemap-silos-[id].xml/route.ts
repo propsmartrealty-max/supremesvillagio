@@ -1,5 +1,4 @@
-export const runtime = 'edge';
-export const runtime = "edge";
+export const dynamic = 'force-static';
 import { getAllSeoSlugStrings } from '@/lib/seo-data';
 import { NextRequest } from 'next/server';
 
