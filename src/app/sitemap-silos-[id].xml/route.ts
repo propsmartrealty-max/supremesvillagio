@@ -2,12 +2,25 @@ export const dynamic = 'force-static';
 import { getAllSeoSlugStrings } from '@/lib/seo-data';
 import { NextRequest } from 'next/server';
 
+export function generateStaticParams() {
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' },
+    { id: '4' },
+    { id: '5' },
+    { id: '6' },
+    { id: '7' },
+    { id: '8' },
+  ];
+}
+
 export async function GET(
   request: NextRequest,
-  { params }: { params: Promise<any> }
+  context: { params: Promise<{ id: string }> }
 ) {
-  const resolvedParams = await params;
-  const idStr = resolvedParams.id.replace('.xml', '');
+  const resolvedParams = await context?.params;
+  const idStr = resolvedParams?.id ? String(resolvedParams.id).replace('.xml', '') : '';
   const id = parseInt(idStr, 10);
   
   if (isNaN(id) || id < 1 || id > 8) {

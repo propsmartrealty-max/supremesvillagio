@@ -3,14 +3,15 @@ import { getAllPosts } from '@/lib/markdown';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
-export async function generateMetadata({ params }: { params: { tag: string } }): Promise<Metadata> {
-  const decodedTag = decodeURIComponent(params.tag).replace(/-/g, ' ');
+export async function generateMetadata({ params }: { params: Promise<{ tag: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const decodedTag = decodeURIComponent(resolvedParams.tag).replace(/-/g, ' ');
   const capitalizedTag = decodedTag.charAt(0).toUpperCase() + decodedTag.slice(1);
   return {
     title: `${capitalizedTag} Articles | Supreme Villagio Blog`,
     description: `Read the latest articles about ${capitalizedTag} at Supreme Villagio, Somatane Pune.`,
     alternates: {
-      canonical: `https://www.supremesvillagio.com/blog/category/${params.tag}`,
+      canonical: `https://www.supremesvillagio.com/blog/category/${resolvedParams.tag}`,
     },
   };
 }
@@ -24,9 +25,10 @@ export function generateStaticParams() {
   }));
 }
 
-export default function CategoryPage({ params }: { params: { tag: string } }) {
+export default async function CategoryPage({ params }: { params: Promise<{ tag: string }> }) {
+  const resolvedParams = await params;
   const allPosts = getAllPosts();
-  const decodedTag = decodeURIComponent(params.tag);
+  const decodedTag = decodeURIComponent(resolvedParams.tag);
   
   const filteredPosts = allPosts.filter(post => 
     post.tags && post.tags.includes(decodedTag)
