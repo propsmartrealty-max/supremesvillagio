@@ -143,6 +143,13 @@ const realEstateListingSchema = {
     },
     "availability": "https://schema.org/InStock",
     "validFrom": "2024-01-01"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "88",
+    "bestRating": "5",
+    "worstRating": "1"
   }
 };
 
@@ -225,7 +232,7 @@ const faqSchema = {
     "name": "When is Supreme Villagio scheduled for possession?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Supreme Villagio will receive complete OC by Dec 27."
+      "text": "Phase 1 & Phase 2 are 100% completed with Occupation Certificate (OC) received and handed over to homeowners. Phase 3 is under active construction with MahaRERA statutory completion scheduled for December 31, 2028."
     }
   },{
     "@type": "Question",

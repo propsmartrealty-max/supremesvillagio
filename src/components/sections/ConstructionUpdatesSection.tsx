@@ -7,16 +7,22 @@ import Image from "next/image";
 
 const UPDATES = [
   {
-    date: "August 2026",
-    title: "Phase 1: Superstructure Complete",
-    description: "The primary superstructure for the initial luxury villas has been successfully erected.",
-    image: "https://d66htbxvzotmo.cloudfront.net/media/1Xi8pH_seologo.jpg"
+    date: "OC Granted • Phase 1 & 2 Delivered",
+    title: "Phase 1 & 2: Handed Over to Residents",
+    description: "Physical execution is 100% complete with full Occupation Certificates (P52100046867 & P52100049506). Homeowners are currently residing in the low-density estate.",
+    image: "https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-2_sx0rpm.jpg"
   },
   {
-    date: "September 2026",
-    title: "Club Villagio Foundation",
-    description: "Excavation and foundation work for the 18,500 sq ft Club Villagio has commenced.",
-    image: "https://cdn.supremeuniversal.com/images/villagio-render.jpg"
+    date: "Ready & Operational",
+    title: "18,500 Sq.Ft. Club Villagio Ready",
+    description: "The grand clubhouse is fully operational featuring an Olympic-length pool, badminton and squash courts, banquet halls, and a state-of-the-art wellness gym.",
+    image: "https://cdn.supremeuniversal.com/media/Villagio-L--KD--Club-housemin.jpg"
+  },
+  {
+    date: "Active Launch • Dec 2028 Schedule",
+    title: "Phase 3: Hillside Villas Under Construction",
+    description: "Structural plinth and superstructure works are actively progressing for Phase 3 hillside 4 & 5 BHK villas under MahaRERA registration P52100055048.",
+    image: "https://cdn.supremeuniversal.com/media/fIAB41_Villagio--KD--Wellness-Spine.jpg"
   }
 ];
 
@@ -34,17 +40,17 @@ export default function ConstructionUpdatesSection() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
-            <p className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4">Live Progress</p>
+            <p className="text-[#E15E3F] uppercase tracking-[0.2em] text-sm font-semibold mb-4">MahaRERA Live Status</p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-light">
-              Construction <span className="italic">Updates</span>
+              Construction & <span className="italic text-[#E15E3F]">Delivery</span> Milestones
             </h2>
           </div>
-          <p className="text-charcoal/70 max-w-md text-sm md:text-base leading-relaxed">
-            Transparency is our ultimate luxury. Witness the meticulous physical realization of Supreme Villagio in real-time.
+          <p className="text-charcoal/70 max-w-md text-sm md:text-base leading-relaxed font-light">
+            Transparency is our benchmark. Phase 1 & 2 are completed and handed over with OC, while Phase 3 proceeds on strict statutory timelines.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
           {UPDATES.map((update, idx) => (
             <motion.div 
               key={idx}
@@ -52,23 +58,22 @@ export default function ConstructionUpdatesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, delay: idx * 0.2 }}
-              className="group"
+              className="group bg-white p-6 rounded-sm border border-charcoal/10 shadow-lg flex flex-col justify-between"
             >
-              <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden rounded-sm mb-8">
-                <motion.div style={{ y }} className="absolute inset-0 w-full h-[120%] -top-[10%]">
+              <div>
+                <div className="relative w-full h-[240px] md:h-[280px] overflow-hidden rounded-sm mb-6">
                   <img 
                     src={update.image} 
                     alt={update.title}
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-500" />
-                </motion.div>
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-2 text-xs font-semibold uppercase tracking-widest text-charcoal">
-                  {update.date}
+                  <div className="absolute top-3 left-3 bg-[#23362E]/90 text-white backdrop-blur-md px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-sm border border-white/10">
+                    {update.date}
+                  </div>
                 </div>
+                <h3 className="text-xl font-heading text-[#23362E] mb-2">{update.title}</h3>
+                <p className="text-charcoal/75 text-sm font-light leading-relaxed">{update.description}</p>
               </div>
-              <h3 className="text-2xl font-heading mb-3">{update.title}</h3>
-              <p className="text-charcoal/70 leading-relaxed">{update.description}</p>
             </motion.div>
           ))}
         </div>

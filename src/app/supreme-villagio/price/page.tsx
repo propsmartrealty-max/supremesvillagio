@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
 import { Tag, ArrowRight, ShieldCheck, Check, Calculator, Download } from 'lucide-react';
+import EmiCalculatorSection from '@/components/sections/EmiCalculatorSection';
 
 export const metadata: Metadata = {
   title: 'Supreme Villagio Price, Cost Sheet & Payment Schedule | Somatane Pune',
@@ -195,6 +196,11 @@ export default function PricePage() {
               </ul>
             </div>
           </div>
+        </div>
+
+        {/* Interactive EMI Calculator */}
+        <div className="mb-16">
+          <EmiCalculatorSection />
         </div>
 
         {/* Payment Schedule Table */}

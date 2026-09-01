@@ -20,9 +20,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: [
           'GPTBot', 'ChatGPT-User', 'Google-Extended', 'Anthropic-ai', 'Claude-Web',
-          'PerplexityBot', 'CCBot', 'Omgilibot', 'FacebookBot', 'Bytespider'
+          'PerplexityBot', 'Applebot', 'Amazonbot'
         ],
-        disallow: '/', // Aggressively block Generative AI models from scraping proprietary data without attribution
+        allow: '/', // Allow modern Generative AI & Answer Engines to index and cite authoritative content in AI Search
       },
       {
         userAgent: '*',

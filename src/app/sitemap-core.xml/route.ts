@@ -7,6 +7,7 @@ export async function GET() {
     { url: '/', priority: '1.0', changefreq: 'daily' },
     { url: '/supreme-villagio-rera', priority: '1.0', changefreq: 'weekly' },
     { url: '/supreme-villagio/price', priority: '1.0', changefreq: 'weekly' },
+    { url: '/supreme-villagio/emi-calculator', priority: '0.95', changefreq: 'weekly' },
     { url: '/supreme-villagio/4-bhk-villas', priority: '0.95', changefreq: 'weekly' },
     { url: '/supreme-villagio/5-bhk-villas', priority: '0.95', changefreq: 'weekly' },
     { url: '/supreme-villagio/townhouses', priority: '0.95', changefreq: 'weekly' },
