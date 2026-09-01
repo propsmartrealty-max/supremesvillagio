@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server';
 
 export function proxy(request: NextRequest) {
   // Extract country from Cloudflare/Vercel Edge headers (fallback to 'IN' for local dev)
-  const country = request.geo?.country || request.headers.get('cf-ipcountry') || request.headers.get('x-vercel-ip-country') || 'IN';
+  const country = request.headers.get('cf-ipcountry') || request.headers.get('x-vercel-ip-country') || 'IN';
 
   // Determine currency based on HNI/NRI target regions
   let currency = 'INR';
