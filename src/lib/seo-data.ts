@@ -185,8 +185,8 @@ export function generateSeoDataFromSlug(slugs: string[]) {
 }
 
 export function getRelatedSlugs(currentSlug: string[], count: number = 6): string[][] {
-  const currentCategory = currentSlug[0];
-  const currentLocation = currentSlug.length > 1 ? currentSlug[1] : null;
+  const currentLocation = currentSlug[0];
+  const currentCategory = currentSlug.length > 1 ? currentSlug[1] : null;
   
   const related: string[][] = [];
   let attempts = 0;
@@ -194,20 +194,19 @@ export function getRelatedSlugs(currentSlug: string[], count: number = 6): strin
   while (related.length < count && attempts < 50) {
     attempts++;
     
-    // Pick a random category, but bias towards same category 50% of the time
-    const cat = Math.random() > 0.5 && currentCategory ? currentCategory : SEO_KEYWORD_MATRIX.categories[Math.floor(Math.random() * SEO_KEYWORD_MATRIX.categories.length)];
-    
     // Pick a random location, but bias towards same location 50% of the time
     const loc = Math.random() > 0.5 && currentLocation ? currentLocation : SEO_KEYWORD_MATRIX.locations[Math.floor(Math.random() * SEO_KEYWORD_MATRIX.locations.length)];
     
-    const modifier = SEO_KEYWORD_MATRIX.modifiers[Math.floor(Math.random() * SEO_KEYWORD_MATRIX.modifiers.length)];
-    const feature = SEO_KEYWORD_MATRIX.features[Math.floor(Math.random() * SEO_KEYWORD_MATRIX.features.length)];
+    // Pick a random category, but bias towards same category 50% of the time
+    const cat = Math.random() > 0.5 && currentCategory ? currentCategory : SEO_KEYWORD_MATRIX.categories[Math.floor(Math.random() * SEO_KEYWORD_MATRIX.categories.length)];
     
-    // Generate a valid length combination (3 to 4 segments)
-    const length = Math.floor(Math.random() * 2) + 3;
-    let slug = [];
-    if (length === 3) slug = [cat, loc, modifier];
-    else slug = [cat, loc, modifier, feature];
+    const modifier = SEO_KEYWORD_MATRIX.modifiers[Math.floor(Math.random() * SEO_KEYWORD_MATRIX.modifiers.length)];
+    
+    // Generate a valid length combination (2 to 3 segments)
+    const length = Math.floor(Math.random() * 2) + 2;
+    let slug: string[] = [];
+    if (length === 2) slug = [loc, cat];
+    else slug = [loc, cat, modifier];
     
     // Ensure we don't duplicate the current slug or existing related slugs
     const slugStr = slug.join('/');
