@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { getAllPosts } from '@/lib/markdown';
 
 export async function GET() {

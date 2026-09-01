@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { generateSeoSlugs, generateSeoDataFromSlug } from '@/lib/seo-data';
 
 export async function GET() {
