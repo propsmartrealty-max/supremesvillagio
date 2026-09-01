@@ -116,54 +116,64 @@ export default function Footer() {
 
         {/* Popular Searches SEO Silo Links */}
         <div className="py-12 border-t border-charcoal-light">
-          <h3 className="text-sm uppercase tracking-widest text-white mb-8 text-center md:text-left">Popular Searches</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm text-stone">
-            <Link href="/" className="hover:text-gold transition-colors font-semibold text-white">Supreme Villagio Somatane</Link>
-            <Link href="/supreme-villagio/pune/villas" className="hover:text-gold transition-colors">Pune Luxury Villas</Link>
-            <Link href="/supreme-villagio/somatane/villas/5-bhk-villas" className="hover:text-gold transition-colors">5 BHK Villas in Somatane</Link>
-            <Link href="/supreme-villagio/near-hinjewadi/bungalows" className="hover:text-gold transition-colors">Bungalows Near Hinjewadi</Link>
-            <Link href="/supreme-villagio/near-baner/row-houses" className="hover:text-gold transition-colors">Row Houses Near Baner</Link>
-            <Link href="/supreme-villagio/pune/villas/4-bhk-villas" className="hover:text-gold transition-colors">4 BHK Villas in Pune</Link>
-            <Link href="/supreme-villagio/west-pune/villas/luxury-villas" className="hover:text-gold transition-colors">Luxury Villas West Pune</Link>
-            <Link href="/supreme-villagio/somatane/bungalows/twin-bungalows" className="hover:text-gold transition-colors">Twin Bungalows Somatane</Link>
-            <Link href="/supreme-villagio/pune/row-houses/premium-row-house" className="hover:text-gold transition-colors">Premium Row Houses Pune</Link>
+          <h3 className="text-sm uppercase tracking-widest text-white mb-8 text-center md:text-left">SEO Silo & Property Directory</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs text-stone">
+            <Link href="/supreme-villagio-rera" className="hover:text-primary transition-colors font-semibold text-white">MahaRERA Registrations</Link>
+            <Link href="/supreme-villagio/price" className="hover:text-primary transition-colors font-semibold text-white">Price & Cost Sheet</Link>
+            <Link href="/supreme-villagio/4-bhk-villas" className="hover:text-primary transition-colors font-semibold text-white">4 BHK Twin Villas</Link>
+            <Link href="/supreme-villagio/5-bhk-villas" className="hover:text-primary transition-colors font-semibold text-white">5 BHK Presidential Villas</Link>
+            <Link href="/supreme-villagio/townhouses" className="hover:text-primary transition-colors">4 BHK Townhouses</Link>
+            <Link href="/supreme-villagio/floor-plans" className="hover:text-primary transition-colors">Floor Plans & Blueprints</Link>
+            <Link href="/supreme-villagio/location" className="hover:text-primary transition-colors">Location & Commute Matrix</Link>
+            <Link href="/supreme-villagio/investment" className="hover:text-primary transition-colors">Investment & ROI Analysis</Link>
+            <Link href="/villas-in-somatane" className="hover:text-primary transition-colors">Villas in Somatane</Link>
+            <Link href="/talegaon-luxury-villas" className="hover:text-primary transition-colors">Luxury Villas in Talegaon</Link>
+            <Link href="/villas-near-mumbai-pune-expressway" className="hover:text-primary transition-colors">Villas Near Mumbai-Pune Expressway</Link>
+            <Link href="/supreme-villagio-vs-paranjape-forest-trails" className="hover:text-primary transition-colors">Villagio vs Forest Trails</Link>
+            <Link href="/somatane-vs-hinjewadi" className="hover:text-primary transition-colors">Somatane vs Hinjewadi</Link>
+            <Link href="/supreme-villagio/phase-1" className="hover:text-primary transition-colors">Phase 1 (OC Received)</Link>
+            <Link href="/supreme-villagio/phase-2" className="hover:text-primary transition-colors">Phase 2 (OC Received)</Link>
+            <Link href="/supreme-villagio/phase-3" className="hover:text-primary transition-colors">Phase 3 (New Launch)</Link>
           </div>
         </div>
 
         {/* MahaRERA Section */}
         <div className="py-8 border-t border-charcoal-light text-center">
-          <h4 className="text-gold font-heading text-sm uppercase tracking-widest mb-4">MahaRERA Registration</h4>
+          <h4 className="text-primary font-heading text-sm uppercase tracking-widest mb-4">MahaRERA Verified Project Registrations</h4>
           <div className="flex flex-col md:flex-row justify-center items-start gap-8 text-sm text-stone mt-6">
             <div className="flex flex-col items-center">
               <img src="https://cdn.supremeuniversal.com/media/SupremeVillagioIP52100046867_cwrz1A.jpg" alt="Phase 1 QR Code" className="w-20 h-20 mb-3 rounded-sm opacity-90 hover:opacity-100 transition-opacity" />
-              <p><strong>Phase 1:</strong> P52100046867</p>
+              <p><strong>Phase 1:</strong> P52100046867 (OC Received)</p>
             </div>
             <div className="hidden md:block h-24 w-px bg-charcoal-light self-center"></div>
             <div className="flex flex-col items-center">
               <img src="https://cdn.supremeuniversal.com/media/SupremeVillagioIIP52100049506_zdy3oY.jpg" alt="Phase 2 QR Code" className="w-20 h-20 mb-3 rounded-sm opacity-90 hover:opacity-100 transition-opacity" />
-              <p><strong>Phase 2:</strong> P52100049506</p>
+              <p><strong>Phase 2:</strong> P52100049506 (OC Received)</p>
             </div>
             <div className="hidden md:block h-24 w-px bg-charcoal-light self-center"></div>
             <div className="flex flex-col items-center">
               <img src="https://cdn.supremeuniversal.com/media/SUPREMEVILLAGIOIIIP52100055048_6dYFb3.jpg" alt="Phase 3 QR Code" className="w-20 h-20 mb-3 rounded-sm opacity-90 hover:opacity-100 transition-opacity" />
-              <p><strong>Phase 3:</strong> P52100055048</p>
+              <p><strong>Phase 3:</strong> P52100055048 (Possession Dec 2028)</p>
             </div>
           </div>
-          <p className="text-xs text-stone mt-4 max-w-3xl mx-auto">
-            Available at <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noopener noreferrer" className="hover:text-gold underline underline-offset-2">maharera.mahaonline.gov.in</a>
+          <p className="text-xs text-stone/80 mt-6 max-w-4xl mx-auto leading-relaxed">
+            Project developed by Supreme Universal. Verified on Maharashtra Real Estate Regulatory Authority at <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline underline-offset-2 text-white">maharera.mahaonline.gov.in</a> under registered projects.
+          </p>
+          <p className="text-[11px] text-stone/60 mt-3 max-w-4xl mx-auto leading-relaxed">
+            <strong>Statutory Disclaimer:</strong> This portal is an authorized marketing and project information asset. All images, architectural renders, specifications, floor plans, and pricing metrics are for informational purposes only and subject to standard terms and conditions.
           </p>
         </div>
 
         <div className="pt-8 border-t border-charcoal-light flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone">
-          <p>&copy; {new Date().getFullYear()} Supreme Villagio. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Supreme Villagio. Authorised Project Marketing Partner.</p>
           <div className="flex gap-6">
-            <Link href="/ecosystem" className="hover:text-gold transition-colors">
-              Developer Ecosystem
+            <Link href="/supreme-villagio-rera" className="hover:text-primary transition-colors">
+              MahaRERA Certifications
             </Link>
-            <Link href="/privacy" className="hover:text-gold transition-colors">
+            <Link href="/privacy" className="hover:text-primary transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-gold transition-colors">
+            <Link href="/terms" className="hover:text-primary transition-colors">
               Terms of Service
             </Link>
           </div>
