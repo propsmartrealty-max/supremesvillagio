@@ -79,178 +79,179 @@
 }
 
 :root {
-  /* Light mode - warm Italian sandstone cream, rich midnight text, radiant gold */
-  --background: hsl(40, 40%, 97%);
-  --foreground: hsl(222, 30%, 12%);
+  /* Supreme Universal Official Brand Palette */
+  /* --bs-body-color: #e4e2d3, --bs-body-bg: #23362e, --bs-primary: #e15e3f */
+  --background: #E4E2D3;
+  --foreground: #23362E;
   
-  --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(222, 30%, 12%);
+  --card: #FFFFFF;
+  --card-foreground: #23362E;
   
-  --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(222, 30%, 12%);
+  --popover: #FFFFFF;
+  --popover-foreground: #23362E;
   
-  --primary: hsl(43, 92%, 52%);
-  --primary-foreground: hsl(222, 35%, 10%);
+  --primary: #E15E3F;
+  --primary-foreground: #E4E2D3;
   
-  --secondary: hsl(40, 30%, 92%);
-  --secondary-foreground: hsl(222, 30%, 12%);
+  --secondary: #D8D6C5;
+  --secondary-foreground: #23362E;
   
-  --muted: hsl(40, 20%, 92%);
-  --muted-foreground: hsl(220, 15%, 45%);
+  --muted: #DBD9CB;
+  --muted-foreground: #5C635F;
   
-  --accent: hsl(43, 92%, 52%); /* Royal Radiant Gold */
-  --accent-foreground: hsl(222, 35%, 10%);
+  --accent: #E15E3F;
+  --accent-foreground: #E4E2D3;
   
-  --destructive: hsl(0, 84.2%, 60.2%);
-  --destructive-foreground: hsl(210, 40%, 98%);
+  --destructive: #D32F2F;
+  --destructive-foreground: #FFFFFF;
   
-  --border: hsl(40, 25%, 86%);
-  --input: hsl(40, 25%, 86%);
-  --ring: hsl(43, 92%, 52%);
+  --border: rgba(35, 54, 46, 0.15);
+  --input: rgba(35, 54, 46, 0.15);
+  --ring: #E15E3F;
   
   --radius: 0.5rem;
   
-  /* Luxury Vibrant Brand Tokens */
-  --gold: hsl(43, 92%, 52%);          /* #F5B81B Radiant Royal Gold */
-  --gold-light: hsl(45, 96%, 68%);    /* #FCD34D Champagne Shimmer */
-  --gold-dark: hsl(38, 88%, 38%);     /* #B47309 Deep Rich Bronze */
-  --gold-muted: hsl(40, 50%, 82%);    /* Soft warm gold */
+  /* Supreme Universal Exact Brand Tokens */
+  --gold: #E15E3F;            /* Official Supreme Villagio Primary: #E15E3F */
+  --gold-light: #F07F63;      /* Warm Terracotta Light */
+  --gold-dark: #C04A2D;       /* Deep Terracotta */
+  --gold-muted: #E4E2D3;
   
-  --emerald: hsl(156, 75%, 36%);      /* #159E56 Lush Botanical Green */
-  --emerald-light: hsl(152, 70%, 48%);/* #28C77B Vibrant Meadow */
-  --emerald-dark: hsl(165, 55%, 13%); /* #0F3327 Deep Velvet Forest */
+  --emerald: #1A6F44;         /* Official Supreme Villagio Success Green: #1A6F44 */
+  --emerald-light: #269960;
+  --emerald-dark: #124A2D;
   
-  --amber: hsl(32, 95%, 52%);         /* #F97316 Sunset Amber Glow */
-  --terracotta: hsl(16, 80%, 54%);    /* #E25828 Tuscan Terracotta */
-  --sapphire: hsl(217, 85%, 58%);     /* #3B82F6 Royal Sapphire */
+  --amber: #E15E3F;
+  --terracotta: #E15E3F;
+  --sapphire: #3B82F6;
   
-  --charcoal: hsl(222, 28%, 9%);      /* #111622 Rich Midnight Velvet (Not flat grey) */
-  --charcoal-light: hsl(220, 22%, 16%);/* #1F2633 Midnight Slate */
-  --charcoal-card: hsl(220, 25%, 12%); /* #161D27 Luxury Dark Surface */
-  --stone: hsl(40, 16%, 68%);         /* Warm Stone */
-  --cream: hsl(40, 40%, 97%);         /* #FBF9F4 Warm Alabaster */
-  --cream-light: hsl(0, 0%, 100%);
+  --charcoal: #23362E;        /* Official Supreme Villagio Body Background: #23362E */
+  --charcoal-light: #2F493E;  /* Elevated Forest Surface */
+  --charcoal-card: #1C2C25;   /* Dark Card Surface */
+  --stone: #9E9C8D;           /* Warm Sandstone Stone */
+  --cream: #E4E2D3;           /* Official Supreme Villagio Body Color: #E4E2D3 */
+  --cream-light: #F4F3EB;
 
-  --chart-1: hsl(43, 92%, 52%);
-  --chart-2: hsl(156, 75%, 36%);
-  --chart-3: hsl(217, 85%, 58%);
-  --chart-4: hsl(32, 95%, 52%);
-  --chart-5: hsl(16, 80%, 54%);
+  --chart-1: #E15E3F;
+  --chart-2: #1A6F44;
+  --chart-3: #23362E;
+  --chart-4: #3B2C1C;
+  --chart-5: #9E9C8D;
   
-  --sidebar: hsl(40, 40%, 97%);
-  --sidebar-foreground: hsl(222, 30%, 12%);
-  --sidebar-primary: hsl(43, 92%, 52%);
-  --sidebar-primary-foreground: hsl(222, 35%, 10%);
-  --sidebar-accent: hsl(40, 30%, 92%);
-  --sidebar-accent-foreground: hsl(222, 30%, 12%);
-  --sidebar-border: hsl(40, 25%, 86%);
-  --sidebar-ring: hsl(43, 92%, 52%);
+  --sidebar: #E4E2D3;
+  --sidebar-foreground: #23362E;
+  --sidebar-primary: #E15E3F;
+  --sidebar-primary-foreground: #E4E2D3;
+  --sidebar-accent: #D8D6C5;
+  --sidebar-accent-foreground: #23362E;
+  --sidebar-border: rgba(35, 54, 46, 0.15);
+  --sidebar-ring: #E15E3F;
 }
 
 .dark {
-  /* Dark mode - deep velvet midnight navy, glowing gold, emerald highlights */
-  --background: hsl(222, 28%, 9%);
-  --foreground: hsl(40, 40%, 97%);
+  /* Supreme Universal Dark Mode - #23362E background, #E4E2D3 text, #E15E3F primary */
+  --background: #23362E;
+  --foreground: #E4E2D3;
   
-  --card: hsl(220, 25%, 12%);
-  --card-foreground: hsl(40, 40%, 97%);
+  --card: #1C2C25;
+  --card-foreground: #E4E2D3;
   
-  --popover: hsl(220, 25%, 12%);
-  --popover-foreground: hsl(40, 40%, 97%);
+  --popover: #1C2C25;
+  --popover-foreground: #E4E2D3;
   
-  --primary: hsl(43, 92%, 54%);
-  --primary-foreground: hsl(222, 35%, 10%);
+  --primary: #E15E3F;
+  --primary-foreground: #23362E;
   
-  --secondary: hsl(220, 22%, 16%);
-  --secondary-foreground: hsl(40, 40%, 97%);
+  --secondary: #2F493E;
+  --secondary-foreground: #E4E2D3;
   
-  --muted: hsl(220, 20%, 14%);
-  --muted-foreground: hsl(40, 15%, 72%);
+  --muted: #1A2922;
+  --muted-foreground: #9E9C8D;
   
-  --accent: hsl(43, 92%, 54%);
-  --accent-foreground: hsl(222, 35%, 10%);
+  --accent: #E15E3F;
+  --accent-foreground: #23362E;
   
-  --destructive: hsl(0, 75%, 45%);
-  --destructive-foreground: hsl(0, 0%, 98%);
+  --destructive: #EF5350;
+  --destructive-foreground: #FFFFFF;
   
-  --border: hsl(220, 20%, 20%);
-  --input: hsl(220, 20%, 20%);
-  --ring: hsl(43, 92%, 54%);
+  --border: rgba(228, 226, 211, 0.2);
+  --input: rgba(228, 226, 211, 0.2);
+  --ring: #E15E3F;
 
-  /* Custom Brand Tokens */
-  --gold: hsl(43, 92%, 54%);
-  --gold-light: hsl(45, 96%, 68%);
-  --gold-dark: hsl(38, 88%, 38%);
-  --gold-muted: hsl(40, 40%, 30%);
+  /* Brand Tokens */
+  --gold: #E15E3F;
+  --gold-light: #F07F63;
+  --gold-dark: #C04A2D;
+  --gold-muted: #E4E2D3;
   
-  --emerald: hsl(156, 75%, 42%);
-  --emerald-light: hsl(152, 70%, 54%);
-  --emerald-dark: hsl(165, 55%, 13%);
+  --emerald: #1A6F44;
+  --emerald-light: #269960;
+  --emerald-dark: #124A2D;
   
-  --amber: hsl(32, 95%, 54%);
-  --terracotta: hsl(16, 80%, 56%);
-  --sapphire: hsl(217, 85%, 62%);
+  --amber: #E15E3F;
+  --terracotta: #E15E3F;
+  --sapphire: #3B82F6;
   
-  --charcoal: hsl(222, 28%, 9%);
-  --charcoal-light: hsl(220, 22%, 16%);
-  --charcoal-card: hsl(220, 25%, 12%);
-  --stone: hsl(40, 16%, 68%);
-  --cream: hsl(40, 40%, 97%);
-  --cream-light: hsl(0, 0%, 100%);
+  --charcoal: #23362E;
+  --charcoal-light: #2F493E;
+  --charcoal-card: #1C2C25;
+  --stone: #9E9C8D;
+  --cream: #E4E2D3;
+  --cream-light: #F4F3EB;
 
-  --chart-1: hsl(43, 92%, 54%);
-  --chart-2: hsl(156, 75%, 42%);
-  --chart-3: hsl(217, 85%, 62%);
-  --chart-4: hsl(32, 95%, 54%);
-  --chart-5: hsl(16, 80%, 56%);
+  --chart-1: #E15E3F;
+  --chart-2: #1A6F44;
+  --chart-3: #23362E;
+  --chart-4: #3B2C1C;
+  --chart-5: #9E9C8D;
   
-  --sidebar: hsl(220, 25%, 12%);
-  --sidebar-foreground: hsl(40, 40%, 97%);
-  --sidebar-primary: hsl(43, 92%, 54%);
-  --sidebar-primary-foreground: hsl(222, 35%, 10%);
-  --sidebar-accent: hsl(220, 22%, 16%);
-  --sidebar-accent-foreground: hsl(40, 40%, 97%);
-  --sidebar-border: hsl(220, 20%, 20%);
-  --sidebar-ring: hsl(43, 92%, 54%);
+  --sidebar: #1C2C25;
+  --sidebar-foreground: #E4E2D3;
+  --sidebar-primary: #E15E3F;
+  --sidebar-primary-foreground: #23362E;
+  --sidebar-accent: #2F493E;
+  --sidebar-accent-foreground: #E4E2D3;
+  --sidebar-border: rgba(228, 226, 211, 0.2);
+  --sidebar-ring: #E15E3F;
 }
 
 @layer utilities {
   .text-gold-gradient {
-    background: linear-gradient(135deg, #FCD34D 0%, #F59E0B 50%, #D97706 100%);
+    background: linear-gradient(135deg, #F07F63 0%, #E15E3F 50%, #C04A2D 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
   .text-emerald-gradient {
-    background: linear-gradient(135deg, #34D399 0%, #10B981 50%, #059669 100%);
+    background: linear-gradient(135deg, #269960 0%, #1A6F44 50%, #124A2D 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .text-sunset-gradient {
-    background: linear-gradient(135deg, #FB923C 0%, #F59E0B 50%, #EF4444 100%);
+    background: linear-gradient(135deg, #F07F63 0%, #E15E3F 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .bg-gold-gradient {
-    background: linear-gradient(135deg, #F59E0B 0%, #FCD34D 50%, #D97706 100%);
+    background: linear-gradient(135deg, #E15E3F 0%, #F07F63 50%, #C04A2D 100%);
   }
 
   .bg-emerald-gradient {
-    background: linear-gradient(135deg, #064E3B 0%, #047857 50%, #065F46 100%);
+    background: linear-gradient(135deg, #1A6F44 0%, #23362E 100%);
   }
 
   .bg-midnight-gradient {
-    background: linear-gradient(180deg, #111622 0%, #0A0D14 100%);
+    background: linear-gradient(180deg, #23362E 0%, #17241F 100%);
   }
 
   .shadow-gold-glow {
-    box-shadow: 0 0 25px rgba(245, 158, 11, 0.25);
+    box-shadow: 0 0 25px rgba(225, 94, 63, 0.25);
   }
 
   .shadow-emerald-glow {
-    box-shadow: 0 0 25px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 0 25px rgba(26, 111, 68, 0.2);
   }
 }
 
