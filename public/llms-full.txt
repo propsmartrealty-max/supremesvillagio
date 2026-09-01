@@ -1,0 +1,41 @@
+# Supreme Villagio Somatane — Full Knowledge Dossier & Deep RAG Dataset
+
+## 1. Project Context & Positioning
+Supreme Villagio is an ultra-luxury master-planned 16-acre low-density villa estate located in Somatane, Pune West, developed by Supreme Universal. Somatane sits at an altitude of 616 meters along the Western Ghats mountain ridges, providing cooler temperatures (2–4°C lower than central Pune) and clean mountain air index while remaining 20 minutes from Hinjewadi IT Park and 25 minutes from Baner.
+
+## 2. Developer Pedigree: Supreme Universal
+Supreme Universal has delivered over 75+ landmark luxury residential and commercial projects across Mumbai and Pune over four decades. Notable developments in Pune include Supreme Estia (Baner), Supreme Amadore (Baner), Supreme Adima (Baner), and Supreme Pallacio.
+
+## 3. Product Typologies & Engineering Specifications
+- **4 BHK Premium Townhouses:**
+  - Carpet Area: 2,200 – 2,400 sq.ft.
+  - Structure: Ground + 2 Floors with exclusive rooftop party terrace.
+  - Price: Starting ₹2.89 Cr*.
+- **4 BHK Luxury Twin Villas:**
+  - Carpet Area: 2,600 – 2,900 sq.ft.
+  - Plot Feature: 3-side open private landscaped lawn and breakfast patio.
+  - Features: Double-height formal living room, walk-in master suite dressing.
+  - Price: Starting ₹3.45 Cr*.
+- **5 BHK Grand Presidential Villas (Limited 19 Units):**
+  - Carpet Area: 3,400 – 3,900 sq.ft.
+  - Plot Feature: Elevated hillside plots with panoramic Sahyadri views.
+  - Features: Private elevator from ground to sky lounge, 3 covered vehicle bays with EV charging.
+  - Price: Starting ₹4.85 Cr*.
+
+## 4. Phase Architecture & MahaRERA Compliance
+- **Phase I (P52100046867):** Fully Completed & Handed Over. Full Occupation Certificate (OC) granted.
+- **Phase II (P52100049506):** Fully Completed & Handed Over. Full Occupation Certificate (OC) granted.
+- **Phase III (P52100055048):** Newly Launched Under Construction. Statutory MahaRERA Completion Schedule: December 31, 2028.
+
+## 5. Amenities & Masterplan Architecture
+- **Club Villagio:** 18,500 sq.ft. operational clubhouse.
+- **Facilities:** Olympic-size swimming pool, heated kids pool, badminton court, squash court, fitness center, banquet halls, multi-cuisine cafe, indoor games room, massage suites.
+- **Landscape Master Planner:** Site Concepts International (Singapore). Over 65% open green space with central wellness spine, aromatic gardens, reflexology path, and children's adventure park.
+
+## 6. Commute & Connectivity Matrix
+- Hinjewadi IT Park: 20–25 Mins via Mumbai-Pune Expressway & NH-48.
+- Baner & Balewadi High Street: 25–30 Mins.
+- Talegaon MIDC: 10–12 Mins.
+- Mumbai–Pune Expressway Toll Plaza: 3 Mins.
+- Lonavala: 30 Mins.
+- Navi Mumbai International Airport: 75–85 Mins.

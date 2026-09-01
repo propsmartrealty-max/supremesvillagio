@@ -79,6 +79,56 @@ const priceSchema = {
   },
 };
 
+const priceBreadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': 'https://www.supremesvillagio.com/',
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Pricing & Cost Sheet',
+      'item': 'https://www.supremesvillagio.com/supreme-villagio/price',
+    },
+  ],
+};
+
+const priceFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    {
+      '@type': 'Question',
+      'name': 'What is the starting price of villas in Supreme Villagio Somatane?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'The starting price for 4 BHK Townhouses at Supreme Villagio is ₹2.89 Cr*. 4 BHK Luxury Twin Villas start from ₹3.45 Cr*, and exclusive 5 BHK Grand Presidential Hillside Villas start from ₹4.85 Cr*.',
+      },
+    },
+    {
+      '@type': 'Question',
+      'name': 'What is the payment schedule for Phase 3 under-construction villas?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Phase 3 offers a milestone-linked construction plan: 10% on booking, 15% on plinth completion, 25% across RCC slabs, 25% on brickwork and plastering, 20% on finishes, and 5% upon possession handover in Dec 2028.',
+      },
+    },
+    {
+      '@type': 'Question',
+      'name': 'What are the government taxes and stamp duty charges in Maharashtra?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Government charges include 7% Maharashtra Stamp Duty and a fixed Registration Fee of ₹30,000, along with applicable GST on under-construction units.',
+      },
+    },
+  ],
+};
+
 export default function PricePage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
@@ -86,6 +136,16 @@ export default function PricePage() {
         id="price-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(priceSchema) }}
+      />
+      <Script
+        id="price-breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(priceBreadcrumbSchema) }}
+      />
+      <Script
+        id="price-faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(priceFaqSchema) }}
       />
 
       <div className="container mx-auto max-w-6xl">

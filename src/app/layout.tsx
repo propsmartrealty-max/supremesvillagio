@@ -150,6 +150,19 @@ const realEstateListingSchema = {
     "reviewCount": "88",
     "bestRating": "5",
     "worstRating": "1"
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", ".hero-subtitle", ".pricing-highlight"]
+  },
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Somatane Pune",
+    "sameAs": [
+      "https://en.wikipedia.org/wiki/Somatane",
+      "https://www.wikidata.org/wiki/Q1538",
+      "https://en.wikipedia.org/wiki/Mumbai%E2%80%93Pune_Expressway"
+    ]
   }
 };
 
@@ -275,7 +288,10 @@ const organizationSchema = {
   "sameAs": [
     "https://www.facebook.com/SupremeUniversalRealEstate/",
     "https://www.instagram.com/supreme_universal/",
-    "https://www.linkedin.com/company/supremeuniversal/"
+    "https://www.linkedin.com/company/supremeuniversal/",
+    "https://www.wikidata.org/wiki/Q1538",
+    "https://en.wikipedia.org/wiki/Somatane",
+    "https://maharera.mahaonline.gov.in/"
   ],
   "contactPoint": {
     "@type": "ContactPoint",
