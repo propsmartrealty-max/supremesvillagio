@@ -6,11 +6,11 @@ import NextImage from "next/image";
 import AnimatedLine from "@/components/ui/AnimatedLine";
 
 const GALLERY_IMAGES = [
-  "https://cdn.supremeuniversal.com/media/Mobile13_kHFJ7R.jpg",
-  "https://cdn.supremeuniversal.com/media/image-3_PEYNPS.jpg",
-  "https://cdn.supremeuniversal.com/media/Mobile14_LLFdev.jpg",
-  "https://cdn.supremeuniversal.com/media/Mobile15_gRJeOM.jpg",
-  "https://cdn.supremeuniversal.com/media/tutGs9_supreme-villagio-mobile.jpg",
+  "https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-3_IOrvdm.jpg",
+  "https://cdn.supremeuniversal.com/media/jfpM5D_Villagio-L--KD--Club-housemin.jpg",
+  "https://cdn.supremeuniversal.com/media/tIaHE6_Villagio-L--Club-housemin.jpg",
+  "https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-5_H7lC84.jpg",
+  "https://cdn.supremeuniversal.com/media/fIAB41_Villagio--KD--Wellness-Spine.jpg",
   "https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-2_sx0rpm.jpg",
 ];
 

@@ -89,7 +89,7 @@ export default function VisionSection({ typology = "luxury homes" }: { typology?
             >
               <div className="relative w-full h-full shadow-2xl">
                 <Image 
-                  src="https://cdn.supremeuniversal.com/media/Mobile13_kHFJ7R.jpg"
+                  src="https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-2_sx0rpm.jpg"
                   alt="Supreme Villagio Exterior"
                   fill
                   className="object-cover"
@@ -102,7 +102,7 @@ export default function VisionSection({ typology = "luxury homes" }: { typology?
             >
               <div className="relative w-full h-full shadow-2xl border-4 border-cream">
                 <Image 
-                  src="https://cdn.supremeuniversal.com/media/image-3_PEYNPS.jpg"
+                  src="https://cdn.supremeuniversal.com/media/jfpM5D_Villagio-L--KD--Club-housemin.jpg"
                   alt="Supreme Villagio Exterior View"
                   fill
                   className="object-cover"
@@ -114,7 +114,7 @@ export default function VisionSection({ typology = "luxury homes" }: { typology?
           {/* Mobile Image Fallback */}
           <div className="block md:hidden h-[400px] w-full mt-10 relative">
              <Image 
-                src="https://cdn.supremeuniversal.com/media/Mobile13_kHFJ7R.jpg"
+                src="https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-2_sx0rpm.jpg"
                 alt="Supreme Villagio Mobile View"
                 fill
                 className="object-cover"
