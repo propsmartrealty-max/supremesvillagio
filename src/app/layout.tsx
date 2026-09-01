@@ -354,6 +354,49 @@ const websiteSchema = {
   }
 };
 
+const siteNavigationSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "SiteNavigationElement",
+      "position": 1,
+      "name": "Price & Cost Sheet",
+      "url": "https://www.supremesvillagio.com/supreme-villagio/price"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 2,
+      "name": "MahaRERA Certifications",
+      "url": "https://www.supremesvillagio.com/supreme-villagio-rera"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 3,
+      "name": "4 BHK Luxury Twin Villas",
+      "url": "https://www.supremesvillagio.com/supreme-villagio/4-bhk-villas"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 4,
+      "name": "5 BHK Grand Presidential",
+      "url": "https://www.supremesvillagio.com/supreme-villagio/5-bhk-villas"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 5,
+      "name": "Floor Plans & Blueprints",
+      "url": "https://www.supremesvillagio.com/supreme-villagio/floor-plans"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 6,
+      "name": "Construction & Handover Status",
+      "url": "https://www.supremesvillagio.com/supreme-villagio/construction-status"
+    }
+  ]
+};
+
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
@@ -480,6 +523,11 @@ export default function RootLayout({
           id="website-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <Script
+          id="site-navigation-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavigationSchema) }}
         />
         <Script
           id="video-object-schema"
