@@ -58,6 +58,16 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
     capable: true,
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.png", type: "image/png" }
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png" }
+    ],
+    shortcut: ["/favicon.ico"]
+  },
   alternates: {
     canonical: "https://www.supremesvillagio.com/",
     languages: {
