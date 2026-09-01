@@ -1,39 +1,36 @@
 # Cloudflare Pages 301 Edge Redirection Engine
 # High-speed edge rules processed before origin compute
 
-# 1. Apex Domain to Canonical WWW 301 Permanent Redirect
-https://supremesvillagio.com/*  https://www.supremesvillagio.com/:splat  301!
-
-# 2. High-Intent Shortlink & Legacy Route Aliases
-/price                           https://www.supremesvillagio.com/supreme-villagio/price                   301
-/pricing                         https://www.supremesvillagio.com/supreme-villagio/price                   301
-/cost-sheet                      https://www.supremesvillagio.com/supreme-villagio/price                   301
-/rates                           https://www.supremesvillagio.com/supreme-villagio/price                   301
-/emi                             https://www.supremesvillagio.com/supreme-villagio/emi-calculator          301
-/emi-calculator                  https://www.supremesvillagio.com/supreme-villagio/emi-calculator          301
-/rera                            https://www.supremesvillagio.com/supreme-villagio-rera                    301
-/maharera                        https://www.supremesvillagio.com/supreme-villagio-rera                    301
-/floorplan                       https://www.supremesvillagio.com/supreme-villagio/floor-plans             301
-/floorplans                      https://www.supremesvillagio.com/supreme-villagio/floor-plans             301
-/masterplan                      https://www.supremesvillagio.com/supreme-villagio/master-plan             301
-/master-plan                     https://www.supremesvillagio.com/supreme-villagio/master-plan             301
-/possession                      https://www.supremesvillagio.com/supreme-villagio/possession              301
-/reviews                         https://www.supremesvillagio.com/supreme-villagio/reviews                 301
-/brochure                        https://www.supremesvillagio.com/supreme-villagio/brochure                301
-/faq                             https://www.supremesvillagio.com/supreme-villagio/faq                     301
-/amenities                       https://www.supremesvillagio.com/supreme-villagio/amenities               301
-/construction-status             https://www.supremesvillagio.com/supreme-villagio/construction-status     301
-/nri                             https://www.supremesvillagio.com/supreme-villagio/nri-guide               301
-/nri-guide                       https://www.supremesvillagio.com/supreme-villagio/nri-guide               301
-/location                        https://www.supremesvillagio.com/supreme-villagio/location                301
-/investment                      https://www.supremesvillagio.com/supreme-villagio/investment              301
-/4bhk                            https://www.supremesvillagio.com/supreme-villagio/4-bhk-villas            301
-/5bhk                            https://www.supremesvillagio.com/supreme-villagio/5-bhk-villas            301
-/townhouse                       https://www.supremesvillagio.com/supreme-villagio/townhouses              301
-/townhouses                      https://www.supremesvillagio.com/supreme-villagio/townhouses              301
-/phase-1                         https://www.supremesvillagio.com/supreme-villagio/phase-1                 301
-/phase-2                         https://www.supremesvillagio.com/supreme-villagio/phase-2                 301
-/phase-3                         https://www.supremesvillagio.com/supreme-villagio/phase-3                 301
-/forest-trails                   https://www.supremesvillagio.com/supreme-villagio-vs-paranjape-forest-trails 301
-/somatane                        https://www.supremesvillagio.com/somatane-real-estate                    301
-/talegaon                        https://www.supremesvillagio.com/talegaon-real-estate                     301
+# 1. High-Intent Shortlink & Legacy Route Aliases
+/price                           /supreme-villagio/price                   301
+/pricing                         /supreme-villagio/price                   301
+/cost-sheet                      /supreme-villagio/price                   301
+/rates                           /supreme-villagio/price                   301
+/emi                             /supreme-villagio/emi-calculator          301
+/emi-calculator                  /supreme-villagio/emi-calculator          301
+/rera                            /supreme-villagio-rera                    301
+/maharera                        /supreme-villagio-rera                    301
+/floorplan                       /supreme-villagio/floor-plans             301
+/floorplans                      /supreme-villagio/floor-plans             301
+/masterplan                      /supreme-villagio/master-plan             301
+/master-plan                     /supreme-villagio/master-plan             301
+/possession                      /supreme-villagio/possession              301
+/reviews                         /supreme-villagio/reviews                 301
+/brochure                        /supreme-villagio/brochure                301
+/faq                             /supreme-villagio/faq                     301
+/amenities                       /supreme-villagio/amenities               301
+/construction-status             /supreme-villagio/construction-status     301
+/nri                             /supreme-villagio/nri-guide               301
+/nri-guide                       /supreme-villagio/nri-guide               301
+/location                        /supreme-villagio/location                301
+/investment                      /supreme-villagio/investment              301
+/4bhk                            /supreme-villagio/4-bhk-villas            301
+/5bhk                            /supreme-villagio/5-bhk-villas            301
+/townhouse                       /supreme-villagio/townhouses              301
+/townhouses                      /supreme-villagio/townhouses              301
+/phase-1                         /supreme-villagio/phase-1                 301
+/phase-2                         /supreme-villagio/phase-2                 301
+/phase-3                         /supreme-villagio/phase-3                 301
+/forest-trails                   /supreme-villagio-vs-paranjape-forest-trails 301
+/somatane                        /somatane-real-estate                    301
+/talegaon                        /talegaon-real-estate                     301
