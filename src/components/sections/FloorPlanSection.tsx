@@ -71,37 +71,41 @@ export default function FloorPlanSection() {
               </div>
 
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent opacity-80" />
+              <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent opacity-90" />
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-emerald-500/10 pointer-events-none" />
 
               {/* Default State Content (Bottom) */}
               <div className="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end h-full transition-all duration-700 group-hover:translate-y-full group-hover:opacity-0">
-                <h3 className="text-3xl font-heading mb-2">{plan.name}</h3>
-                <p className="text-gold text-sm uppercase tracking-widest">{plan.carpetArea}</p>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-gold inline-block" />
+                  <p className="text-gold text-xs uppercase tracking-widest font-bold">{plan.carpetArea}</p>
+                </div>
+                <h3 className="text-3xl font-heading text-cream mb-1 group-hover:text-gold transition-colors">{plan.name}</h3>
               </div>
 
               {/* Hover State Content (Reveals on Hover) */}
-              <div className="absolute inset-0 p-8 flex flex-col justify-between translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700">
+              <div className="absolute inset-0 p-8 flex flex-col justify-between translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 bg-charcoal/95 backdrop-blur-md">
                 <div>
-                  <h3 className="text-2xl font-heading text-gold mb-4">{plan.name}</h3>
-                  <p className="text-white/80 font-light leading-relaxed text-sm mb-6 line-clamp-4">
+                  <h3 className="text-2xl font-heading text-gold-gradient font-medium mb-3">{plan.name}</h3>
+                  <p className="text-cream/80 font-light leading-relaxed text-sm mb-6 line-clamp-4">
                     {plan.description}
                   </p>
 
-                  <div className="grid grid-cols-2 gap-4 mb-6 pt-6 border-t border-white/20">
-                    <div>
-                      <p className="text-[10px] text-white/50 uppercase tracking-widest mb-1">Carpet Area</p>
-                      <p className="text-sm font-medium">{plan.carpetArea}</p>
+                  <div className="grid grid-cols-2 gap-4 mb-6 pt-5 border-t border-gold/20">
+                    <div className="bg-white/5 p-3 border border-white/5">
+                      <p className="text-[10px] text-gold uppercase tracking-widest mb-1 font-semibold">Carpet Area</p>
+                      <p className="text-sm font-medium text-cream">{plan.carpetArea}</p>
                     </div>
-                    <div>
-                      <p className="text-[10px] text-white/50 uppercase tracking-widest mb-1">Plot Area</p>
-                      <p className="text-sm font-medium">{plan.plotArea}</p>
+                    <div className="bg-white/5 p-3 border border-white/5">
+                      <p className="text-[10px] text-gold uppercase tracking-widest mb-1 font-semibold">Plot Area</p>
+                      <p className="text-sm font-medium text-cream">{plan.plotArea}</p>
                     </div>
                   </div>
 
-                  <ul className="space-y-3">
+                  <ul className="space-y-2.5">
                     {plan.highlights.map((highlight, idx) => (
-                      <li key={idx} className="flex items-center text-white/70 text-sm font-light">
-                        <div className="w-1 h-1 rounded-full bg-gold mr-3" />
+                      <li key={idx} className="flex items-center text-cream/90 text-sm font-light">
+                        <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-amber-400 to-yellow-500 mr-3 shrink-0" />
                         {highlight}
                       </li>
                     ))}
@@ -110,7 +114,7 @@ export default function FloorPlanSection() {
 
                 <button 
                   onClick={openContactModal}
-                  className="mt-8 flex items-center justify-center gap-3 bg-white text-charcoal py-4 px-6 text-xs uppercase tracking-widest font-bold hover:bg-gold transition-colors"
+                  className="mt-6 flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-charcoal py-3.5 px-6 text-xs uppercase tracking-widest font-bold shadow-lg shadow-amber-500/25 hover:brightness-110 hover:shadow-amber-500/40 active:scale-95 transition-all duration-300 rounded-none cursor-pointer"
                 >
                   <Maximize2 size={16} /> Request Floor Plan
                 </button>

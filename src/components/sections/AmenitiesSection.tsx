@@ -85,36 +85,30 @@ export default function AmenitiesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className={`relative overflow-hidden group rounded-sm ${amenity.colSpan} ${amenity.rowSpan} bg-muted h-[300px] md:h-auto`}
+              className={`relative overflow-hidden group rounded-sm ${amenity.colSpan} ${amenity.rowSpan} bg-charcoal-card border border-white/10 hover:border-gold/60 transition-all duration-500 shadow-xl h-[300px] md:h-auto`}
             >
-              {/* Image Fallback Background */}
-              <div className="absolute inset-0 bg-charcoal/20 z-10 transition-colors duration-500 group-hover:bg-transparent" />
-              
-              {/* Background gradient for text legibility */}
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/20 to-transparent z-20" />
+              {/* Warm gradient overlay for rich color depth */}
+              <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent z-20 opacity-90 group-hover:opacity-70 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-emerald-500/10 z-10 pointer-events-none mix-blend-screen" />
 
               <motion.div 
                 className="absolute inset-0 w-full h-full"
                 style={{ y: amenity.rowSpan.includes("2") ? y : 0 }}
               >
-                {/* 
-                  Note: Using unoptimized img or fallback for now. 
-                  In production, these URLs should be valid Supreme Universal CDN links.
-                */}
                 <img
                   src={amenity.image}
                   alt={amenity.title}
-                  className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000 ease-out"
-                  onError={(e) => {
-                    // Fallback to gradient if image fails to load
-                    (e.target as HTMLImageElement).src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Crect width='100%25' height='100%25' fill='%231f2937'/%3E%3C/svg%3E";
-                  }}
+                  className="w-full h-full object-cover scale-105 group-hover:scale-110 transition-transform duration-1000 ease-out"
                 />
               </motion.div>
 
-              <div className="absolute bottom-0 left-0 p-8 z-30 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                <h3 className="text-2xl font-heading text-white mb-2">{amenity.title}</h3>
-                <p className="text-white/70 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+              <div className="absolute bottom-0 left-0 p-8 z-30 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500 w-full">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-gold inline-block" />
+                  <span className="text-[10px] uppercase tracking-widest text-gold font-bold">Exclusive Amenity</span>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-heading text-cream mb-2 group-hover:text-gold transition-colors duration-300">{amenity.title}</h3>
+                <p className="text-cream/80 font-light opacity-90 group-hover:opacity-100 transition-opacity duration-500 text-sm max-w-lg leading-relaxed">
                   {amenity.description}
                 </p>
               </div>

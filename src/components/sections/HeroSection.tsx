@@ -71,7 +71,8 @@ export default function HeroSection({
           quality={100}
           className="object-cover object-center transform scale-105 transition-transform duration-[20s] ease-linear hover:scale-110"
         />
-        <div className="absolute inset-0 bg-charcoal/40 bg-gradient-to-t from-charcoal/80 via-transparent to-charcoal/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-950/20 via-transparent to-emerald-950/20 mix-blend-overlay pointer-events-none" />
       </motion.div>
 
       {/* Content */}
@@ -85,44 +86,46 @@ export default function HeroSection({
             alt="Supreme Villagio Somatane Logo"
             width={300}
             height={100}
-            className="mx-auto drop-shadow-2xl brightness-0 invert" // Invert if the logo is originally dark
+            className="mx-auto drop-shadow-[0_10px_20px_rgba(245,184,27,0.15)] brightness-0 invert" 
           />
         </div>
 
         <div className="overflow-hidden mb-6 flex flex-col items-center justify-center">
           <TextReveal 
             text={headlineLine1} 
-            className="text-4xl md:text-6xl lg:text-7xl font-heading font-semibold text-cream max-w-5xl leading-tight" 
+            className="text-4xl md:text-6xl lg:text-7xl font-heading font-semibold text-cream max-w-5xl leading-tight drop-shadow-md" 
             delay={0.5} 
             highlightWords={highlightWords}
+            highlightClass="text-gold-gradient italic font-light font-heading"
           />
           <TextReveal 
             text={headlineLine2} 
-            className="text-4xl md:text-6xl lg:text-7xl font-heading font-normal text-cream max-w-5xl leading-tight" 
+            className="text-4xl md:text-6xl lg:text-7xl font-heading font-normal text-cream max-w-5xl leading-tight drop-shadow-md" 
             delay={1}
             highlightWords={highlightWords}
+            highlightClass="text-gold-gradient italic font-light font-heading"
           />
         </div>
         
         <div className="overflow-hidden mb-12">
-          <p className="hero-text-reveal text-lg md:text-xl text-cream/90 max-w-2xl font-light tracking-wide">
+          <p className="hero-text-reveal text-lg md:text-xl text-cream/90 max-w-2xl font-light tracking-wide drop-shadow-sm">
             {subline}
           </p>
         </div>
 
-        <div className="overflow-hidden flex flex-col sm:flex-row gap-6">
+        <div className="overflow-hidden flex flex-col sm:flex-row gap-6 items-center">
           <button 
             onClick={openContactModal}
-            className="hero-text-reveal bg-gold text-charcoal px-8 py-4 text-sm uppercase tracking-widest hover:bg-white transition-colors duration-300 font-semibold"
+            className="hero-text-reveal bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-charcoal px-9 py-4 text-sm uppercase tracking-widest font-bold shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:brightness-110 active:scale-95 transition-all duration-300 rounded-none cursor-pointer"
             aria-label="Book a private tour of Supreme Villagio"
           >
             Book Private Tour
           </button>
           <button 
-            className="hero-text-reveal flex items-center justify-center gap-3 border border-cream/30 text-cream px-8 py-4 text-sm uppercase tracking-widest hover:bg-cream/10 transition-colors duration-300 backdrop-blur-sm"
+            className="hero-text-reveal flex items-center justify-center gap-3 border border-gold/40 bg-white/5 text-cream px-8 py-4 text-sm uppercase tracking-widest hover:bg-gold/15 hover:border-gold hover:text-gold transition-all duration-300 backdrop-blur-md rounded-none"
             aria-label="Watch the Supreme Villagio walkthrough film"
           >
-            <Play size={16} /> Watch Film
+            <Play size={16} className="text-gold" /> Watch Film
           </button>
         </div>
       </motion.div>
@@ -130,22 +133,25 @@ export default function HeroSection({
       {/* Floating Info Panel (Real Data) */}
       <div className="hero-panel absolute bottom-0 left-0 w-full z-20">
         <div className="container mx-auto px-4 md:px-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-4 border-t border-cream/20 bg-charcoal/80 backdrop-blur-md py-4 md:py-6">
-            <div className="px-2 md:px-4 border-r border-cream/10 md:last:border-0">
-              <p className="text-[10px] md:text-xs text-gold uppercase tracking-widest mb-1 font-semibold">Typology</p>
-              <p className="text-xs md:text-sm text-cream font-light">{typology}</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-4 border-t border-gold/20 bg-charcoal/90 backdrop-blur-xl py-4 md:py-6 shadow-2xl">
+            <div className="px-2 md:px-4 border-r border-white/10 md:last:border-0">
+              <p className="text-[10px] md:text-xs text-gold uppercase tracking-widest mb-1 font-bold">Typology</p>
+              <p className="text-xs md:text-sm text-cream font-medium">{typology}</p>
             </div>
-            <div className="px-2 md:px-4 border-none md:border-r border-cream/10 md:last:border-0">
-              <p className="text-[10px] md:text-xs text-gold uppercase tracking-widest mb-1 font-semibold">Project Status</p>
-              <p className="text-xs md:text-sm text-cream font-light">Under Construction</p>
+            <div className="px-2 md:px-4 border-none md:border-r border-white/10 md:last:border-0">
+              <p className="text-[10px] md:text-xs text-gold uppercase tracking-widest mb-1 font-bold">Project Status</p>
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <p className="text-xs md:text-sm text-cream font-medium">Under Construction</p>
+              </div>
             </div>
-            <div className="px-2 md:px-4 border-r border-cream/10 md:last:border-0 mt-2 md:mt-0">
-              <p className="text-[10px] md:text-xs text-gold uppercase tracking-widest mb-1 font-semibold">Location</p>
-              <p className="text-xs md:text-sm text-cream font-light">Somatane, Pune</p>
+            <div className="px-2 md:px-4 border-r border-white/10 md:last:border-0 mt-2 md:mt-0">
+              <p className="text-[10px] md:text-xs text-gold uppercase tracking-widest mb-1 font-bold">Location</p>
+              <p className="text-xs md:text-sm text-cream font-medium">Somatane, Pune</p>
             </div>
             <div className="px-2 md:px-4 mt-2 md:mt-0">
-              <p className="text-[10px] md:text-xs text-gold uppercase tracking-widest mb-1 font-semibold">Starting Price</p>
-              <p className="text-xs md:text-sm text-cream font-light text-gold"><DynamicPrice fallbackPrice={pricing} /></p>
+              <p className="text-[10px] md:text-xs text-gold uppercase tracking-widest mb-1 font-bold">Starting Price</p>
+              <p className="text-xs md:text-sm font-semibold text-gold-gradient"><DynamicPrice fallbackPrice={pricing} /></p>
             </div>
           </div>
         </div>

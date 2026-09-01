@@ -57,10 +57,10 @@ export default function ArchitectureSection() {
           >
             <button
               onClick={() => setActiveHotspot(activeHotspot === spot.id ? null : spot.id)}
-              className="relative w-8 h-8 md:w-10 md:h-10 bg-gold text-charcoal rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-30"
+              className="relative w-9 h-9 md:w-11 md:h-11 bg-gradient-to-br from-amber-400 via-yellow-400 to-amber-500 text-charcoal rounded-full flex items-center justify-center shadow-lg shadow-amber-500/30 hover:scale-115 transition-transform z-30 cursor-pointer"
             >
               <Plus size={20} className={`transition-transform duration-300 ${activeHotspot === spot.id ? 'rotate-45' : ''}`} />
-              <span className="absolute inset-0 rounded-full border border-gold animate-ping opacity-75 pointer-events-none" />
+              <span className="absolute inset-0 rounded-full border-2 border-amber-400 animate-ping opacity-60 pointer-events-none" />
             </button>
 
             <AnimatePresence>
@@ -69,10 +69,10 @@ export default function ArchitectureSection() {
                   initial={{ opacity: 0, y: 10, scale: 0.9 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 10, scale: 0.9 }}
-                  className="absolute top-12 left-1/2 -translate-x-1/2 w-64 bg-background/95 backdrop-blur-md border border-border/50 p-4 rounded-none shadow-2xl z-40"
+                  className="absolute top-14 left-1/2 -translate-x-1/2 w-64 bg-charcoal/95 backdrop-blur-xl border border-gold/40 p-5 rounded-sm shadow-2xl z-40 text-left"
                 >
-                  <h4 className="text-gold font-heading text-lg mb-2">{spot.title}</h4>
-                  <p className="text-sm text-foreground/80 leading-relaxed">{spot.desc}</p>
+                  <h4 className="text-gold-gradient font-heading text-lg mb-2 font-medium">{spot.title}</h4>
+                  <p className="text-xs text-cream/80 leading-relaxed font-light">{spot.desc}</p>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -83,7 +83,7 @@ export default function ArchitectureSection() {
       <div className="container mx-auto px-6 md:px-12 mt-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div>
-            <h4 className="text-3xl font-heading text-gold mb-6">A Slower, Richer Pace of Life</h4>
+            <h4 className="text-3xl md:text-4xl font-heading text-gold-gradient mb-6">A Slower, Richer Pace of Life</h4>
             <p className="text-stone font-light leading-relaxed mb-6">
               Rooted in the serene heart of Somatane, Supreme Villagio reimagines community living with a rare blend of nature, design, and personal space. This villa estate is crafted for those who value meaningful architecture, curated greens, and a slower, richer pace of life.
             </p>
@@ -91,22 +91,22 @@ export default function ArchitectureSection() {
               Every detail — from the landscape by global experts to the ready clubhouse — echoes Supreme’s signature focus on refinement over flamboyance. Here, life unfolds not in vertical towers but across open skies, tree-lined boulevards, and thoughtfully planned spaces that feel just right.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-16 border-l border-cream/30 pl-8 lg:pl-16">
+          <div className="grid grid-cols-2 gap-16 border-l border-gold/30 pl-8 lg:pl-16">
             <div>
-              <p className="text-5xl md:text-8xl font-heading text-cream mb-2 tracking-tighter">40+</p>
-              <p className="text-[10px] md:text-xs text-stone uppercase tracking-widest font-semibold">Lifestyle Comforts</p>
+              <p className="text-5xl md:text-8xl font-heading text-gold-gradient mb-2 tracking-tighter font-light">40+</p>
+              <p className="text-[10px] md:text-xs text-gold uppercase tracking-widest font-bold">Lifestyle Comforts</p>
             </div>
             <div>
-              <p className="text-5xl md:text-8xl font-heading text-cream mb-2 tracking-tighter">616<span className="text-xl md:text-3xl">m</span></p>
-              <p className="text-[10px] md:text-xs text-stone uppercase tracking-widest font-semibold">Above Sea Level</p>
+              <p className="text-5xl md:text-8xl font-heading text-gold-gradient mb-2 tracking-tighter font-light">616<span className="text-xl md:text-3xl text-gold">m</span></p>
+              <p className="text-[10px] md:text-xs text-gold uppercase tracking-widest font-bold">Above Sea Level</p>
             </div>
             <div>
-              <p className="text-5xl md:text-8xl font-heading text-cream mb-2 tracking-tighter">25<span className="text-xl md:text-3xl">m</span></p>
-              <p className="text-[10px] md:text-xs text-stone uppercase tracking-widest font-semibold">From Baner</p>
+              <p className="text-5xl md:text-8xl font-heading text-gold-gradient mb-2 tracking-tighter font-light">25<span className="text-xl md:text-3xl text-gold">m</span></p>
+              <p className="text-[10px] md:text-xs text-gold uppercase tracking-widest font-bold">From Baner</p>
             </div>
             <div>
-              <p className="text-5xl md:text-8xl font-heading text-cream mb-2 tracking-tighter">2<span className="text-xl md:text-3xl">hr</span></p>
-              <p className="text-[10px] md:text-xs text-stone uppercase tracking-widest font-semibold">To Airport</p>
+              <p className="text-5xl md:text-8xl font-heading text-gold-gradient mb-2 tracking-tighter font-light">2<span className="text-xl md:text-3xl text-gold">hr</span></p>
+              <p className="text-[10px] md:text-xs text-gold uppercase tracking-widest font-bold">To Airport</p>
             </div>
           </div>
         </div>

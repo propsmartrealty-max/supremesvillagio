@@ -51,13 +51,23 @@
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
 
-  /* Luxury Colors */
+  /* Luxury Enhanced Colorful Palette */
   --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
   --color-gold-muted: var(--gold-muted);
+  --color-emerald: var(--emerald);
+  --color-emerald-light: var(--emerald-light);
+  --color-emerald-dark: var(--emerald-dark);
+  --color-amber: var(--amber);
+  --color-terracotta: var(--terracotta);
+  --color-sapphire: var(--sapphire);
   --color-charcoal: var(--charcoal);
   --color-charcoal-light: var(--charcoal-light);
+  --color-charcoal-card: var(--charcoal-card);
   --color-stone: var(--stone);
   --color-cream: var(--cream);
+  --color-cream-light: var(--cream-light);
   
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
@@ -69,113 +79,179 @@
 }
 
 :root {
-  /* Light mode - warm whites, cream, charcoal text */
-  --background: hsl(40, 33%, 98%);
-  --foreground: hsl(220, 10%, 15%);
+  /* Light mode - warm Italian sandstone cream, rich midnight text, radiant gold */
+  --background: hsl(40, 40%, 97%);
+  --foreground: hsl(222, 30%, 12%);
   
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(220, 10%, 15%);
+  --card-foreground: hsl(222, 30%, 12%);
   
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(220, 10%, 15%);
+  --popover-foreground: hsl(222, 30%, 12%);
   
-  --primary: hsl(220, 10%, 15%);
-  --primary-foreground: hsl(40, 33%, 98%);
+  --primary: hsl(43, 92%, 52%);
+  --primary-foreground: hsl(222, 35%, 10%);
   
-  --secondary: hsl(40, 20%, 90%);
-  --secondary-foreground: hsl(220, 10%, 15%);
+  --secondary: hsl(40, 30%, 92%);
+  --secondary-foreground: hsl(222, 30%, 12%);
   
-  --muted: hsl(40, 15%, 92%);
-  --muted-foreground: hsl(220, 5%, 45%);
+  --muted: hsl(40, 20%, 92%);
+  --muted-foreground: hsl(220, 15%, 45%);
   
-  --accent: hsl(40, 60%, 70%); /* Champagne Gold */
-  --accent-foreground: hsl(220, 10%, 15%);
+  --accent: hsl(43, 92%, 52%); /* Royal Radiant Gold */
+  --accent-foreground: hsl(222, 35%, 10%);
   
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(210, 40%, 98%);
   
-  --border: hsl(40, 15%, 85%);
-  --input: hsl(40, 15%, 85%);
-  --ring: hsl(40, 60%, 70%);
+  --border: hsl(40, 25%, 86%);
+  --input: hsl(40, 25%, 86%);
+  --ring: hsl(43, 92%, 52%);
   
   --radius: 0.5rem;
   
-  /* Custom Brand Tokens */
-  --gold: hsl(40, 60%, 70%);
-  --gold-muted: hsl(40, 40%, 85%);
-  --charcoal: hsl(0, 0%, 4%); /* #0A0A0A Near Black */
-  --charcoal-light: hsl(0, 0%, 12%); /* Darker grey */
-  --stone: hsl(0, 0%, 60%); /* Neutral stark grey */
-  --cream: hsl(0, 0%, 98%); /* Crisp White */
-
-  --chart-1: hsl(12, 76%, 61%);
-  --chart-2: hsl(173, 58%, 39%);
-  --chart-3: hsl(197, 37%, 24%);
-  --chart-4: hsl(43, 74%, 66%);
-  --chart-5: hsl(27, 87%, 67%);
+  /* Luxury Vibrant Brand Tokens */
+  --gold: hsl(43, 92%, 52%);          /* #F5B81B Radiant Royal Gold */
+  --gold-light: hsl(45, 96%, 68%);    /* #FCD34D Champagne Shimmer */
+  --gold-dark: hsl(38, 88%, 38%);     /* #B47309 Deep Rich Bronze */
+  --gold-muted: hsl(40, 50%, 82%);    /* Soft warm gold */
   
-  --sidebar: hsl(0, 0%, 98%);
-  --sidebar-foreground: hsl(240, 5.3%, 26.1%);
-  --sidebar-primary: hsl(240, 5.9%, 10%);
-  --sidebar-primary-foreground: hsl(0, 0%, 98%);
-  --sidebar-accent: hsl(240, 4.8%, 95.9%);
-  --sidebar-accent-foreground: hsl(240, 5.9%, 10%);
-  --sidebar-border: hsl(220, 13%, 91%);
-  --sidebar-ring: hsl(217.2, 91.2%, 59.8%);
+  --emerald: hsl(156, 75%, 36%);      /* #159E56 Lush Botanical Green */
+  --emerald-light: hsl(152, 70%, 48%);/* #28C77B Vibrant Meadow */
+  --emerald-dark: hsl(165, 55%, 13%); /* #0F3327 Deep Velvet Forest */
+  
+  --amber: hsl(32, 95%, 52%);         /* #F97316 Sunset Amber Glow */
+  --terracotta: hsl(16, 80%, 54%);    /* #E25828 Tuscan Terracotta */
+  --sapphire: hsl(217, 85%, 58%);     /* #3B82F6 Royal Sapphire */
+  
+  --charcoal: hsl(222, 28%, 9%);      /* #111622 Rich Midnight Velvet (Not flat grey) */
+  --charcoal-light: hsl(220, 22%, 16%);/* #1F2633 Midnight Slate */
+  --charcoal-card: hsl(220, 25%, 12%); /* #161D27 Luxury Dark Surface */
+  --stone: hsl(40, 16%, 68%);         /* Warm Stone */
+  --cream: hsl(40, 40%, 97%);         /* #FBF9F4 Warm Alabaster */
+  --cream-light: hsl(0, 0%, 100%);
+
+  --chart-1: hsl(43, 92%, 52%);
+  --chart-2: hsl(156, 75%, 36%);
+  --chart-3: hsl(217, 85%, 58%);
+  --chart-4: hsl(32, 95%, 52%);
+  --chart-5: hsl(16, 80%, 54%);
+  
+  --sidebar: hsl(40, 40%, 97%);
+  --sidebar-foreground: hsl(222, 30%, 12%);
+  --sidebar-primary: hsl(43, 92%, 52%);
+  --sidebar-primary-foreground: hsl(222, 35%, 10%);
+  --sidebar-accent: hsl(40, 30%, 92%);
+  --sidebar-accent-foreground: hsl(222, 30%, 12%);
+  --sidebar-border: hsl(40, 25%, 86%);
+  --sidebar-ring: hsl(43, 92%, 52%);
 }
 
 .dark {
-  /* Dark mode - deep charcoal, gold accents */
-  --background: hsl(0, 0%, 4%);
-  --foreground: hsl(0, 0%, 98%);
+  /* Dark mode - deep velvet midnight navy, glowing gold, emerald highlights */
+  --background: hsl(222, 28%, 9%);
+  --foreground: hsl(40, 40%, 97%);
   
-  --card: hsl(0, 0%, 6%);
-  --card-foreground: hsl(0, 0%, 98%);
+  --card: hsl(220, 25%, 12%);
+  --card-foreground: hsl(40, 40%, 97%);
   
-  --popover: hsl(0, 0%, 6%);
-  --popover-foreground: hsl(0, 0%, 98%);
+  --popover: hsl(220, 25%, 12%);
+  --popover-foreground: hsl(40, 40%, 97%);
   
-  --primary: hsl(40, 60%, 70%);
-  --primary-foreground: hsl(0, 0%, 4%);
+  --primary: hsl(43, 92%, 54%);
+  --primary-foreground: hsl(222, 35%, 10%);
   
-  --secondary: hsl(0, 0%, 12%);
-  --secondary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(220, 22%, 16%);
+  --secondary-foreground: hsl(40, 40%, 97%);
   
-  --muted: hsl(0, 0%, 10%);
-  --muted-foreground: hsl(0, 0%, 70%);
+  --muted: hsl(220, 20%, 14%);
+  --muted-foreground: hsl(40, 15%, 72%);
   
-  --accent: hsl(40, 60%, 70%);
-  --accent-foreground: hsl(0, 0%, 4%);
+  --accent: hsl(43, 92%, 54%);
+  --accent-foreground: hsl(222, 35%, 10%);
   
-  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive: hsl(0, 75%, 45%);
   --destructive-foreground: hsl(0, 0%, 98%);
   
-  --border: hsl(0, 0%, 15%);
-  --input: hsl(0, 0%, 15%);
-  --ring: hsl(40, 60%, 70%);
+  --border: hsl(220, 20%, 20%);
+  --input: hsl(220, 20%, 20%);
+  --ring: hsl(43, 92%, 54%);
 
   /* Custom Brand Tokens */
-  --gold: hsl(40, 60%, 70%);
-  --gold-muted: hsl(40, 40%, 35%);
-  --charcoal: hsl(0, 0%, 4%);
-  --charcoal-light: hsl(0, 0%, 12%);
-  --stone: hsl(0, 0%, 60%);
-  --cream: hsl(0, 0%, 98%);
-
-  --chart-1: hsl(220, 70%, 50%);
-  --chart-2: hsl(160, 60%, 45%);
-  --chart-3: hsl(30, 80%, 55%);
-  --chart-4: hsl(280, 65%, 60%);
-  --chart-5: hsl(340, 75%, 55%);
+  --gold: hsl(43, 92%, 54%);
+  --gold-light: hsl(45, 96%, 68%);
+  --gold-dark: hsl(38, 88%, 38%);
+  --gold-muted: hsl(40, 40%, 30%);
   
-  --sidebar: hsl(240, 5.9%, 10%);
-  --sidebar-foreground: hsl(240, 4.8%, 95.9%);
-  --sidebar-primary: hsl(224.3, 76.3%, 48%);
-  --sidebar-primary-foreground: hsl(0, 0%, 100%);
-  --sidebar-accent: hsl(240, 3.7%, 15.9%);
-  --sidebar-accent-foreground: hsl(240, 4.8%, 95.9%);
-  --sidebar-border: hsl(240, 3.7%, 15.9%);
-  --sidebar-ring: hsl(217.2, 91.2%, 59.8%);
+  --emerald: hsl(156, 75%, 42%);
+  --emerald-light: hsl(152, 70%, 54%);
+  --emerald-dark: hsl(165, 55%, 13%);
+  
+  --amber: hsl(32, 95%, 54%);
+  --terracotta: hsl(16, 80%, 56%);
+  --sapphire: hsl(217, 85%, 62%);
+  
+  --charcoal: hsl(222, 28%, 9%);
+  --charcoal-light: hsl(220, 22%, 16%);
+  --charcoal-card: hsl(220, 25%, 12%);
+  --stone: hsl(40, 16%, 68%);
+  --cream: hsl(40, 40%, 97%);
+  --cream-light: hsl(0, 0%, 100%);
+
+  --chart-1: hsl(43, 92%, 54%);
+  --chart-2: hsl(156, 75%, 42%);
+  --chart-3: hsl(217, 85%, 62%);
+  --chart-4: hsl(32, 95%, 54%);
+  --chart-5: hsl(16, 80%, 56%);
+  
+  --sidebar: hsl(220, 25%, 12%);
+  --sidebar-foreground: hsl(40, 40%, 97%);
+  --sidebar-primary: hsl(43, 92%, 54%);
+  --sidebar-primary-foreground: hsl(222, 35%, 10%);
+  --sidebar-accent: hsl(220, 22%, 16%);
+  --sidebar-accent-foreground: hsl(40, 40%, 97%);
+  --sidebar-border: hsl(220, 20%, 20%);
+  --sidebar-ring: hsl(43, 92%, 54%);
+}
+
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #FCD34D 0%, #F59E0B 50%, #D97706 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .text-emerald-gradient {
+    background: linear-gradient(135deg, #34D399 0%, #10B981 50%, #059669 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-sunset-gradient {
+    background: linear-gradient(135deg, #FB923C 0%, #F59E0B 50%, #EF4444 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, #F59E0B 0%, #FCD34D 50%, #D97706 100%);
+  }
+
+  .bg-emerald-gradient {
+    background: linear-gradient(135deg, #064E3B 0%, #047857 50%, #065F46 100%);
+  }
+
+  .bg-midnight-gradient {
+    background: linear-gradient(180deg, #111622 0%, #0A0D14 100%);
+  }
+
+  .shadow-gold-glow {
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.25);
+  }
+
+  .shadow-emerald-glow {
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.2);
+  }
 }
 
 @layer base {
@@ -189,7 +265,9 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading tracking-tight;
   }
-}@media (pointer: fine) {
+}
+
+@media (pointer: fine) {
   body {
     cursor: none;
   }

@@ -88,7 +88,7 @@ export default function Navbar() {
           <Magnetic strength={40}>
             <button 
               onClick={() => openContactModal()}
-              className="ml-6 bg-foreground text-background px-6 py-3 text-sm uppercase tracking-widest hover:bg-gold hover:text-charcoal transition-colors duration-300 cursor-pointer"
+              className="ml-6 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-charcoal font-bold px-6 py-3 text-sm uppercase tracking-widest shadow-md shadow-amber-500/20 hover:shadow-amber-500/40 hover:brightness-110 active:scale-95 transition-all duration-300 cursor-pointer rounded-none"
               aria-label="Open contact form to book a visit"
             >
               Book Visit
