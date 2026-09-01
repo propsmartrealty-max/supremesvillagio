@@ -1,9 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export const runtime = 'edge';
-
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   // Extract country from Cloudflare/Vercel Edge headers (fallback to 'IN' for local dev)
   const country = request.headers.get('cf-ipcountry') || request.headers.get('x-vercel-ip-country') || 'IN';
 
