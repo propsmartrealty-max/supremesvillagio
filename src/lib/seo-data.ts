@@ -145,7 +145,6 @@ export function generateSeoDataFromSlug(slugs: string[]) {
   // Advanced grammatical formatting for the title
   let titleString = "";
   if (rawModifier.startsWith('under') || rawModifier.startsWith('between') || rawModifier.startsWith('above') || rawModifier.startsWith('for') || rawModifier.startsWith('with')) {
-    // e.g. "Ultra Luxury Homes in Baner Under 5 Crore"
     titleString = `${formattedCat} in ${formattedLoc} ${formattedMod}`;
   } else if (rawModifier === "investment" || rawModifier === "high-roi") {
     titleString = `${formattedMod} ${formattedCat} in ${formattedLoc}`;
@@ -157,28 +156,55 @@ export function generateSeoDataFromSlug(slugs: string[]) {
     titleString = `${formattedCat} in ${formattedLoc} ${formattedMod ? "- " + formattedMod : ""}`;
   }
 
-  // Enforce HNI Focus
   const finalTitle = `${titleString} | Supreme Villagio Somatane`;
   
-  // Identify core typology for the UI
-  let typologyText = "Premium Villas";
-  if (rawCategory.includes("row-house")) typologyText = "Luxury Row Houses";
-  if (rawCategory.includes("duplex")) typologyText = "Premium Duplex Homes";
-  if (rawCategory.includes("bungalow")) typologyText = "Ultra Luxury Twin Bungalows";
-  if (rawCategory.includes("villagio")) typologyText = "Supreme Villagio Luxury Villas";
+  // Dynamic Pricing & Typology Hardening
+  let typologyText = "4 & 5 BHK Luxury Twin Villas";
+  let startingPrice = "₹2.89 Cr*";
+  let carpetAreaText = "2,200 – 3,900 Sq. Ft.";
 
-  const optimizedDescription = `Discover the pinnacle of luxury living. Supreme Villagio offers ${typologyText.toLowerCase()} in the ${formattedLoc} real estate market. Perfectly designed for HNI buyers seeking ${formattedMod || "exclusive properties"} in the ₹3-10 Cr segment.`;
+  if (rawCategory.includes("5-bhk")) {
+    typologyText = "5 BHK Grand Presidential Villas";
+    startingPrice = "₹4.85 Cr*";
+    carpetAreaText = "3,400 – 3,900 Sq. Ft.";
+  } else if (rawCategory.includes("4-bhk") && (rawCategory.includes("twin") || rawCategory.includes("villa") || rawCategory.includes("bungalow"))) {
+    typologyText = "4 BHK Luxury Twin Villas";
+    startingPrice = "₹3.45 Cr*";
+    carpetAreaText = "2,600 – 2,900 Sq. Ft.";
+  } else if (rawCategory.includes("townhouse") || rawCategory.includes("row-house")) {
+    typologyText = "4 BHK Luxury Townhouses";
+    startingPrice = "₹2.89 Cr*";
+    carpetAreaText = "2,200 – 2,400 Sq. Ft.";
+  }
 
-  const dynamicSeoParagraph = `Welcome to the pinnacle of luxury real estate in ${formattedLoc}. If you are searching the market for premium ${formattedCat.toLowerCase()}, Supreme Villagio offers an unparalleled horizontal lifestyle experience that high-rise apartments simply cannot match. ${formattedMod ? `Specifically engineered for discerning buyers looking for ${formattedMod.toLowerCase()}, our ` : 'Our '}exclusive 16-acre master-planned community ensures that every aspect of your new home exceeds expectations. Discover why elite investors and families are securing their ${typologyText} residences in the highly coveted ${formattedLoc} micro-market today.`;
+  // Location Context Hardening (Prevents Doorway Penalty by explaining exact geographic relationship to Somatane)
+  let locationContext = `in the serene 616-meter altitude microclimate of Somatane, Pune`;
+  if (rawLoc === "hinjawadi" || rawLoc === "hinjewadi") {
+    locationContext = `just 20 minutes from Hinjewadi IT Park via the Mumbai-Pune Expressway`;
+  } else if (rawLoc === "baner" || rawLoc === "balewadi") {
+    locationContext = `just 25 minutes from Baner & Balewadi High Street via the bypass highway`;
+  } else if (rawLoc === "talegaon") {
+    locationContext = `just 8 minutes from Talegaon MIDC along the expressway growth corridor`;
+  } else if (rawLoc === "chakan") {
+    locationContext = `within 25 minutes of the Chakan Auto & Manufacturing Corridor`;
+  } else if (rawLoc === "mumbai-pune-expressway" || rawLoc === "lonavala") {
+    locationContext = `directly situated 3 minutes from the Mumbai-Pune Expressway toll gate with Lonavala-grade hill breezes`;
+  } else if (rawLoc === "kiwale" || rawLoc === "dehu-road" || rawLoc === "pcmc") {
+    locationContext = `seamlessly connected to PCMC and Kiwale via the Old Highway and expressway bypass`;
+  }
+
+  const optimizedDescription = `Supreme Villagio offers ${typologyText.toLowerCase()} (${carpetAreaText}) ${locationContext}. Starting from ${startingPrice}. Verified MahaRERA (P52100046867 / P52100055048).`;
+
+  const dynamicSeoParagraph = `Welcome to Supreme Villagio, Pune's flagship 16-acre low-density gated villa estate. If you are exploring the market for ${formattedCat.toLowerCase()} ${locationContext}, Supreme Villagio provides independent horizontal living, private wrap-around gardens, and the operational 18,500 sq.ft. Club Villagio. ${formattedMod ? `Tailored for buyers prioritizing ${formattedMod.toLowerCase()}, our ` : 'Our '}residences combine pure freehold proportionate land ownership with clean mountain air and rapid signal-free expressway connectivity. Explore ${typologyText} starting from ${startingPrice} today.`;
 
   return {
     heroHeadline1: formattedMod ? formattedMod : "A New Paradigm of",
     heroHeadline2: formattedCat,
-    heroSubline: `Secure your legacy in the highly coveted ${formattedLoc} market. ${typologyText} starting from ₹2.89 Cr*. Designed exclusively for the luxury buyer.`,
+    heroSubline: `Secure your legacy ${locationContext}. ${typologyText} starting from ${startingPrice}. Master-planned by Site Concepts International, Singapore.`,
     highlightWords: [formattedCat, formattedLoc, formattedMod].filter(Boolean).flatMap(s => s.split(" ")),
-    pricing: "₹2.89 Cr*",
+    pricing: startingPrice,
     typology: typologyText,
-    title: finalTitle.replace(/\s+/g, ' ').trim(), // Clean up extra spaces
+    title: finalTitle.replace(/\s+/g, ' ').trim(),
     description: optimizedDescription,
     dynamicSeoParagraph
   };
