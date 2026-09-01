@@ -9,40 +9,36 @@ import {
 
 const FAQS = [
   {
-    question: "What residential options does the project offer?",
-    answer: "The estate features an exclusive collection of 3, 4, and 5 BHK twin villas, alongside elegantly designed 4 BHK townhouses."
+    question: "What is the price of Supreme Villagio villas and townhouses?",
+    answer: "Pricing starts from ₹2.89 Cr* for 4 BHK Luxury Townhouses (2,200 – 2,400 sq.ft.), ₹3.45 Cr* for 4 BHK Luxury Twin Villas (2,600 – 2,900 sq.ft. with private 3-side open garden), and ₹4.85 Cr* for exclusive 5 BHK Grand Presidential Villas (3,400 – 3,900 sq.ft. with private elevator provision). All prices exclude 7% Maharashtra Stamp Duty, ₹30,000 Registration Fee, and applicable GST."
   },
   {
-    question: "How expansive is the development?",
-    answer: "The entire community is meticulously planned across a sprawling expanse of approximately 16 acres."
+    question: "What are the MahaRERA registration numbers for Supreme Villagio?",
+    answer: "Supreme Villagio is registered with MahaRERA under three distinct project phases: Phase 1 (MahaRERA Reg: P52100046867), Phase 2 (MahaRERA Reg: P52100049506), and Phase 3 (MahaRERA Reg: P52100055048). All details can be verified on the official MahaRERA portal (maharera.mahaonline.gov.in)."
   },
   {
-    question: "What is the expected possession timeline?",
-    answer: "The project is slated to receive its full Occupancy Certificate (OC) by December 2027."
+    question: "What is the current construction and possession timeline?",
+    answer: "Phase 1 & Phase 2 are 100% completed with full Occupation Certificates (OC) received and handed over to homeowners. The 18,500 sq.ft. Club Villagio is fully operational. Phase 3 hillside villas are under active construction with MahaRERA statutory possession scheduled for December 31, 2028."
   },
   {
-    question: "Can you describe the clubhouse facilities?",
-    answer: "Residents enjoy exclusive access to Club Villagio, an expansive 18,500 sq. ft. facility dedicated to indoor recreation, wellness, and social gatherings."
+    question: "What are the exact carpet areas and plot sizes?",
+    answer: "Carpet areas range from ~2,200 sq.ft. for 4 BHK Townhouses (G+2 layout) up to ~3,900 sq.ft. for 5 BHK Presidential Villas. Plot sizes range from 2,500 to 5,000+ sq.ft. with private garden allocations and covered car parking for 2 to 3 vehicles."
   },
   {
-    question: "What is the exact address of the estate?",
-    answer: "The property is nestled in the serene locale of Somatane, Pune."
+    question: "What amenities are included in the 18,500 sq. ft. Club Villagio?",
+    answer: "Club Villagio is ready and operational, offering an Olympic-length swimming pool, heated kids' pool, squash court, badminton court, wellness gymnasium, multi-cuisine cafe, banquet hall, spa treatment suites, and landscaped wellness trails designed by Site Concepts International, Singapore."
   },
   {
-    question: "How accessible is the site from key city hubs?",
-    answer: "You can reach the estate via a smooth 30-minute drive from Baner, taking the Mumbai-Satara Highway."
+    question: "Where is Supreme Villagio located and what are the commute times?",
+    answer: "Supreme Villagio is situated at Somatane Phata, Pune West (616m elevation). Commute times are 20 mins to Hinjewadi IT Park (18 km), 25 mins to Baner (25 km), 8 mins to Talegaon MIDC, 3 mins to the Mumbai-Pune Expressway Toll Plaza, and 30 mins to Lonavala."
   },
   {
-    question: "Does the property offer a secure, enclosed environment?",
-    answer: "Absolutely, it is a fully secured, gated luxury community comprising premium villas and townhouses."
+    question: "What is the payment schedule for under-construction Phase 3 units?",
+    answer: "Phase 3 offers a milestone-linked construction plan: 10% on booking, 15% on plinth completion, 25% across RCC slab stages, 25% on brickwork/plastering, 20% on internal finishes, and 5% on possession handover."
   },
   {
-    question: "What is the total unit density of the community?",
-    answer: "The development maintains a low-density profile with just 75 3-BHK townhouses, 44 4-BHK townhouses, 72 4-BHK twin villas, and 19 5-BHK twin villas."
-  },
-  {
-    question: "What kind of lifestyle amenities are included?",
-    answer: "Beyond the grand Club Villagio, the estate is equipped with a diverse array of outdoor leisure, fitness, and nature-inspired recreational spaces."
+    question: "Is Supreme Villagio suitable for NRI real estate investment?",
+    answer: "Yes, Supreme Villagio is heavily favored by NRI buyers in the UAE, US, UK, and Singapore due to its freehold title ownership, strong Somatane capital appreciation (14% YoY), managed gated community maintenance, and pre-approved home loan status with HDFC, SBI, ICICI, and Axis Bank."
   }
 ];
 

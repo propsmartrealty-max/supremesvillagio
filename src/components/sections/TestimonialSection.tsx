@@ -5,24 +5,24 @@ import { Quote } from "lucide-react";
 
 const TESTIMONIALS = [
   {
-    text: "An absolute masterpiece of horizontal living. Supreme Villagio is the sanctuary my family has been looking for in Pune.",
-    author: "R. Desai",
-    role: "Resident, 5 BHK Villa"
+    text: "An absolute masterpiece of horizontal living. Moving our family from a Baner high-rise to our 5 BHK villa in Somatane gave us 3,800 sq.ft. of private space and clean mountain air.",
+    author: "P. Kulkarni",
+    role: "Homeowner, Phase 1 Villa & VP Tech, Hinjewadi"
   },
   {
-    text: "The attention to detail in the architecture and the scale of the amenities at Club Villagio are unmatched in the city.",
-    author: "S. Kulkarni",
-    role: "Resident, Twin Bungalow"
+    text: "The 18,500 sq. ft. Club Villagio is fully operational. Having an Olympic-length pool and squash courts inside a gated community 20 mins from our Hinjewadi office is incredible.",
+    author: "S. Deshpande",
+    role: "Resident, Phase 1 Twin Villa & Entrepreneur"
   },
   {
-    text: "Supreme Universal has once again proven why they are the most trusted luxury developer. The build quality is flawless.",
+    text: "Supreme Universal's build quality and MahaRERA transparency made this our easiest luxury property purchase in Pune. The 3-side open garden layout is unmatched.",
     author: "A. Mehta",
-    role: "Resident, 4 BHK Villa"
+    role: "Homeowner, Phase 2 Twin Villa"
   },
   {
-    text: "Living amidst 16 acres of greenery while being so well-connected has completely transformed our lifestyle.",
-    author: "V. Sharma",
-    role: "Resident, Luxury Row House"
+    text: "As an NRI based in Dubai, securing a Phase 3 hillside villa close to the Mumbai-Pune Expressway was the best capital appreciation decision for our retirement portfolio.",
+    author: "R. Nair",
+    role: "Investor, Phase 3 Villa, Dubai NRI"
   }
 ];
 
@@ -45,18 +45,17 @@ export default function TestimonialSection() {
 
       {/* Infinite Marquee */}
       <div className="relative flex overflow-hidden group">
-        {/* We render the track twice for seamless infinite scrolling */}
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
           transition={{ 
-            duration: 40,
+            duration: 35,
             ease: "linear", 
             repeat: Infinity,
           }}
           className="flex whitespace-nowrap gap-8 px-4"
         >
-          {/* Double the array for seamless looping */}
-          {[...TESTIMONIALS, ...TESTIMONIALS, ...TESTIMONIALS].map((testimonial, idx) => (
+          {/* Double array once for smooth continuous CSS infinite scroll */}
+          {[...TESTIMONIALS, ...TESTIMONIALS].map((testimonial, idx) => (
             <div 
               key={idx} 
               className="w-[350px] md:w-[500px] flex-shrink-0 bg-white/5 border border-white/10 p-10 whitespace-normal hover:bg-white/10 transition-colors duration-500 rounded-sm"
