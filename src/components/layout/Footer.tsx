@@ -118,17 +118,33 @@ export default function Footer() {
         <div className="py-12 border-t border-charcoal-light">
           <h3 className="text-sm uppercase tracking-widest text-white mb-8 text-center md:text-left">SEO Silo & Property Directory</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs text-stone">
-            <Link href="/supreme-villagio-rera" className="hover:text-primary transition-colors font-semibold text-white">MahaRERA Registrations</Link>
+            <Link href="/supreme-villagio-rera" className="hover:text-primary transition-colors font-semibold text-white">MahaRERA Numbers</Link>
             <Link href="/supreme-villagio/price" className="hover:text-primary transition-colors font-semibold text-white">Price & Cost Sheet</Link>
+            <Link href="/supreme-villagio/emi-calculator" className="hover:text-primary transition-colors font-semibold text-white">EMI & Stamp Duty</Link>
             <Link href="/supreme-villagio/4-bhk-villas" className="hover:text-primary transition-colors font-semibold text-white">4 BHK Twin Villas</Link>
-            <Link href="/supreme-villagio/5-bhk-villas" className="hover:text-primary transition-colors font-semibold text-white">5 BHK Presidential Villas</Link>
+            <Link href="/supreme-villagio/5-bhk-villas" className="hover:text-primary transition-colors font-semibold text-white">5 BHK Presidential</Link>
             <Link href="/supreme-villagio/townhouses" className="hover:text-primary transition-colors">4 BHK Townhouses</Link>
             <Link href="/supreme-villagio/floor-plans" className="hover:text-primary transition-colors">Floor Plans & Blueprints</Link>
-            <Link href="/supreme-villagio/location" className="hover:text-primary transition-colors">Location & Commute Matrix</Link>
-            <Link href="/supreme-villagio/investment" className="hover:text-primary transition-colors">Investment & ROI Analysis</Link>
-            <Link href="/villas-in-somatane" className="hover:text-primary transition-colors">Villas in Somatane</Link>
-            <Link href="/talegaon-luxury-villas" className="hover:text-primary transition-colors">Luxury Villas in Talegaon</Link>
-            <Link href="/villas-near-mumbai-pune-expressway" className="hover:text-primary transition-colors">Villas Near Mumbai-Pune Expressway</Link>
+            <Link href="/supreme-villagio/master-plan" className="hover:text-primary transition-colors">16-Acre Master Plan</Link>
+            <Link href="/supreme-villagio/amenities" className="hover:text-primary transition-colors">18,500 Sq.Ft. Club Villagio</Link>
+            <Link href="/supreme-villagio/construction-status" className="hover:text-primary transition-colors">Construction Status</Link>
+            <Link href="/supreme-villagio/reviews" className="hover:text-primary transition-colors">Homeowner Reviews</Link>
+            <Link href="/supreme-villagio/brochure" className="hover:text-primary transition-colors">Download Brochure</Link>
+            <Link href="/supreme-villagio/faq" className="hover:text-primary transition-colors">Buyer FAQ Directory</Link>
+            <Link href="/supreme-villagio/location" className="hover:text-primary transition-colors">Location Matrix</Link>
+            <Link href="/supreme-villagio/investment" className="hover:text-primary transition-colors">Investment Analysis</Link>
+            <Link href="/somatane-real-estate" className="hover:text-primary transition-colors">Somatane Real Estate</Link>
+            <Link href="/somatane-villas" className="hover:text-primary transition-colors">Villas in Somatane</Link>
+            <Link href="/somatane-property-prices" className="hover:text-primary transition-colors">Somatane Price Trends</Link>
+            <Link href="/talegaon-real-estate" className="hover:text-primary transition-colors">Talegaon Real Estate</Link>
+            <Link href="/talegaon-luxury-villas" className="hover:text-primary transition-colors">Talegaon Luxury Villas</Link>
+            <Link href="/hinjewadi-villas" className="hover:text-primary transition-colors">Villas Near Hinjewadi</Link>
+            <Link href="/pcmc-luxury-villas" className="hover:text-primary transition-colors">Villas Near PCMC</Link>
+            <Link href="/luxury-villas-pune" className="hover:text-primary transition-colors">Pune Luxury Villas</Link>
+            <Link href="/4-bhk-villas-pune" className="hover:text-primary transition-colors">4 BHK Villas Pune</Link>
+            <Link href="/5-bhk-villas-pune" className="hover:text-primary transition-colors">5 BHK Villas Pune</Link>
+            <Link href="/luxury-bungalows-pune" className="hover:text-primary transition-colors">Luxury Bungalows Pune</Link>
+            <Link href="/villas-near-mumbai-pune-expressway" className="hover:text-primary transition-colors">Expressway Villas</Link>
             <Link href="/supreme-villagio-vs-paranjape-forest-trails" className="hover:text-primary transition-colors">Villagio vs Forest Trails</Link>
             <Link href="/somatane-vs-hinjewadi" className="hover:text-primary transition-colors">Somatane vs Hinjewadi</Link>
             <Link href="/supreme-villagio/phase-1" className="hover:text-primary transition-colors">Phase 1 (OC Received)</Link>
