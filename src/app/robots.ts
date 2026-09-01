@@ -32,7 +32,8 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: [
-      `${baseUrl}/sitemap.xml` // The root index handles all chunked silos natively
+      `${baseUrl}/sitemap.xml`,
+      `${baseUrl}/sitemap-core.xml`
     ],
     host: baseUrl,
   };

@@ -1,4 +1,5 @@
 export const dynamic = 'force-static';
+
 export async function GET() {
   const baseUrl = 'https://www.supremesvillagio.com';
   const lastModified = new Date().toISOString();
@@ -7,38 +8,6 @@ export async function GET() {
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>${baseUrl}/sitemap-core.xml</loc>
-    <lastmod>${lastModified}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${baseUrl}/sitemap-silos-1.xml</loc>
-    <lastmod>${lastModified}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${baseUrl}/sitemap-silos-2.xml</loc>
-    <lastmod>${lastModified}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${baseUrl}/sitemap-silos-3.xml</loc>
-    <lastmod>${lastModified}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${baseUrl}/sitemap-silos-4.xml</loc>
-    <lastmod>${lastModified}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${baseUrl}/sitemap-silos-5.xml</loc>
-    <lastmod>${lastModified}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${baseUrl}/sitemap-silos-6.xml</loc>
-    <lastmod>${lastModified}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${baseUrl}/sitemap-silos-7.xml</loc>
-    <lastmod>${lastModified}</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${baseUrl}/sitemap-silos-8.xml</loc>
     <lastmod>${lastModified}</lastmod>
   </sitemap>
   <sitemap>
