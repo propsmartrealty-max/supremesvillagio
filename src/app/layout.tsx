@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     alternateLocale: ["en_US", "en_GB", "en_AE"],
-    url: "https://www.supremeuniversal.com/residential-property/pune/somatane/supreme-villagio/",
+    url: "https://www.supremesvillagio.com/",
     title: "Supreme Villagio | Pune's #1 Premium Luxury Bungalow & Villa Market",
     description: "Ranked #1 in the Pune Real Estate Market. Supreme Villagio offers ultra-premium 4 & 5 BHK luxury bungalows and villas in Somatane, Pune.",
     siteName: "Supreme Universal",
@@ -121,6 +121,29 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+};
+
+const realEstateListingSchema = {
+  "@context": "https://schema.org",
+  "@type": "RealEstateListing",
+  "@id": "https://www.supremesvillagio.com/#realestate",
+  "name": "Supreme Villagio Luxury Villas & Townhouses",
+  "description": "Ultra-luxury 3, 4 & 5 BHK Twin Villas and Townhouses in Somatane, Pune across 16 scenic acres with Club Villagio.",
+  "url": "https://www.supremesvillagio.com/",
+  "datePosted": "2024-01-01",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "28900000",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "priceCurrency": "INR",
+      "minPrice": "28900000",
+      "maxPrice": "65000000"
+    },
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2024-01-01"
+  }
 };
 
 const faqSchema = {
@@ -221,17 +244,17 @@ const breadcrumbSchema = {
     "@type": "ListItem", 
     "position": 1, 
     "name": "Home Page",
-    "item": "https://www.supremeuniversal.com/"  
+    "item": "https://www.supremesvillagio.com/"  
   },{
     "@type": "ListItem", 
     "position": 2, 
-    "name": "Projects",
-    "item": "https://www.supremeuniversal.com/projects/"  
+    "name": "Villas in Pune",
+    "item": "https://www.supremesvillagio.com/supreme-villagio/residences"  
   },{
     "@type": "ListItem", 
     "position": 3, 
-    "name": "Supreme Villagio",
-    "item": "https://www.supremeuniversal.com/residential-property/pune/somatane/supreme-villagio/"  
+    "name": "Somatane Pune",
+    "item": "https://www.supremesvillagio.com/supreme-villagio/somatane-pune"  
   }]
 };
 
@@ -405,6 +428,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://cdn.supremeuniversal.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cdn.supremeuniversal.com" />
 
+        <Script
+          id="real-estate-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(realEstateListingSchema) }}
+        />
         <Script
           id="faq-schema"
           type="application/ld+json"
