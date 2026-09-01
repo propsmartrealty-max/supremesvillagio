@@ -2,8 +2,8 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function proxy(request: NextRequest) {
-  // Extract country from Vercel headers (provided automatically by Vercel edge network)
-  const country = request.headers.get('x-vercel-ip-country') || 'IN'; // Default to India if not found
+  // Extract country from Cloudflare/Vercel Edge headers (fallback to 'IN' for local dev)
+  const country = request.geo?.country || request.headers.get('cf-ipcountry') || request.headers.get('x-vercel-ip-country') || 'IN';
 
   // Determine currency based on HNI/NRI target regions
   let currency = 'INR';
@@ -17,30 +17,43 @@ export function proxy(request: NextRequest) {
     currency = 'SGD'; // Southeast Asia
   }
 
-  // Create response
-  const response = NextResponse.next();
+  // If the user is from UAE, US, UK, Singapore, Australia, Canada etc., flag them as NRI
+  const isNRI = ['AE', 'US', 'GB', 'SG', 'AU', 'CA'].includes(country);
+
+  // Clone the request headers and append our custom geo headers
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set('x-user-country', country);
+  requestHeaders.set('x-is-nri', isNRI ? 'true' : 'false');
+  requestHeaders.set('x-user-currency', currency);
+
+  const response = NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
+  });
 
   // Set cookies for frontend components to consume seamlessly without React hydration errors
   response.cookies.set('user-country', country, { maxAge: 86400, path: '/' });
   response.cookies.set('user-currency', currency, { maxAge: 86400, path: '/' });
+  response.cookies.set('nri_status', isNRI ? 'true' : 'false', {
+    httpOnly: false,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax',
+    maxAge: 60 * 60 * 24 * 30, // 30 days
+    path: '/',
+  });
 
-  // Add custom headers so backend APIs/analytics can track the geo-source
+  // Add custom headers to the response so backend APIs/analytics can track the geo-source
   response.headers.set('x-user-currency', currency);
   response.headers.set('x-user-country', country);
+  response.headers.set('x-is-nri', isNRI ? 'true' : 'false');
 
   return response;
 }
 
-// Only run middleware on the main routes, ignore static files, API routes, and images to save edge compute
+// Only run proxy on the main routes, ignore static files, API routes, and images to save compute
 export const config = {
   matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - api (API routes)
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico, sitemap.xml, robots.txt (metadata files)
-     */
-    '/((?!api|_next/static|_next/image|favicon.ico|sitemap.*|robots.txt).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|sitemap.*|merchant-feed.*|llms.txt|robots.txt).*)',
   ],
 };

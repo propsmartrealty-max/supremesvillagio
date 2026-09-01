@@ -194,18 +194,6 @@ export default async function DynamicSeoPage({ params }: { params: Promise<{ slu
   };
 
   
-  // Breadcrumb Schema for SERP CTR Dominance
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": slugArray.map((slug, index) => ({
-      "@type": "ListItem",
-      "position": index + 1,
-      "name": slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
-      "item": `https://www.supremesvillagio.com/supreme-villagio/${slugArray.slice(0, index + 1).join('/')}`
-    }))
-  };
-
   
   // VideoObject Schema for Google Video Search Dominance
   const videoJsonLd = {
@@ -288,11 +276,7 @@ export default async function DynamicSeoPage({ params }: { params: Promise<{ slu
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(entityGraphJsonLd) }}
       />
-            <Script
-        id={`json-ld-breadcrumb-${slugArray.join('-')}`}
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
+
             <Script
         id={`json-ld-video-${slugArray.join('-')}`}
         type="application/ld+json"
