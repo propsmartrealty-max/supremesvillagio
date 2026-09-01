@@ -71,15 +71,27 @@ const nextConfig: NextConfig = {
             value: cspHeader,
           },
           {
+            key: 'Cross-Origin-Opener-Policy',
+            value: 'same-origin',
+          },
+          {
+            key: 'Cross-Origin-Resource-Policy',
+            value: 'cross-origin',
+          },
+          {
+            key: 'Cache-Tag',
+            value: 'supreme-villagio, real-estate, somatane-villas, property-pricing',
+          },
+          {
             key: 'Cache-Control',
             value: 'public, max-age=3600, s-maxage=31536000, stale-while-revalidate=86400',
           },
           {
-            key: 'Vercel-CDN-Cache-Control',
+            key: 'CDN-Cache-Control',
             value: 'max-age=31536000',
           },
           {
-            key: 'CDN-Cache-Control',
+            key: 'Cloudflare-CDN-Cache-Control',
             value: 'max-age=31536000',
           },
         ],

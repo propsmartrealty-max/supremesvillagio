@@ -1,19 +1,42 @@
-# Static asset caching on Cloudflare Edge
+# Cloudflare Edge Headers Configuration
+# Optimized for Cloudflare Pages, Tiered Cache & Edge WAF
+
+# 1. Static immutable Next.js bundles
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable
   Access-Control-Allow-Origin: *
+  Cache-Tag: nextjs-static, supreme-assets
 
+# 2. Optimized images & assets
 /images/*
   Cache-Control: public, max-age=31536000, immutable
   Access-Control-Allow-Origin: *
+  Cache-Tag: supreme-media, floorplans
 
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
   Access-Control-Allow-Origin: *
+  Cache-Tag: supreme-fonts
 
-# Global security headers for all pages
+# 3. XML Sitemaps & Feeds
+/*.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800
+  Cache-Tag: supreme-sitemaps, seo-feed
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600, s-maxage=86400
+  Cache-Tag: supreme-robots
+
+# 4. Global Security, WAF & Performance Headers for all HTML Pages
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: cross-origin
+  X-Robots-Tag: all, max-image-preview:large, max-snippet:-1, max-video-preview:-1
+  Cache-Tag: supreme-villagio, real-estate, somatane-villas, property-pricing
