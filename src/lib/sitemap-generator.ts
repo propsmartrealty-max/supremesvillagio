@@ -1,39 +1,10 @@
-export const dynamic = 'force-static';
-import { getAllSeoSlugStrings } from '@/lib/seo-data';
-import { NextRequest } from 'next/server';
+import { getAllSeoSlugStrings } from "@/lib/seo-data";
 
-export function generateStaticParams() {
-  return [
-    { id: '1' },
-    { id: '2' },
-    { id: '3' },
-    { id: '4' },
-    { id: '5' },
-    { id: '6' },
-    { id: '7' },
-    { id: '8' },
-  ];
-}
-
-export async function GET(
-  request: NextRequest,
-  context: { params: Promise<{ id: string }> }
-) {
-  const resolvedParams = await context?.params;
-  const idStr = resolvedParams?.id ? String(resolvedParams.id).replace('.xml', '') : '';
-  const id = parseInt(idStr, 10);
-  
-  if (isNaN(id) || id < 1 || id > 8) {
-    return new Response('Not Found', { status: 404 });
-  }
-
-  const baseUrl = 'https://www.supremesvillagio.com';
+export function generateSiloSitemap(id: number): Response {
+  const baseUrl = "https://www.supremesvillagio.com";
   const lastModified = new Date().toISOString();
   
-  // Get all 48,944 combinations
   const allSlugs = getAllSeoSlugStrings();
-  
-  // Chunk size is roughly 10,000 URLs per sitemap to prevent Vercel 10s timeouts
   const CHUNK_SIZE = 10000;
   const startIndex = (id - 1) * CHUNK_SIZE;
   const endIndex = startIndex + CHUNK_SIZE;
@@ -45,7 +16,7 @@ export async function GET(
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   ${chunkedSlugs.map(slugArray => {
-    const pageUrl = `${baseUrl}/supreme-villagio/${slugArray.join('/')}`;
+    const pageUrl = `${baseUrl}/supreme-villagio/${slugArray.join("/")}`;
     return `
     <url>
       <loc>${pageUrl}</loc>
@@ -63,14 +34,13 @@ export async function GET(
       <priority>0.8</priority>
     </url>
     `;
-  }).join('')}
+  }).join("")}
 </urlset>`;
 
   return new Response(xml.trim(), {
     headers: {
-      'Content-Type': 'application/xml',
-      // Aggressive caching: Cache for 24 hours on Edge
-      'Cache-Control': 'public, max-age=86400, s-maxage=86400, stale-while-revalidate',
+      "Content-Type": "application/xml",
+      "Cache-Control": "public, max-age=86400, s-maxage=86400, stale-while-revalidate",
     },
   });
 }
