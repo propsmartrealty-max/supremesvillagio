@@ -4,7 +4,7 @@ const cspHeader = `
   default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net https://www.clarity.ms;
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-  img-src 'self' blob: data: https://cdn.supremeuniversal.com https://images.unsplash.com https://www.supremeuniversal.com https://www.facebook.com;
+  img-src 'self' blob: data: https://cdn.supremeuniversal.com https://images.unsplash.com https://www.supremeuniversal.com https://www.facebook.com https://*.cloudfront.net https://d66htbxvzotmo.cloudfront.net;
   font-src 'self' https://fonts.gstatic.com;
   connect-src 'self' https://www.google-analytics.com https://a.clarity.ms;
   object-src 'none';
@@ -16,12 +16,8 @@ const cspHeader = `
 `.replace(/\s{2,}/g, ' ').trim();
 
 const nextConfig: NextConfig = {
-    images: {
-    loader: 'custom',
-    loaderFile: './src/lib/cloudflare-image-loader.ts',
-    formats: ['image/avif', 'image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+  images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -34,7 +30,11 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'www.supremeuniversal.com',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'd66htbxvzotmo.cloudfront.net',
+      },
     ],
   },
   async headers() {
