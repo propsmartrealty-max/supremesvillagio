@@ -68,6 +68,14 @@ export default function ContactModal() {
           });
         }
 
+        // Cloudflare Zaraz Edge tracking
+        if (typeof window !== "undefined" && (window as any).zaraz) {
+          (window as any).zaraz.track('Lead', {
+            typology: data.typology || 'General',
+            source: 'Contact Modal'
+          });
+        }
+
         setIsSuccess(true);
         setTimeout(() => {
           setIsSuccess(false);
