@@ -3,7 +3,6 @@ import React from 'react';
 import { notFound } from 'next/navigation';
 import { PILLAR_POSTS, getPostBySlug } from '@/lib/blog-data';
 
-export const runtime = 'edge';
 export const dynamicParams = false;
 
 export function generateStaticParams() {

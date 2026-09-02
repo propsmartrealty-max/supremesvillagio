@@ -3,7 +3,6 @@ import Link from 'next/link';
 import LandingPageTemplate from '@/components/layout/LandingPageTemplate';
 import { Metadata } from 'next';
 
-export const runtime = 'edge';
 export const dynamicParams = false;
 
 export function generateStaticParams() {

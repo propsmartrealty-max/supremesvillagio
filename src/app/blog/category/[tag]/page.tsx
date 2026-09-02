@@ -3,7 +3,6 @@ import { getAllPosts } from '@/lib/markdown';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
-export const runtime = 'edge';
 export const dynamicParams = false;
 
 export async function generateMetadata({ params }: { params: Promise<{ tag: string }> }): Promise<Metadata> {
