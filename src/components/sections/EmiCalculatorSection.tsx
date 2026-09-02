@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { Calculator, ShieldCheck, ArrowRight, IndianRupee } from 'lucide-react';
+import { Calculator, ShieldCheck, ArrowRight } from 'lucide-react';
 import { useModal } from '@/contexts/ModalContext';
 
 export default function EmiCalculatorSection() {
@@ -199,8 +199,8 @@ export default function EmiCalculatorSection() {
 
             <div className="mt-8">
               <button
-                onClick={openContactModal}
-                className="w-full bg-gradient-to-r from-[#E15E3F] to-[#F07F63] text-white font-bold py-4 px-6 text-xs uppercase tracking-widest shadow-xl hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2"
+                onClick={() => openContactModal("Bank Pre-Approval & Financial Plan")}
+                className="w-full bg-gradient-to-r from-[#E15E3F] to-[#F07F63] text-white font-bold py-4 px-6 text-xs uppercase tracking-widest shadow-xl hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 Apply for Bank Pre-Approval <ArrowRight className="w-4 h-4" />
               </button>

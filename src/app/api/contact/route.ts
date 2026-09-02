@@ -77,7 +77,7 @@ export async function POST(request: Request) {
       message: "Lead successfully recorded and routed",
       meta: { country, isNRI, rayId }
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Error sending lead to Google Script:", error);
     return NextResponse.json({ error: "Failed to send lead. Please try again or call +91 7744009295 directly." }, { status: 500 });
   }

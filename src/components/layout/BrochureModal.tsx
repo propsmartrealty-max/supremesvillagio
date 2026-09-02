@@ -59,8 +59,7 @@ export default function BrochureModal() {
         
         // Trigger the actual PDF download
         const link = document.createElement("a");
-        // Cloudflare blocks local files > 25MB, routing this through your existing CDN
-        link.href = "https://cdn.supremeuniversal.com/media/supreme-villagio-brochure.pdf";
+        link.href = "https://d66htbxvzotmo.cloudfront.net/media/Supreme-Villagio-E-Brochure.pdf";
         link.download = "Supreme-Villagio-Brochure.pdf";
         link.target = "_blank";
         document.body.appendChild(link);
@@ -75,7 +74,7 @@ export default function BrochureModal() {
       } else {
         throw new Error("Failed to submit details");
       }
-    } catch (error) {
+    } catch {
       setSubmitError("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);

@@ -2,10 +2,9 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
 import { PILLAR_POSTS, getPostBySlug } from '@/lib/blog-data';
-import Script from 'next/script';
-import Image from "next/image";
 
-export const dynamicParams = true;
+export const runtime = 'edge';
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return PILLAR_POSTS.map((post) => ({
@@ -52,8 +51,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   return (
     <>
-      <Script
-        id={`json-ld-article-${post.slug}`}
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />

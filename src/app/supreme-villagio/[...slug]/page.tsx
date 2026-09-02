@@ -1,5 +1,6 @@
 import { redirect } from 'next/navigation';
 
+export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
 export default async function DynamicSeoPage({ params }: { params: Promise<{ slug: string[] }> }) {

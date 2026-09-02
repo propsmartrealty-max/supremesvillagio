@@ -27,7 +27,7 @@ export default function NriBanner() {
         Secure your luxury villa in Pune with exclusive NRI payment plans.
       </span>
       <button 
-        onClick={openContactModal}
+        onClick={() => openContactModal("NRI Investment Desk")}
         className="ml-0 md:ml-4 bg-charcoal text-white px-4 py-1.5 text-xs uppercase tracking-widest font-bold rounded-sm hover:bg-forest transition-colors shadow-lg"
       >
         Request NRI Guide

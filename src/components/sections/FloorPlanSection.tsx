@@ -4,7 +4,6 @@
 import { motion } from "framer-motion";
 import { useModal } from "@/contexts/ModalContext";
 import { Maximize2 } from "lucide-react";
-import Image from "next/image";
 
 const FLOOR_PLANS = [
   {
@@ -113,7 +112,7 @@ export default function FloorPlanSection() {
                 </div>
 
                 <button 
-                  onClick={openContactModal}
+                  onClick={() => openContactModal(plan.name)}
                   className="mt-6 flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-charcoal py-3.5 px-6 text-xs uppercase tracking-widest font-bold shadow-lg shadow-amber-500/25 hover:brightness-110 hover:shadow-amber-500/40 active:scale-95 transition-all duration-300 rounded-none cursor-pointer"
                 >
                   <Maximize2 size={16} /> Request Floor Plan

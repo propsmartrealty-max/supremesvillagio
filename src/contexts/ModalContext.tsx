@@ -4,7 +4,8 @@ import { createContext, useContext, useState, ReactNode } from "react";
 
 interface ModalContextType {
   isContactModalOpen: boolean;
-  openContactModal: () => void;
+  selectedTypology?: string;
+  openContactModal: (typology?: unknown) => void;
   closeContactModal: () => void;
   isBrochureModalOpen: boolean;
   openBrochureModal: () => void;
@@ -15,14 +16,26 @@ const ModalContext = createContext<ModalContextType | undefined>(undefined);
 
 export function ModalProvider({ children }: { children: ReactNode }) {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [selectedTypology, setSelectedTypology] = useState<string | undefined>(undefined);
   const [isBrochureModalOpen, setIsBrochureModalOpen] = useState(false);
+
+  const openContactModal = (typology?: unknown) => {
+    setSelectedTypology(typeof typology === 'string' ? typology : undefined);
+    setIsContactModalOpen(true);
+  };
+
+  const closeContactModal = () => {
+    setIsContactModalOpen(false);
+    setSelectedTypology(undefined);
+  };
 
   return (
     <ModalContext.Provider
       value={{
         isContactModalOpen,
-        openContactModal: () => setIsContactModalOpen(true),
-        closeContactModal: () => setIsContactModalOpen(false),
+        selectedTypology,
+        openContactModal,
+        closeContactModal,
         isBrochureModalOpen,
         openBrochureModal: () => setIsBrochureModalOpen(true),
         closeBrochureModal: () => setIsBrochureModalOpen(false),
@@ -40,3 +53,4 @@ export function useModal() {
   }
   return context;
 }
+

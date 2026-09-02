@@ -4,7 +4,6 @@
 import Link from "next/link";
 import { Mail } from "lucide-react";
 import { useModal } from "@/contexts/ModalContext";
-import Image from "next/image";
 
 export default function Footer() {
   const { openContactModal, openBrochureModal } = useModal();

@@ -4,6 +4,7 @@ declare global {
   interface Window {
     fbq?: (...args: unknown[]) => void;
     gtag?: (...args: unknown[]) => void;
+    zaraz?: { track: (event: string, data: Record<string, unknown>) => void };
   }
 }
 
@@ -13,7 +14,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -26,7 +27,7 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>;
 
 export default function ContactModal() {
-  const { isContactModalOpen, closeContactModal } = useModal();
+  const { isContactModalOpen, closeContactModal, selectedTypology } = useModal();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -35,9 +36,16 @@ export default function ContactModal() {
     handleSubmit,
     formState: { errors },
     reset,
+    setValue,
   } = useForm<FormValues>({
     resolver: zodResolver(formSchema),
   });
+
+  useEffect(() => {
+    if (selectedTypology) {
+      setValue("typology", selectedTypology);
+    }
+  }, [selectedTypology, setValue]);
 
   const [submitError, setSubmitError] = useState<string | null>(null);
 
@@ -69,8 +77,8 @@ export default function ContactModal() {
         }
 
         // Cloudflare Zaraz Edge tracking
-        if (typeof window !== "undefined" && (window as any).zaraz) {
-          (window as any).zaraz.track('Lead', {
+        if (typeof window !== "undefined" && window.zaraz) {
+          window.zaraz.track('Lead', {
             typology: data.typology || 'General',
             source: 'Contact Modal'
           });

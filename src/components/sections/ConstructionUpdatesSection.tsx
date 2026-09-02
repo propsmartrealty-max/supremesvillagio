@@ -2,8 +2,7 @@
 "use client";
 
 import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import Image from "next/image";
+import { motion } from 'framer-motion';
 
 const UPDATES = [
   {
@@ -28,12 +27,6 @@ const UPDATES = [
 
 export default function ConstructionUpdatesSection() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
 
   return (
     <section ref={containerRef} className="py-24 md:py-32 bg-cream text-charcoal relative overflow-hidden">
