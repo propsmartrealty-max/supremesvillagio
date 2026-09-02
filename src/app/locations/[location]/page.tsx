@@ -1,4 +1,4 @@
-import { generateSeoSlugs } from '@/lib/seo-data';
+import { generateSeoSlugs, SEO_KEYWORD_MATRIX } from '@/lib/seo-data';
 import Link from 'next/link';
 import LandingPageTemplate from '@/components/layout/LandingPageTemplate';
 import { Metadata } from 'next';
@@ -7,9 +7,7 @@ export const runtime = 'edge';
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  const allSlugs = generateSeoSlugs();
-  const locations = Array.from(new Set(allSlugs.map(slugArray => slugArray[0])));
-  return locations.map(loc => ({ location: loc }));
+  return SEO_KEYWORD_MATRIX.locations.map(loc => ({ location: loc }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ location: string }> }): Promise<Metadata> {
