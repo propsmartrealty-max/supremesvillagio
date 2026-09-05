@@ -40,10 +40,14 @@ export const metadata: Metadata = {
   title: "Supreme Villagio Somatane | #1 Premium Bungalows & Luxury Villas in Pune",
   description: "Ranked #1 in the Pune Real Estate Market. Supreme Villagio offers ultra-premium 4 & 5 BHK luxury bungalows and villas in Somatane, Pune. Explore the finest villas in Pune.",
   keywords: [
-    "Premium Bungalows in Pune", "Villas in Pune", "Pune Real Estate Market", 
-    "Luxury Villas Pune", "Supreme Villagio Somatane", "4 BHK Bungalows", 
-    "5 BHK Bungalows Pune", "Supreme Villagio", "Club Villagio", 
-    "Club Villagio Somatane", "Supreme Villagio Pune", "Supreme Universal Somatane"
+    "Supreme Villagio", "Supreme Villagio Somatane", "Supreme Villagio Somante",
+    "Supreme Villagio Ecosystem", "Supreme Villagio Somatane Ecosystem", "Supreme Villagio Somante Ecosystem",
+    "Villagio Somatane", "Villagio Somatane Ecosystem", "Club Villagio", "Club Villagio Somatane",
+    "Supreme Universal Somatane", "Supreme Villagio Pune", "Premium Bungalows in Pune", 
+    "Villas in Pune", "Luxury Villas Pune", "4 BHK Luxury Villas", "5 BHK Luxury Villas",
+    "Supreme Villagio 4 BHK", "Supreme Villagio 5 BHK", "Supreme Villagio Price",
+    "Supreme Villagio MahaRERA", "Supreme Villagio Reviews", "Supreme Villagio Floor Plans",
+    "Supreme Villagio Master Plan", "Pune Real Estate Market"
   ],
   authors: [{ name: "Supreme Universal" }],
   creator: "Supreme Universal",

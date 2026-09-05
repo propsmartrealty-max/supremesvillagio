@@ -5,6 +5,7 @@ export async function GET() {
 
   const corePages = [
     { url: '/', priority: '1.0', changefreq: 'daily' },
+    { url: '/ecosystem', priority: '1.0', changefreq: 'daily' },
     { url: '/supreme-villagio-rera', priority: '1.0', changefreq: 'weekly' },
     { url: '/supreme-villagio/price', priority: '1.0', changefreq: 'weekly' },
     { url: '/supreme-villagio/emi-calculator', priority: '0.95', changefreq: 'weekly' },

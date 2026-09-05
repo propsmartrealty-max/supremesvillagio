@@ -34,3 +34,28 @@
 /forest-trails                   /supreme-villagio-vs-paranjape-forest-trails 301
 /somatane                        /somatane-real-estate                    301
 /talegaon                        /talegaon-real-estate                     301
+
+# 2. Ecosystem & Permutations Engine (including typo tolerance for somante)
+/supreme-villagio-ecosystem              /ecosystem                             301
+/supreme-villagio/ecosystem              /ecosystem                             301
+/villagio-ecosystem                      /ecosystem                             301
+/somante                                 /somatane-real-estate                  301
+/somante-villas                          /somatane-villas                       301
+/somante-real-estate                     /somatane-real-estate                  301
+/supreme-villagio-somante                /somatane-real-estate                  301
+/supreme-villagio/somante                /somatane-real-estate                  301
+/supreme-villagio-somatane-ecosystem     /ecosystem                             301
+/supreme-villagio/somatane-ecosystem     /ecosystem                             301
+/supreme-villagio-somante-ecosystem      /ecosystem                             301
+/supreme-villagio/somante-ecosystem      /ecosystem                             301
+/club-villagio                           /supreme-villagio/amenities            301
+/club-villagio-somatane                  /supreme-villagio/amenities            301
+/villagio-amenities                      /supreme-villagio/amenities            301
+/villagio-clubhouse                      /supreme-villagio/amenities            301
+/villagio-floorplans                     /supreme-villagio/floor-plans          301
+/villagio-masterplan                     /supreme-villagio/master-plan          301
+/villagio-pricing                        /supreme-villagio/price                301
+/villagio-price                          /supreme-villagio/price                301
+/villagio-rera                           /supreme-villagio-rera                 301
+/villagio-somatane                       /                                      301
+/villagio-pune                           /                                      301

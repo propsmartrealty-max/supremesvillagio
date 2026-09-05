@@ -16,6 +16,14 @@ export const metadata: Metadata = {
 };
 
 const SEARCHABLE_ITEMS = [
+  // Master Ecosystem Hub
+  {
+    title: 'Supreme Villagio Somatane Ecosystem',
+    category: 'Master Hub',
+    desc: 'The complete 16-acre ecosystem directory uniting 4 & 5 BHK villas, Club Villagio, pricing sheets, and MahaRERA compliance.',
+    href: '/ecosystem',
+    keywords: ['ecosystem', 'somatane ecosystem', 'somante', 'somante ecosystem', 'supreme villagio somante', 'master directory', 'portfolio', 'supreme universal']
+  },
   // Typologies & Hubs
   {
     title: '4 BHK Luxury Twin Villas',
