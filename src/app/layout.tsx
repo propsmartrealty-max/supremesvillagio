@@ -127,16 +127,27 @@ const realEstateListingSchema = {
   "description": "Ultra-luxury 3, 4 & 5 BHK Twin Villas and Townhouses in Somatane, Pune across 16 scenic acres with Club Villagio.",
   "url": "https://www.supremesvillagio.com/",
   "datePosted": "2024-01-01",
+  "hasMap": "https://maps.google.com/?cid=1063668383210777524",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Survey No. 44, Near Mumbai-Pune Expressway, Somatane Phata",
+    "addressLocality": "Somatane, Talegaon Dabhade, Pune",
+    "postalCode": "410506",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 18.6936968,
+    "longitude": 73.687351,
+    "elevation": "616 m"
+  },
   "offers": {
-    "@type": "Offer",
+    "@type": "AggregateOffer",
     "priceCurrency": "INR",
-    "price": "28900000",
-    "priceSpecification": {
-      "@type": "PriceSpecification",
-      "priceCurrency": "INR",
-      "minPrice": "28900000",
-      "maxPrice": "65000000"
-    },
+    "lowPrice": "28900000",
+    "highPrice": "65000000",
+    "offerCount": "210",
     "availability": "https://schema.org/InStock",
     "validFrom": "2024-01-01"
   },
@@ -153,13 +164,51 @@ const realEstateListingSchema = {
   },
   "spatialCoverage": {
     "@type": "Place",
-    "name": "Somatane Pune",
+    "name": "Somatane, Pune",
     "sameAs": [
       "https://en.wikipedia.org/wiki/Somatane",
       "https://www.wikidata.org/wiki/Q1538",
-      "https://en.wikipedia.org/wiki/Mumbai%E2%80%93Pune_Expressway"
+      "https://www.wikidata.org/wiki/Q2721868",
+      "https://www.wikidata.org/wiki/Q5767571",
+      "https://www.wikidata.org/wiki/Q3630739",
+      "https://www.wikidata.org/wiki/Q7301132"
     ]
-  }
+  },
+  "containsPlace": [
+    {
+      "@type": "SingleFamilyResidence",
+      "name": "4 BHK Luxury Twin Villa",
+      "numberOfRooms": 4,
+      "numberOfBedrooms": 4,
+      "numberOfBathroomsTotal": 4,
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": 260,
+        "unitCode": "MTK"
+      },
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Private Landscaped Lawn", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Double-Height Living Room", "value": true }
+      ]
+    },
+    {
+      "@type": "SingleFamilyResidence",
+      "name": "5 BHK Grand Presidential Hillside Villa",
+      "numberOfRooms": 5,
+      "numberOfBedrooms": 5,
+      "numberOfBathroomsTotal": 6,
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": 350,
+        "unitCode": "MTK"
+      },
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Private Elevator", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Panoramic Mountain View", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "3 Covered Car Bays", "value": true }
+      ]
+    }
+  ]
 };
 
 const faqSchema = {
@@ -270,7 +319,7 @@ const breadcrumbSchema = {
     "@type": "ListItem", 
     "position": 3, 
     "name": "Somatane Pune",
-    "item": "https://www.supremesvillagio.com/supreme-villagio/somatane-pune"  
+    "item": "https://www.supremesvillagio.com/somatane-real-estate"  
   }]
 };
 
@@ -480,6 +529,19 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <head>
+        {/* Google Local & Geographic Knowledge Graph Signals */}
+        <meta name="geo.region" content="IN-MH" />
+        <meta name="geo.placename" content="Somatane, Pune" />
+        <meta name="geo.position" content="18.693697;73.687351" />
+        <meta name="ICBM" content="18.693697, 73.687351" />
+        <meta name="target" content="all" />
+        <meta name="audience" content="all" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="revisit-after" content="1 days" />
+        <meta name="classification" content="Real Estate, Luxury Villas, Bungalows, Pune Property" />
+
         {/* Resource Pre-connection for Performance */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
@@ -489,6 +551,8 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://d66htbxvzotmo.cloudfront.net" />
         <link rel="preconnect" href="https://cdn.supremeuniversal.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cdn.supremeuniversal.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
         <Script
           id="real-estate-schema"

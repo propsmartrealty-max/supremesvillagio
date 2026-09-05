@@ -29,7 +29,7 @@
   Cache-Control: public, max-age=3600, s-maxage=86400
   Cache-Tag: supreme-robots
 
-# 4. Global Security, WAF & Performance Headers for all HTML Pages
+# 4. Global Security, WAF, Cloudflare Early Hints (HTTP 103) & Performance Headers for all HTML Pages
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
@@ -39,4 +39,9 @@
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: cross-origin
   X-Robots-Tag: all, max-image-preview:large, max-snippet:-1, max-video-preview:-1
-  Cache-Tag: supreme-villagio, real-estate, somatane-villas, property-pricing
+  Cache-Tag: supreme-villagio, real-estate, somatane-villas, property-pricing, google-seo-first-rank, luxury-villas-pune
+  Link: <https://d66htbxvzotmo.cloudfront.net>; rel="preconnect"; crossorigin
+  Link: <https://cdn.supremeuniversal.com>; rel="preconnect"; crossorigin
+  Link: <https://fonts.googleapis.com>; rel="preconnect"
+  Link: <https://fonts.gstatic.com>; rel="preconnect"; crossorigin
+  Link: <https://www.googletagmanager.com>; rel="preconnect"

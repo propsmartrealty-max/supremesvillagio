@@ -2,6 +2,9 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
+  const userAgent = request.headers.get('user-agent') || '';
+  const isSearchCrawler = /Googlebot|Bingbot|Applebot|YandexBot|DuckDuckBot|Baiduspider|GPTBot|PerplexityBot|Claude-Web|Google-Extended/i.test(userAgent);
+
   // Extract country from Cloudflare/Vercel Edge headers (fallback to 'IN' for local dev)
   const country = request.headers.get('cf-ipcountry') || request.headers.get('x-vercel-ip-country') || 'IN';
 
@@ -25,6 +28,7 @@ export function middleware(request: NextRequest) {
   requestHeaders.set('x-user-country', country);
   requestHeaders.set('x-is-nri', isNRI ? 'true' : 'false');
   requestHeaders.set('x-user-currency', currency);
+  requestHeaders.set('x-is-crawler', isSearchCrawler ? 'true' : 'false');
 
   const response = NextResponse.next({
     request: {
@@ -32,21 +36,31 @@ export function middleware(request: NextRequest) {
     },
   });
 
-  // Set cookies for frontend components to consume seamlessly without React hydration errors
-  response.cookies.set('user-country', country, { maxAge: 86400, path: '/' });
-  response.cookies.set('user-currency', currency, { maxAge: 86400, path: '/' });
-  response.cookies.set('nri_status', isNRI ? 'true' : 'false', {
-    httpOnly: false,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'lax',
-    maxAge: 60 * 60 * 24 * 30, // 30 days
-    path: '/',
-  });
+  // Only set cookies for human visitors to keep responses ultra-lean and maximally cacheable for Googlebot
+  if (!isSearchCrawler) {
+    response.cookies.set('user-country', country, { maxAge: 86400, path: '/' });
+    response.cookies.set('user-currency', currency, { maxAge: 86400, path: '/' });
+    response.cookies.set('nri_status', isNRI ? 'true' : 'false', {
+      httpOnly: false,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax',
+      maxAge: 60 * 60 * 24 * 30, // 30 days
+      path: '/',
+    });
+  }
 
-  // Add custom headers to the response so backend APIs/analytics can track the geo-source
+  // Add Cloudflare Early Hints (HTTP 103) & preconnect Link headers
+  response.headers.set(
+    'Link',
+    '<https://d66htbxvzotmo.cloudfront.net>; rel="preconnect"; crossorigin, <https://cdn.supremeuniversal.com>; rel="preconnect"; crossorigin, <https://fonts.googleapis.com>; rel="preconnect", <https://fonts.gstatic.com>; rel="preconnect"; crossorigin'
+  );
+
+  // Global Edge SEO and telemetry headers
   response.headers.set('x-user-currency', currency);
   response.headers.set('x-user-country', country);
   response.headers.set('x-is-nri', isNRI ? 'true' : 'false');
+  response.headers.set('x-robots-tag', 'all, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+  response.headers.set('x-edge-seo-engine', 'cloudflare-active');
 
   return response;
 }
