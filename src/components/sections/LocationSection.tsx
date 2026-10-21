@@ -27,29 +27,43 @@ export default function LocationSection({ typology = "luxury villas" }: { typolo
             <span className="italic text-white">Equilibrium</span>
           </h3>
           <p className="text-stone font-light leading-relaxed mb-8">
-            Situated just 2 hours from Mumbai and 30 minutes from Pune, with seamless access to Hinjawadi, Talegaon, and Chakan MIDC — Somatane offers connectivity without the compromise of urban chaos, making it the perfect destination for {typology.toLowerCase()}.
+            Situated just 3 minutes from the Mumbai–Pune Expressway toll gateway, Somatane provides high-speed, signal-free access to both Mumbai and Pune. Located at 616m elevation, it offers pure air and misty mountain views while remaining minutes from Hinjawadi IT Park, Talegaon, and Baner — making it the premier choice for {typology.toLowerCase()}.
           </p>
           
-          <ul className="space-y-6">
+          <ul className="space-y-5">
             <li className="flex items-start gap-4">
               <MapPin className="text-gold mt-1 shrink-0" size={24} />
               <div>
-                <p className="text-lg font-heading text-cream">Navi Mumbai Airport</p>
-                <p className="text-sm text-stone">2 Hours Drive</p>
+                <p className="text-base font-heading text-cream">Mumbai–Pune Expressway Toll Plaza</p>
+                <p className="text-xs text-stone">3 Mins Drive (1.5 Km Signal-Free)</p>
               </div>
             </li>
             <li className="flex items-start gap-4">
               <MapPin className="text-gold mt-1 shrink-0" size={24} />
               <div>
-                <p className="text-lg font-heading text-cream">Baner / Hinjewadi</p>
-                <p className="text-sm text-stone">25 Mins Drive</p>
+                <p className="text-base font-heading text-cream">Navi Mumbai &amp; Atal Setu (MTHL)</p>
+                <p className="text-xs text-stone">75–85 Mins Drive (Seamless Expressway Access)</p>
               </div>
             </li>
             <li className="flex items-start gap-4">
               <MapPin className="text-gold mt-1 shrink-0" size={24} />
               <div>
-                <p className="text-lg font-heading text-cream">Phoenix Mall of the Millennium</p>
-                <p className="text-sm text-stone">25 Mins Drive</p>
+                <p className="text-base font-heading text-cream">Hinjewadi IT Park &amp; Baner</p>
+                <p className="text-xs text-stone">20–25 Mins Drive</p>
+              </div>
+            </li>
+            <li className="flex items-start gap-4">
+              <MapPin className="text-gold mt-1 shrink-0" size={24} />
+              <div>
+                <p className="text-base font-heading text-cream">Phoenix Mall of the Millennium</p>
+                <p className="text-xs text-stone">20 Mins Drive</p>
+              </div>
+            </li>
+            <li className="flex items-start gap-4">
+              <MapPin className="text-gold mt-1 shrink-0" size={24} />
+              <div>
+                <p className="text-base font-heading text-cream">Lonavala Hill Station</p>
+                <p className="text-xs text-stone">30 Mins Drive</p>
               </div>
             </li>
           </ul>

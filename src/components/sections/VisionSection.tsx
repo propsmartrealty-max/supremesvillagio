@@ -56,26 +56,29 @@ export default function VisionSection({ typology = "luxury homes" }: { typology?
               className="space-y-6 text-charcoal-light text-lg font-light leading-relaxed"
             >
               <p>
-                Supreme Villagio is not just a residence; it is a meticulously crafted sanctuary in Somatane, Pune. 
-                Spanning 16 acres of pristine landscape, we have redefined horizontal living by offering exclusive {typology.toLowerCase()}.
+                Supreme Villagio by Supreme Universal is recognized as Pune’s premier luxury bungalow enclave and the preferred horizontal estate choice for discerning Mumbai and Pune buyers. Spanning 16 scenic hillside acres at 616m elevation, we have set a new benchmark for low-rise sanctuary living with exclusive {typology.toLowerCase()}.
               </p>
               
               <ul className="mt-8 space-y-4 pt-4 border-t border-charcoal/10">
                 <li className="flex items-center gap-4">
-                  <div className="w-2 h-2 bg-gold rounded-full" />
-                  <span className="font-medium">Spacious 4 & 5 BHK Twin Villas & 4 BHK Townhouses</span>
+                  <div className="w-2 h-2 bg-gold rounded-full shrink-0" />
+                  <span className="font-medium">4 &amp; 5 BHK Gated Twin Villas &amp; 4 BHK Townhouses with 3-Side Private Lawns</span>
                 </li>
                 <li className="flex items-center gap-4">
-                  <div className="w-2 h-2 bg-gold rounded-full" />
-                  <span className="font-medium">Fully-Equipped Club Villagio</span>
+                  <div className="w-2 h-2 bg-gold rounded-full shrink-0" />
+                  <span className="font-medium">18,500 Sq.Ft. Ready Grand Club Villagio with Infinity Pool &amp; Wellness Spa</span>
                 </li>
                 <li className="flex items-center gap-4">
-                  <div className="w-2 h-2 bg-gold rounded-full" />
-                  <span className="font-medium">Landscaped by Site Concepts, Singapore</span>
+                  <div className="w-2 h-2 bg-gold rounded-full shrink-0" />
+                  <span className="font-medium">65% Dedicated Open Green Spaces Designed by Site Concepts, Singapore</span>
                 </li>
                 <li className="flex items-center gap-4">
-                  <div className="w-2 h-2 bg-gold rounded-full" />
-                  <span className="font-medium">Phase 1 & 2 Sold Out and Handed Over</span>
+                  <div className="w-2 h-2 bg-gold rounded-full shrink-0" />
+                  <span className="font-medium">Expressway Corridor: 3 Mins from Toll Plaza, 75 Mins from Navi Mumbai &amp; Atal Setu</span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="w-2 h-2 bg-gold rounded-full shrink-0" />
+                  <span className="font-medium">Phase 1 &amp; Phase 2 100% Completed with OC Received; Phase 3 Under Construction</span>
                 </li>
               </ul>
             </motion.div>

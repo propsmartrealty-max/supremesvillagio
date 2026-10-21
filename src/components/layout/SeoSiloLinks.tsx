@@ -1,46 +1,106 @@
 import React from 'react';
 import Link from 'next/link';
-import { generateSeoSlugs } from '@/lib/seo-data';
 
-export default function SeoSiloLinks({ currentTypology }: { currentTypology: string }) {
-  // Get all generated slugs (now an array of arrays)
-  const allSlugs = generateSeoSlugs();
-  
-  // Create a silo based on the current typology
-  const is5BHK = currentTypology.includes('5');
-  const isBungalow = currentTypology.toLowerCase().includes('bungalow');
-  const isRowHouse = currentTypology.toLowerCase().includes('row');
-  
-  let siloKeyword = '4-bhk';
-  if (is5BHK) siloKeyword = '5-bhk';
-  if (isBungalow) siloKeyword = 'bungalow';
-  if (isRowHouse) siloKeyword = 'row-house';
+export default function SeoSiloLinks({ currentTypology }: { currentTypology?: string }) {
+  const bungalowsAndVillas = [
+    { title: "Luxury Bungalows in Pune", href: "/luxury-bungalows-pune", desc: "4 & 5 BHK gated twin bungalows with private lawns" },
+    { title: "Luxury Villas in Pune", href: "/luxury-villas-pune", desc: "Benchmark horizontal living across 16 scenic acres" },
+    { title: "4 BHK Luxury Villas", href: "/4-bhk-villas-pune", desc: "Double-height living rooms and private gardens" },
+    { title: "5 BHK Presidential Hillside Villas", href: "/5-bhk-villas-pune", desc: "Private elevator, 3-car parking, panoramic views" },
+    { title: "4 BHK Townhouses", href: "/supreme-villagio/townhouses", desc: "G+2 luxury residences with private terrace" },
+    { title: "Villas vs Apartments in Pune", href: "/villas-vs-apartments-pune", desc: "Why HNI buyers prefer land ownership over flats" },
+  ];
 
-  // Filter for related slugs (Siloing) and take a chunk
-  const relatedSlugs = allSlugs
-    .filter(slugArray => slugArray.join('-').includes(siloKeyword))
-    .filter((_, i) => i % 2 === 0) 
-    .slice(0, 15);
+  const expresswayAndMumbai = [
+    { title: "Villas Near Mumbai-Pune Expressway", href: "/villas-near-mumbai-pune-expressway", desc: "3 mins from Expressway toll; ideal for Mumbai buyers" },
+    { title: "Somatane Real Estate Guide", href: "/somatane-real-estate", desc: "Pune's fastest-growing luxury horizontal estate hub" },
+    { title: "Villas in Somatane", href: "/somatane-villas", desc: "616m elevation, hill-station microclimate & clean air" },
+    { title: "Somatane vs Hinjewadi IT Park", href: "/somatane-vs-hinjewadi", desc: "20-minute commute to Phase 1, 2 & 3 IT corridors" },
+    { title: "Talegaon Luxury Real Estate", href: "/talegaon-luxury-villas", desc: "Connectivity to MIDC & Mumbai-Pune Expressway" },
+    { title: "Supreme Villagio vs Forest Trails", href: "/supreme-villagio-vs-paranjape-forest-trails", desc: "Comparative analysis of Pune's premier villa projects" },
+  ];
 
-  if (relatedSlugs.length === 0) return null;
+  const projectPortfolio = [
+    { title: "MahaRERA Certifications (OC Received)", href: "/supreme-villagio-rera", desc: "Verified RERA P52100046867, P52100049506, P52100055048" },
+    { title: "16-Acre Master Plan & Layout", href: "/supreme-villagio/master-plan", desc: "Site Concepts Singapore landscape masterplan" },
+    { title: "18,500 Sq.Ft. Club Villagio", href: "/supreme-villagio/amenities", desc: "Infinity pool, gym, yoga pavilion, squash court" },
+    { title: "Villa Blueprints & Floor Plans", href: "/supreme-villagio/floor-plans", desc: "Detailed carpet areas and spatial layouts" },
+    { title: "Transparent Pricing & Cost Sheets", href: "/supreme-villagio/price", desc: "All-inclusive pricing starting from ₹2.89 Cr*" },
+    { title: "NRI Investment & Repatriation Desk", href: "/supreme-villagio/nri-guide", desc: "FEMA guidelines & currency advantage advisory" },
+  ];
 
   return (
-    <section className="bg-charcoal text-stone/60 py-12 border-t border-white/5 text-xs">
+    <section className="bg-charcoal text-cream/80 py-16 border-t border-white/10 text-xs">
       <div className="container mx-auto px-6 md:px-12">
-        <h3 className="text-stone/40 uppercase tracking-widest mb-6 font-medium">Explore Related Properties in Pune</h3>
-        <ul className="flex flex-wrap gap-x-6 gap-y-3">
-          {relatedSlugs.map(slugArray => {
-            const urlPath = slugArray.join('/');
-            const readableText = slugArray.join(' ').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-            return (
-              <li key={urlPath}>
-                <Link href={`/supreme-villagio/${urlPath}`} className="hover:text-gold transition-colors block">
-                  {readableText}
-                </Link>
-              </li>
-            )
-          })}
-        </ul>
+        <div className="text-center md:text-left mb-10">
+          <p className="text-gold uppercase tracking-[0.2em] font-semibold text-[11px] mb-2">Pune Luxury Real Estate Authority</p>
+          <h2 className="text-2xl md:text-3xl font-heading text-cream font-light">Supreme Villagio Ecosystem &amp; Directory</h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Column 1 */}
+          <div>
+            <h3 className="text-gold font-bold uppercase tracking-wider text-xs pb-2 mb-4 border-b border-white/10">
+              Pune Luxury Bungalows &amp; Villas
+            </h3>
+            <ul className="space-y-4">
+              {bungalowsAndVillas.map(item => (
+                <li key={item.href}>
+                  <Link href={item.href} className="group block">
+                    <span className="text-cream group-hover:text-gold transition-colors font-medium block">
+                      {item.title}
+                    </span>
+                    <span className="text-stone/70 text-[11px] block mt-0.5">
+                      {item.desc}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 2 */}
+          <div>
+            <h3 className="text-gold font-bold uppercase tracking-wider text-xs pb-2 mb-4 border-b border-white/10">
+              Mumbai Corridor &amp; Location
+            </h3>
+            <ul className="space-y-4">
+              {expresswayAndMumbai.map(item => (
+                <li key={item.href}>
+                  <Link href={item.href} className="group block">
+                    <span className="text-cream group-hover:text-gold transition-colors font-medium block">
+                      {item.title}
+                    </span>
+                    <span className="text-stone/70 text-[11px] block mt-0.5">
+                      {item.desc}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 3 */}
+          <div>
+            <h3 className="text-gold font-bold uppercase tracking-wider text-xs pb-2 mb-4 border-b border-white/10">
+              Specifications &amp; Verification
+            </h3>
+            <ul className="space-y-4">
+              {projectPortfolio.map(item => (
+                <li key={item.href}>
+                  <Link href={item.href} className="group block">
+                    <span className="text-cream group-hover:text-gold transition-colors font-medium block">
+                      {item.title}
+                    </span>
+                    <span className="text-stone/70 text-[11px] block mt-0.5">
+                      {item.desc}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );
