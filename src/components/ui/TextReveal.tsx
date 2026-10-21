@@ -54,9 +54,9 @@ export default function TextReveal({
   const words = text.split(" ");
 
   return (
-    <motion.div
+    <motion.span
       ref={ref}
-      style={{ overflow: "hidden", display: "flex", flexWrap: "wrap", gap: "0.25em" }}
+      style={{ overflow: "hidden", display: "inline-flex", flexWrap: "wrap", gap: "0.25em" }}
       variants={container}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
@@ -78,6 +78,6 @@ export default function TextReveal({
           </motion.span>
         );
       })}
-    </motion.div>
+    </motion.span>
   );
 }

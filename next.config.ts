@@ -2,16 +2,17 @@ import type { NextConfig } from "next";
 
 const cspHeader = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net https://www.clarity.ms;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net https://www.clarity.ms https://*.clarity.ms;
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-  img-src 'self' blob: data: https://cdn.supremeuniversal.com https://images.unsplash.com https://www.supremeuniversal.com https://www.facebook.com https://*.cloudfront.net https://d66htbxvzotmo.cloudfront.net;
-  font-src 'self' https://fonts.gstatic.com;
-  connect-src 'self' https://www.google-analytics.com https://a.clarity.ms;
+  img-src 'self' blob: data: https://cdn.supremeuniversal.com https://images.unsplash.com https://www.supremeuniversal.com https://www.facebook.com https://*.cloudfront.net https://d66htbxvzotmo.cloudfront.net https://*.google-analytics.com https://*.googletagmanager.com;
+  font-src 'self' data: https://fonts.gstatic.com;
+  media-src 'self' blob: https://d66htbxvzotmo.cloudfront.net https://cdn.supremeuniversal.com;
+  connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google-analytics.com https://a.clarity.ms https://*.clarity.ms https://cdn.supremeuniversal.com;
   object-src 'none';
   base-uri 'self';
   form-action 'self';
   frame-ancestors 'none';
-  frame-src 'self' https://www.google.com;
+  frame-src 'self' https://www.google.com https://maps.google.com https://*.google.com;
   upgrade-insecure-requests;
 `.replace(/\s{2,}/g, ' ').trim();
 

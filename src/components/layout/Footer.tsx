@@ -157,17 +157,17 @@ export default function Footer() {
           <h4 className="text-primary font-heading text-sm uppercase tracking-widest mb-4">MahaRERA Verified Project Registrations</h4>
           <div className="flex flex-col md:flex-row justify-center items-start gap-8 text-sm text-stone mt-6">
             <div className="flex flex-col items-center">
-              <img src="https://cdn.supremeuniversal.com/media/SupremeVillagioIP52100046867_cwrz1A.jpg" alt="Phase 1 QR Code" className="w-20 h-20 mb-3 rounded-sm opacity-90 hover:opacity-100 transition-opacity" />
+              <img src="https://cdn.supremeuniversal.com/media/SupremeVillagioIP52100046867_cwrz1A.jpg" alt="Phase 1 QR Code" loading="lazy" decoding="async" className="w-20 h-20 mb-3 rounded-sm opacity-90 hover:opacity-100 transition-opacity" />
               <p><strong>Phase 1:</strong> P52100046867 (OC Received)</p>
             </div>
             <div className="hidden md:block h-24 w-px bg-charcoal-light self-center"></div>
             <div className="flex flex-col items-center">
-              <img src="https://cdn.supremeuniversal.com/media/SupremeVillagioIIP52100049506_zdy3oY.jpg" alt="Phase 2 QR Code" className="w-20 h-20 mb-3 rounded-sm opacity-90 hover:opacity-100 transition-opacity" />
+              <img src="https://cdn.supremeuniversal.com/media/SupremeVillagioIIP52100049506_zdy3oY.jpg" alt="Phase 2 QR Code" loading="lazy" decoding="async" className="w-20 h-20 mb-3 rounded-sm opacity-90 hover:opacity-100 transition-opacity" />
               <p><strong>Phase 2:</strong> P52100049506 (OC Received)</p>
             </div>
             <div className="hidden md:block h-24 w-px bg-charcoal-light self-center"></div>
             <div className="flex flex-col items-center">
-              <img src="https://cdn.supremeuniversal.com/media/SUPREMEVILLAGIOIIIP52100055048_6dYFb3.jpg" alt="Phase 3 QR Code" className="w-20 h-20 mb-3 rounded-sm opacity-90 hover:opacity-100 transition-opacity" />
+              <img src="https://cdn.supremeuniversal.com/media/SUPREMEVILLAGIOIIIP52100055048_6dYFb3.jpg" alt="Phase 3 QR Code" loading="lazy" decoding="async" className="w-20 h-20 mb-3 rounded-sm opacity-90 hover:opacity-100 transition-opacity" />
               <p><strong>Phase 3:</strong> P52100055048 (Possession Dec 2028)</p>
             </div>
           </div>

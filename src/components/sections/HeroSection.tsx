@@ -74,7 +74,7 @@ export default function HeroSection({
               type="image/webp"
             />
             <img 
-              src="/images/hero-desktop.webp"
+              src="/images/hero-mobile.webp"
               alt={`${headlineLine1} ${headlineLine2} - ${subline}`}
               title={`${headlineLine1} ${headlineLine2}`}
               fetchPriority="high"

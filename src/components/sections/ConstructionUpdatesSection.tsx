@@ -58,6 +58,8 @@ export default function ConstructionUpdatesSection() {
                   <img 
                     src={update.image} 
                     alt={update.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
                   <div className="absolute top-3 left-3 bg-[#23362E]/90 text-white backdrop-blur-md px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-sm border border-white/10">

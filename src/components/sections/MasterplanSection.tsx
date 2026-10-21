@@ -44,7 +44,7 @@ export default function MasterplanSection() {
               alt="Supreme Villagio Masterplan Aerial View"
               fill
               className="object-cover opacity-85"
-              priority
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-charcoal/30 mix-blend-multiply" />
           </motion.div>
