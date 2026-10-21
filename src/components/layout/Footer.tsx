@@ -117,6 +117,7 @@ export default function Footer() {
         <div className="py-12 border-t border-charcoal-light">
           <h3 className="text-sm uppercase tracking-widest text-white mb-8 text-center md:text-left">SEO Silo & Property Directory</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs text-stone">
+            <Link href="/ecosystem" className="hover:text-primary transition-colors font-semibold text-white">Supreme Villagio Ecosystem</Link>
             <Link href="/supreme-villagio-rera" className="hover:text-primary transition-colors font-semibold text-white">MahaRERA Numbers</Link>
             <Link href="/supreme-villagio/price" className="hover:text-primary transition-colors font-semibold text-white">Price & Cost Sheet</Link>
             <Link href="/supreme-villagio/emi-calculator" className="hover:text-primary transition-colors font-semibold text-white">EMI & Stamp Duty</Link>

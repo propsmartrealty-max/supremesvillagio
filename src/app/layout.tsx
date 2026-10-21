@@ -469,6 +469,18 @@ const siteNavigationSchema = {
       "position": 6,
       "name": "Construction & Handover Status",
       "url": "https://www.supremesvillagio.com/supreme-villagio/construction-status"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 7,
+      "name": "Verified Homeowner Reviews",
+      "url": "https://www.supremesvillagio.com/supreme-villagio/reviews"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 8,
+      "name": "Supreme Villagio Ecosystem",
+      "url": "https://www.supremesvillagio.com/ecosystem"
     }
   ]
 };
