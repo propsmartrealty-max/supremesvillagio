@@ -97,6 +97,8 @@ export default function AmenitiesSection() {
                 <img
                   src={amenity.image}
                   alt={amenity.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover scale-105 group-hover:scale-110 transition-transform duration-1000 ease-out"
                 />
               </motion.div>

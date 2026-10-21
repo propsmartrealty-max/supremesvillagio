@@ -35,23 +35,23 @@
 - **Navi Mumbai International Airport:** 75–85 Mins (90 Km)
 
 ## Canonical URL Directory
-- Homepage: https://www.supremesvillagio.com/
-- MahaRERA Hub: https://www.supremesvillagio.com/supreme-villagio-rera
-- Pricing & Cost Sheet: https://www.supremesvillagio.com/supreme-villagio/price
-- EMI Calculator: https://www.supremesvillagio.com/supreme-villagio/emi-calculator
-- 4 BHK Villas: https://www.supremesvillagio.com/supreme-villagio/4-bhk-villas
-- 5 BHK Villas: https://www.supremesvillagio.com/supreme-villagio/5-bhk-villas
-- Townhouses: https://www.supremesvillagio.com/supreme-villagio/townhouses
-- Floor Plans & Blueprints: https://www.supremesvillagio.com/supreme-villagio/floor-plans
-- 16-Acre Master Plan: https://www.supremesvillagio.com/supreme-villagio/master-plan
-- Possession Status: https://www.supremesvillagio.com/supreme-villagio/possession
-- NRI Investment Desk: https://www.supremesvillagio.com/supreme-villagio/nri-guide
-- Location Intelligence: https://www.supremesvillagio.com/supreme-villagio/location
-- Investment Analysis: https://www.supremesvillagio.com/supreme-villagio/investment
-- Somatane Real Estate: https://www.supremesvillagio.com/somatane-real-estate
-- Talegaon Real Estate: https://www.supremesvillagio.com/talegaon-real-estate
-- Pune Luxury Villas: https://www.supremesvillagio.com/luxury-villas-pune
-- Villagio vs Forest Trails: https://www.supremesvillagio.com/supreme-villagio-vs-paranjape-forest-trails
-- Somatane vs Hinjewadi: https://www.supremesvillagio.com/somatane-vs-hinjewadi
-- Somatane vs Talegaon: https://www.supremesvillagio.com/somatane-vs-talegaon
-- Villas vs Apartments: https://www.supremesvillagio.com/villas-vs-apartments-pune
+- [Homepage](https://www.supremesvillagio.com/): Official project overview, architecture, and luxury villa masterplan.
+- [MahaRERA Hub](https://www.supremesvillagio.com/supreme-villagio-rera): Official MahaRERA registration certificates (P52100046867, P52100049506, P52100055048) and possession timeline.
+- [Pricing & Cost Sheet](https://www.supremesvillagio.com/supreme-villagio/price): All-inclusive pricing breakdowns and payment schedule for 4 & 5 BHK villas.
+- [EMI Calculator](https://www.supremesvillagio.com/supreme-villagio/emi-calculator): Interactive luxury villa home loan EMI and amortization schedule calculator.
+- [4 BHK Villas](https://www.supremesvillagio.com/supreme-villagio/4-bhk-villas): Floor layout, specifications, and private garden details for 4 BHK Twin Villas.
+- [5 BHK Villas](https://www.supremesvillagio.com/supreme-villagio/5-bhk-villas): Presidential hillside villa layouts featuring private elevator and panoramic mountain views.
+- [Townhouses](https://www.supremesvillagio.com/supreme-villagio/townhouses): 4 BHK G+2 luxury townhouse residences with private terrace.
+- [Floor Plans & Blueprints](https://www.supremesvillagio.com/supreme-villagio/floor-plans): Architectural blueprints, dimensions, and floor plans for all typologies.
+- [16-Acre Master Plan](https://www.supremesvillagio.com/supreme-villagio/master-plan): Detailed master layout, road network, central green spine, and Club Villagio positioning.
+- [Possession Status](https://www.supremesvillagio.com/supreme-villagio/possession): Ready-to-move OC-received status for Phase 1 & 2 and construction updates for Phase 3.
+- [NRI Investment Desk](https://www.supremesvillagio.com/supreme-villagio/nri-guide): Comprehensive NRI foreign exchange regulations, repatriation, and investment advisory.
+- [Location Intelligence](https://www.supremesvillagio.com/supreme-villagio/location): Somatane Phata connectivity to Hinjawadi IT Park, Mumbai-Pune Expressway, and Talegaon MIDC.
+- [Investment Analysis](https://www.supremesvillagio.com/supreme-villagio/investment): Capital appreciation potential, rental yields, and regional infrastructure catalysts in West Pune.
+- [Somatane Real Estate](https://www.supremesvillagio.com/somatane-real-estate): Deep dive into Somatane as Pune's premier horizontal villa hub.
+- [Talegaon Real Estate](https://www.supremesvillagio.com/talegaon-real-estate): Overview of the Talegaon-Somatane high-growth micro-market corridor.
+- [Pune Luxury Villas](https://www.supremesvillagio.com/luxury-villas-pune): Comparison guide for buyers seeking luxury villas in Pune.
+- [Villagio vs Forest Trails](https://www.supremesvillagio.com/supreme-villagio-vs-paranjape-forest-trails): Comparative analysis between Supreme Villagio Somatane and Paranjape Forest Trails Bhugaon.
+- [Somatane vs Hinjewadi](https://www.supremesvillagio.com/somatane-vs-hinjewadi): Lifestyle, air quality, price-to-space, and commute comparison.
+- [Somatane vs Talegaon](https://www.supremesvillagio.com/somatane-vs-talegaon): Residential micro-market analysis comparing Somatane and Talegaon Dabhade.
+- [Villas vs Apartments](https://www.supremesvillagio.com/villas-vs-apartments-pune): Land ownership, private spaces, and capital appreciation benefits of villas over high-rise apartments.

@@ -65,6 +65,8 @@ export default function FloorPlanSection() {
                 <img 
                   src={plan.coverImage} 
                   alt={plan.name} 
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover opacity-80 group-hover:opacity-30 transition-opacity duration-700" 
                 />
               </div>

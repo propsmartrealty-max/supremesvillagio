@@ -37,8 +37,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.supremesvillagio.com"),
-  title: "Supreme Villagio Somatane | #1 Premium Bungalows & Luxury Villas in Pune",
-  description: "Ranked #1 in the Pune Real Estate Market. Supreme Villagio offers ultra-premium 4 & 5 BHK luxury bungalows and villas in Somatane, Pune. Explore the finest villas in Pune.",
+  title: "Supreme Villagio Somatane Pune | Luxury 4 & 5 BHK Villas & Townhouses",
+  description: "Supreme Villagio by Supreme Universal in Somatane, Pune. Exclusive 4 & 5 BHK luxury villas and townhouses spread across 16 scenic acres with Club Villagio.",
   keywords: [
     "Supreme Villagio", "Supreme Villagio Somatane", "Supreme Villagio Somante",
     "Supreme Villagio Ecosystem", "Supreme Villagio Somatane Ecosystem", "Supreme Villagio Somante Ecosystem",
@@ -90,8 +90,8 @@ export const metadata: Metadata = {
     locale: "en_IN",
     alternateLocale: ["en_US", "en_GB", "en_AE"],
     url: "https://www.supremesvillagio.com/",
-    title: "Supreme Villagio | Pune's #1 Premium Luxury Bungalow & Villa Market",
-    description: "Ranked #1 in the Pune Real Estate Market. Supreme Villagio offers ultra-premium 4 & 5 BHK luxury bungalows and villas in Somatane, Pune.",
+    title: "Supreme Villagio Somatane Pune | Luxury 4 & 5 BHK Villas & Townhouses",
+    description: "Supreme Villagio by Supreme Universal in Somatane, Pune. Exclusive 4 & 5 BHK luxury villas and townhouses spread across 16 scenic acres with Club Villagio.",
     siteName: "Supreme Universal",
     images: [
       {
@@ -154,13 +154,6 @@ const realEstateListingSchema = {
     "offerCount": "210",
     "availability": "https://schema.org/InStock",
     "validFrom": "2024-01-01"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "88",
-    "bestRating": "5",
-    "worstRating": "1"
   },
   "speakable": {
     "@type": "SpeakableSpecification",
@@ -547,16 +540,14 @@ export default function RootLayout({
         <meta name="classification" content="Real Estate, Luxury Villas, Bungalows, Pune Property" />
 
         {/* Resource Pre-connection for Performance */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://connect.facebook.net" />
-        <link rel="dns-prefetch" href="https://connect.facebook.net" />
-        <link rel="preconnect" href="https://d66htbxvzotmo.cloudfront.net" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://d66htbxvzotmo.cloudfront.net" />
         <link rel="preconnect" href="https://cdn.supremeuniversal.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://cdn.supremeuniversal.com" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://d66htbxvzotmo.cloudfront.net" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://d66htbxvzotmo.cloudfront.net" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 
         <Script
           id="real-estate-schema"
@@ -623,20 +614,6 @@ export default function RootLayout({
                 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_CLARITY_ID || ""}");
-          `}
-        </Script>
-        {/* Progressive Web App (PWA) Service Worker Registration */}
-        <Script id="pwa-sw" strategy="lazyOnload">
-          {`
-            if ('serviceWorker' in navigator) {
-              window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js').then(function(registration) {
-                  console.log('PWA ServiceWorker registered successfully');
-                }, function(err) {
-                  console.log('PWA ServiceWorker registration failed: ', err);
-                });
-              });
-            }
           `}
         </Script>
       </head>

@@ -8,27 +8,25 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: ['Googlebot', 'Bingbot', 'Applebot', 'YandexBot', 'Baiduspider', 'DuckDuckBot'],
         allow: '/',
-        crawlDelay: 2, // Ensure continuous aggressive crawling without DDoS'ing the Edge Network
       },
       {
         userAgent: [
           'AhrefsBot', 'SemrushBot', 'MJ12bot', 'DotBot', 'PetalBot', 'YandexImages',
           'MegaIndex.ru', 'BLEXBot', 'BuiltBotTough', 'DataForSeoBot'
         ],
-        disallow: '/', // Block toxic SEO scrapers to conserve compute strictly for HNI buyers & Search Engines
+        disallow: '/', // Block aggressive non-search scrapers
       },
       {
         userAgent: [
           'GPTBot', 'ChatGPT-User', 'Google-Extended', 'Anthropic-ai', 'Claude-Web',
           'PerplexityBot', 'Applebot', 'Amazonbot'
         ],
-        allow: '/', // Allow modern Generative AI & Answer Engines to index and cite authoritative content in AI Search
+        allow: '/', // Allow AI Answer Engines to cite verified data
       },
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/*?*', '/api/'], // Block spider traps and internal backend compute endpoints
-        crawlDelay: 5,
+        disallow: ['/api/'],
       },
     ],
     sitemap: [

@@ -33,18 +33,21 @@ export default function FloatingCTA() {
             href="https://wa.me/917744009295?text=Hello!%20I%20am%20interested%20in%20knowing%20more%20about%20the%20ultra-luxury%20properties%20(4/5%20BHK%20Villas%20%26%20Row%20Houses)%20at%20Supreme%20Villagio%20in%20Somatane%2C%20Pune.%20Please%20share%20the%20brochure%2C%20floor%20plans%2C%20and%20pricing%20details."
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Chat with Supreme Villagio sales concierge on WhatsApp"
             className="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
           >
             <MessageCircle size={24} />
           </a>
           <a
             href="tel:+917744009295"
+            aria-label="Call Supreme Villagio sales office directly"
             className="w-12 h-12 bg-charcoal text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
           >
             <Phone size={22} />
           </a>
           <button
             onClick={openContactModal}
+            aria-label="Schedule a private villa site visit"
             className="w-12 h-12 bg-gold text-charcoal rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
           >
             <Calendar size={22} />

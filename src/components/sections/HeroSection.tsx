@@ -69,8 +69,8 @@ export default function HeroSection({
             fill
             priority
             fetchPriority="high"
-            sizes="100vw"
-            quality={100}
+            sizes="(max-width: 768px) 100vw, 100vw"
+            quality={80}
             className="object-cover object-center transform scale-105 transition-transform duration-[20s] ease-linear hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-black/30" />
@@ -92,7 +92,7 @@ export default function HeroSection({
             />
           </div>
 
-          <div className="overflow-hidden mb-6 flex flex-col items-center justify-center">
+          <h1 className="overflow-hidden mb-6 flex flex-col items-center justify-center">
             <TextReveal 
               text={headlineLine1} 
               className="text-4xl md:text-6xl lg:text-7xl font-heading font-semibold text-cream max-w-5xl leading-tight drop-shadow-md" 
@@ -107,7 +107,8 @@ export default function HeroSection({
               highlightWords={highlightWords}
               highlightClass="text-gold-gradient italic font-light font-heading"
             />
-          </div>
+            <span className="sr-only">Supreme Villagio Somatane | Luxury 4 &amp; 5 BHK Villas &amp; Townhouses in Pune</span>
+          </h1>
           
           <div className="overflow-hidden mb-12">
             <p className="hero-text-reveal text-lg md:text-xl text-cream/90 max-w-2xl font-light tracking-wide drop-shadow-sm">
