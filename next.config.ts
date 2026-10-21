@@ -84,15 +84,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Cache-Control',
-            value: 'public, max-age=3600, s-maxage=31536000, stale-while-revalidate=86400',
-          },
-          {
-            key: 'CDN-Cache-Control',
-            value: 'max-age=31536000',
-          },
-          {
-            key: 'Cloudflare-CDN-Cache-Control',
-            value: 'max-age=31536000',
+            value: 'public, max-age=0, must-revalidate',
           },
         ],
       },
