@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { NextResponse } from 'next/server';
 
 const INDEXNOW_KEY = 'c2e5a8f4b1d64e97a3b2c1d0e5f4a6b7';
