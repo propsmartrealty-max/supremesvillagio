@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Tag, ArrowRight, ShieldCheck, Check, Calculator, Download } from 'lucide-react';
 import EmiCalculatorSection from '@/components/sections/EmiCalculatorSection';
 
@@ -180,18 +179,15 @@ const priceFaqSchema = {
 export default function PricePage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="price-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(priceSchema) }}
       />
-      <Script
-        id="price-breadcrumb-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(priceBreadcrumbSchema) }}
       />
-      <Script
-        id="price-faq-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(priceFaqSchema) }}
       />

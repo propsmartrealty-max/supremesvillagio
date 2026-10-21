@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Sparkles, Home, ShieldCheck, ArrowRight, Check, MapPin, Compass, Trophy, Building, Trees } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -95,13 +94,11 @@ const faqSchema = {
 export default function LuxuryBungalowsPunePage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="bungalows-pune-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(bungalowSchema) }}
       />
-      <Script
-        id="bungalows-pune-faq-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />

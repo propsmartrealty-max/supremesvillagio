@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Star, MessageSquare, ShieldCheck, ArrowRight, Quote } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -154,8 +153,7 @@ const REVIEWS_DATA = [
 export default function ReviewsPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="reviews-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsSchema) }}
       />

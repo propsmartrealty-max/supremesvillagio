@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Car, CheckCircle2, ArrowRight, ShieldCheck, MapPin, Sparkles, Trophy, Building2, Trees } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -93,13 +92,11 @@ const expresswayFaqSchema = {
 export default function VillasNearExpresswayPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="expressway-listing-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(expresswayListingSchema) }}
       />
-      <Script
-        id="expressway-faq-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(expresswayFaqSchema) }}
       />
