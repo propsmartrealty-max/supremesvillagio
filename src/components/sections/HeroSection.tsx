@@ -60,19 +60,29 @@ export default function HeroSection({
   return (
     <>
       <section ref={containerRef} className="relative h-[100dvh] w-full overflow-hidden bg-charcoal">
-        {/* Background Media */}
+        {/* Background Media - Responsive High Performance WebP */}
         <motion.div style={{ y }} className="absolute inset-0 w-full h-full">
-          <Image 
-            src="https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-3_IOrvdm.jpg"
-            alt={`${headlineLine1} ${headlineLine2} - ${subline}`}
-            title={`${headlineLine1} ${headlineLine2}`}
-            fill
-            priority
-            fetchPriority="high"
-            sizes="(max-width: 768px) 100vw, 100vw"
-            quality={80}
-            className="object-cover object-center transform scale-105 transition-transform duration-[20s] ease-linear hover:scale-110"
-          />
+          <picture className="w-full h-full">
+            <source
+              media="(max-width: 768px)"
+              srcSet="/images/hero-mobile.webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcSet="/images/hero-desktop.webp"
+              type="image/webp"
+            />
+            <img 
+              src="/images/hero-desktop.webp"
+              alt={`${headlineLine1} ${headlineLine2} - ${subline}`}
+              title={`${headlineLine1} ${headlineLine2}`}
+              fetchPriority="high"
+              loading="eager"
+              decoding="async"
+              className="w-full h-full object-cover object-center transform scale-105 transition-transform duration-[20s] ease-linear hover:scale-110"
+            />
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-black/30" />
           <div className="absolute inset-0 bg-gradient-to-r from-amber-950/20 via-transparent to-emerald-950/20 mix-blend-overlay pointer-events-none" />
         </motion.div>

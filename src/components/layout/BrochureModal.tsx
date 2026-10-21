@@ -101,6 +101,7 @@ export default function BrochureModal() {
             <button
               onClick={closeBrochureModal}
               className="absolute top-6 right-6 p-2 rounded-full hover:bg-muted transition-colors"
+              aria-label="Close brochure modal"
             >
               <X size={24} className="text-foreground/70" />
             </button>

@@ -171,10 +171,10 @@ export default function Footer() {
               <p><strong>Phase 3:</strong> P52100055048 (Possession Dec 2028)</p>
             </div>
           </div>
-          <p className="text-xs text-stone/80 mt-6 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xs text-stone mt-6 max-w-4xl mx-auto leading-relaxed">
             Project developed by Supreme Universal. Verified on Maharashtra Real Estate Regulatory Authority at <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline underline-offset-2 text-white">maharera.mahaonline.gov.in</a> under registered projects.
           </p>
-          <p className="text-[11px] text-stone/60 mt-3 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-[11px] text-stone mt-3 max-w-4xl mx-auto leading-relaxed">
             <strong>Statutory Disclaimer:</strong> This portal is an authorized marketing and project information asset. All images, architectural renders, specifications, floor plans, and pricing metrics are for informational purposes only and subject to standard terms and conditions.
           </p>
         </div>

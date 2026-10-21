@@ -128,7 +128,7 @@
   --charcoal: #23362E;        /* Official Supreme Villagio Body Background: #23362E */
   --charcoal-light: #2F493E;  /* Elevated Forest Surface */
   --charcoal-card: #1C2C25;   /* Dark Card Surface */
-  --stone: #9E9C8D;           /* Warm Sandstone Stone */
+  --stone: #CDC9B9;           /* High-contrast Warm Sandstone Stone (WCAG AAA compliant on charcoal) */
   --cream: #E4E2D3;           /* Official Supreme Villagio Body Color: #E4E2D3 */
   --cream-light: #F4F3EB;
 

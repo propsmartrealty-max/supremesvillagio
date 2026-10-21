@@ -58,6 +58,7 @@ export default function ArchitectureSection() {
             <button
               onClick={() => setActiveHotspot(activeHotspot === spot.id ? null : spot.id)}
               className="relative w-9 h-9 md:w-11 md:h-11 bg-gradient-to-br from-amber-400 via-yellow-400 to-amber-500 text-charcoal rounded-full flex items-center justify-center shadow-lg shadow-amber-500/30 hover:scale-115 transition-transform z-30 cursor-pointer"
+              aria-label={`View architectural details for ${spot.title}`}
             >
               <Plus size={20} className={`transition-transform duration-300 ${activeHotspot === spot.id ? 'rotate-45' : ''}`} />
               <span className="absolute inset-0 rounded-full border-2 border-amber-400 animate-ping opacity-60 pointer-events-none" />
