@@ -6,11 +6,11 @@ export default function PressSection() {
   return (
     <section className="py-14 md:py-20 bg-charcoal border-y border-white/5 overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 text-center">
-        <p className="text-gold/80 uppercase tracking-[0.25em] text-xs font-semibold mb-10">
+        <p className="text-gold uppercase tracking-[0.25em] text-xs font-semibold mb-10">
           Recognized For Architectural Excellence In Leading Publications
         </p>
         
-        <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20 text-cream/60">
+        <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20 text-cream">
           {/* The Economic Times */}
           <div className="flex items-center gap-2 hover:text-cream transition-colors duration-300" title="The Economic Times">
             <svg className="h-6 md:h-7 w-auto fill-current" viewBox="0 0 240 32" role="img" aria-label="The Economic Times">

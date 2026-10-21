@@ -92,13 +92,14 @@ export default function MasterplanSection() {
                   <div>
                     <div className="flex items-center gap-3 mb-2">
                       <div className={`w-2 h-2 rounded-full ${activeZone.status === 'Available' ? 'bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]' : 'bg-red-500'}`} />
-                      <span className="text-xs uppercase tracking-widest text-white/50">{activeZone.status}</span>
+                      <span className="text-xs uppercase tracking-widest text-stone">{activeZone.status}</span>
                     </div>
                     <h4 className="text-3xl font-heading text-cream">{activeZone.title}</h4>
                   </div>
                   <button 
                     onClick={() => setActiveZone(null)}
-                    className="p-2 text-white/50 hover:text-gold transition-colors"
+                    aria-label="Close masterplan zone details"
+                    className="p-2 text-stone hover:text-gold transition-colors"
                   >
                     <X size={24} />
                   </button>
@@ -118,7 +119,7 @@ export default function MasterplanSection() {
 
                   <div className="mb-8">
                     <p className="text-xs uppercase tracking-widest text-gold mb-3">Overview</p>
-                    <p className="text-white/70 font-light leading-relaxed">
+                    <p className="text-cream font-normal leading-relaxed">
                       {activeZone.description}
                     </p>
                   </div>

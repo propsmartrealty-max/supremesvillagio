@@ -121,7 +121,7 @@ export default function HeroSection({
           </h1>
           
           <div className="overflow-hidden mb-12">
-            <p className="hero-text-reveal text-lg md:text-xl text-cream/90 max-w-2xl font-light tracking-wide drop-shadow-sm">
+            <p className="hero-text-reveal text-lg md:text-xl text-cream max-w-2xl font-light tracking-wide drop-shadow-sm">
               {subline}
             </p>
           </div>

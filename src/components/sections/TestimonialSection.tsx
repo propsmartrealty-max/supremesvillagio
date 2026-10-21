@@ -38,7 +38,7 @@ export default function TestimonialSection() {
         <div className="text-center">
           <p className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4">Words of Trust</p>
           <h2 className="text-4xl md:text-5xl font-heading font-light">
-            The <span className="text-white/50 italic">Supreme</span> Experience
+            The <span className="text-gold italic">Supreme</span> Experience
           </h2>
         </div>
       </div>
@@ -63,12 +63,12 @@ export default function TestimonialSection() {
               <div className="text-gold mb-6">
                 <Quote size={32} />
               </div>
-              <p className="text-lg md:text-xl font-light leading-relaxed mb-8 text-white/90">
+              <p className="text-lg md:text-xl font-light leading-relaxed mb-8 text-white">
                 &quot;{testimonial.text}&quot;
               </p>
               <div>
                 <p className="font-heading text-lg">{testimonial.author}</p>
-                <p className="text-white/50 text-xs uppercase tracking-widest mt-1">{testimonial.role}</p>
+                <p className="text-stone text-xs uppercase tracking-widest mt-1">{testimonial.role}</p>
               </div>
             </div>
           ))}

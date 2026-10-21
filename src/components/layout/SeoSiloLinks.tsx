@@ -30,7 +30,7 @@ export default function SeoSiloLinks({ currentTypology }: { currentTypology?: st
   ];
 
   return (
-    <section className="bg-charcoal text-cream/80 py-16 border-t border-white/10 text-xs">
+    <section className="bg-charcoal text-cream py-16 border-t border-white/10 text-xs">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center md:text-left mb-10">
           <p className="text-gold uppercase tracking-[0.2em] font-semibold text-[11px] mb-2">Pune Luxury Real Estate Authority</p>
@@ -50,7 +50,7 @@ export default function SeoSiloLinks({ currentTypology }: { currentTypology?: st
                     <span className="text-cream group-hover:text-gold transition-colors font-medium block">
                       {item.title}
                     </span>
-                    <span className="text-stone/70 text-[11px] block mt-0.5">
+                    <span className="text-stone text-[11px] block mt-0.5">
                       {item.desc}
                     </span>
                   </Link>
@@ -71,7 +71,7 @@ export default function SeoSiloLinks({ currentTypology }: { currentTypology?: st
                     <span className="text-cream group-hover:text-gold transition-colors font-medium block">
                       {item.title}
                     </span>
-                    <span className="text-stone/70 text-[11px] block mt-0.5">
+                    <span className="text-stone text-[11px] block mt-0.5">
                       {item.desc}
                     </span>
                   </Link>
@@ -92,7 +92,7 @@ export default function SeoSiloLinks({ currentTypology }: { currentTypology?: st
                     <span className="text-cream group-hover:text-gold transition-colors font-medium block">
                       {item.title}
                     </span>
-                    <span className="text-stone/70 text-[11px] block mt-0.5">
+                    <span className="text-stone text-[11px] block mt-0.5">
                       {item.desc}
                     </span>
                   </Link>

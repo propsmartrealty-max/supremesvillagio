@@ -45,7 +45,7 @@ export default function FloorPlanSection() {
           <p className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4">The Residences</p>
           <h2 className="text-4xl md:text-6xl font-heading font-light leading-tight">
             Curated Spaces for <br className="hidden md:block"/>
-            <span className="text-white/50 italic">Elevated Living</span>
+            <span className="text-gold italic">Elevated Living</span>
           </h2>
         </div>
 
@@ -88,7 +88,7 @@ export default function FloorPlanSection() {
               <div className="absolute inset-0 p-8 flex flex-col justify-between translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 bg-charcoal/95 backdrop-blur-md">
                 <div>
                   <h3 className="text-2xl font-heading text-gold-gradient font-medium mb-3">{plan.name}</h3>
-                  <p className="text-cream/80 font-light leading-relaxed text-sm mb-6 line-clamp-4">
+                  <p className="text-cream font-light leading-relaxed text-sm mb-6 line-clamp-4">
                     {plan.description}
                   </p>
 
@@ -105,7 +105,7 @@ export default function FloorPlanSection() {
 
                   <ul className="space-y-2.5">
                     {plan.highlights.map((highlight, idx) => (
-                      <li key={idx} className="flex items-center text-cream/90 text-sm font-light">
+                      <li key={idx} className="flex items-center text-cream text-sm font-light">
                         <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-amber-400 to-yellow-500 mr-3 shrink-0" />
                         {highlight}
                       </li>

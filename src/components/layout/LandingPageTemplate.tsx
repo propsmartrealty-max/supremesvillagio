@@ -102,7 +102,7 @@ export default function LandingPageTemplate({
         typology={typology}
       />
       {dynamicSeoParagraph && (
-        <section className="bg-charcoal text-cream/70 py-12 border-b border-white/5">
+        <section className="bg-charcoal text-cream py-12 border-b border-white/5">
           <div className="container mx-auto px-6 md:px-12 text-center max-w-4xl">
             <p className="text-lg md:text-xl font-light leading-relaxed">
               {dynamicSeoParagraph}

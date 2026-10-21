@@ -125,7 +125,7 @@ export default function FeaturesSliderSection() {
                 {feature.title}
               </h4>
             </div>
-            <p className="text-charcoal/80 font-light leading-relaxed text-sm">
+            <p className="text-charcoal font-normal leading-relaxed text-sm">
               {feature.desc}
             </p>
           </div>

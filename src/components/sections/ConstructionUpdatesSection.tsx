@@ -38,7 +38,7 @@ export default function ConstructionUpdatesSection() {
               Construction & <span className="italic text-[#E15E3F]">Delivery</span> Milestones
             </h2>
           </div>
-          <p className="text-charcoal/70 max-w-md text-sm md:text-base leading-relaxed font-light">
+          <p className="text-charcoal max-w-md text-sm md:text-base leading-relaxed font-normal">
             Transparency is our benchmark. Phase 1 & 2 are completed and handed over with OC, while Phase 3 proceeds on strict statutory timelines.
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function ConstructionUpdatesSection() {
                   </div>
                 </div>
                 <h3 className="text-xl font-heading text-[#23362E] mb-2">{update.title}</h3>
-                <p className="text-charcoal/75 text-sm font-light leading-relaxed">{update.description}</p>
+                <p className="text-charcoal text-sm font-normal leading-relaxed">{update.description}</p>
               </div>
             </motion.div>
           ))}

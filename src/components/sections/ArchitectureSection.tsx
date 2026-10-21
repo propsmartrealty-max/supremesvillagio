@@ -73,7 +73,7 @@ export default function ArchitectureSection() {
                   className="absolute top-14 left-1/2 -translate-x-1/2 w-64 bg-charcoal/95 backdrop-blur-xl border border-gold/40 p-5 rounded-sm shadow-2xl z-40 text-left"
                 >
                   <h4 className="text-gold-gradient font-heading text-lg mb-2 font-medium">{spot.title}</h4>
-                  <p className="text-xs text-cream/80 leading-relaxed font-light">{spot.desc}</p>
+                  <p className="text-xs text-cream leading-relaxed font-normal">{spot.desc}</p>
                 </motion.div>
               )}
             </AnimatePresence>

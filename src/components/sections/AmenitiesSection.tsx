@@ -109,7 +109,7 @@ export default function AmenitiesSection() {
                   <span className="text-[10px] uppercase tracking-widest text-gold font-bold">Exclusive Amenity</span>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-heading text-cream mb-2 group-hover:text-gold transition-colors duration-300">{amenity.title}</h3>
-                <p className="text-cream/80 font-light opacity-90 group-hover:opacity-100 transition-opacity duration-500 text-sm max-w-lg leading-relaxed">
+                <p className="text-cream font-normal text-sm max-w-lg leading-relaxed">
                   {amenity.description}
                 </p>
               </div>
