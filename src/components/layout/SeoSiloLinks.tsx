@@ -13,6 +13,7 @@ export default function SeoSiloLinks({ currentTypology }: { currentTypology?: st
 
   const expresswayAndMumbai = [
     { title: "Villas Near Mumbai-Pune Expressway", href: "/villas-near-mumbai-pune-expressway", desc: "3 mins from Expressway toll; ideal for Mumbai buyers" },
+    { title: "Villas Near Atal Setu (MTHL)", href: "/villas-near-atal-setu-mthl", desc: "75 mins signal-free drive from Mumbai via Atal Setu & Expressway" },
     { title: "Somatane Real Estate Guide", href: "/somatane-real-estate", desc: "Pune's fastest-growing luxury horizontal estate hub" },
     { title: "Villas in Somatane", href: "/somatane-villas", desc: "616m elevation, hill-station microclimate & clean air" },
     { title: "Somatane vs Hinjewadi IT Park", href: "/somatane-vs-hinjewadi", desc: "20-minute commute to Phase 1, 2 & 3 IT corridors" },

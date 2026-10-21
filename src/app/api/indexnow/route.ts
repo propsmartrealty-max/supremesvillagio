@@ -1,66 +1,60 @@
 import { NextResponse } from 'next/server';
 
-export const runtime = 'edge';
+const INDEXNOW_KEY = 'c2e5a8f4b1d64e97a3b2c1d0e5f4a6b7';
+const HOST = 'www.supremesvillagio.com';
 
-export async function POST(request: Request) {
+const CANONICAL_URLS = [
+  'https://www.supremesvillagio.com/',
+  'https://www.supremesvillagio.com/supreme-villagio/reviews',
+  'https://www.supremesvillagio.com/supreme-villagio/price',
+  'https://www.supremesvillagio.com/supreme-villagio/4-bhk-villas',
+  'https://www.supremesvillagio.com/supreme-villagio/5-bhk-villas',
+  'https://www.supremesvillagio.com/supreme-villagio/townhouses',
+  'https://www.supremesvillagio.com/supreme-villagio-rera',
+  'https://www.supremesvillagio.com/luxury-bungalows-pune',
+  'https://www.supremesvillagio.com/villas-near-mumbai-pune-expressway',
+  'https://www.supremesvillagio.com/somatane-villas',
+  'https://www.supremesvillagio.com/luxury-villas-pune',
+  'https://www.supremesvillagio.com/4-bhk-villas-pune',
+  'https://www.supremesvillagio.com/5-bhk-villas-pune',
+  'https://www.supremesvillagio.com/merchant-feed.xml'
+];
+
+export async function POST(req: Request) {
   try {
-    const host = 'www.supremesvillagio.com';
-    const key = 'd66htbxvzotmo';
-    const keyLocation = `https://${host}/d66htbxvzotmo.txt`;
+    let urlsToSubmit = CANONICAL_URLS;
+    try {
+      const body = await req.json();
+      if (body && Array.isArray(body.urls) && body.urls.length > 0) {
+        urlsToSubmit = body.urls;
+      }
+    } catch {
+      // Default to CANONICAL_URLS if no json body
+    }
 
-    const body = await request.json().catch(() => ({}));
-    const urls: string[] = body.urls || [
-      `https://${host}/`,
-      `https://${host}/supreme-villagio-rera`,
-      `https://${host}/supreme-villagio/price`,
-      `https://${host}/supreme-villagio/emi-calculator`,
-      `https://${host}/supreme-villagio/4-bhk-villas`,
-      `https://${host}/supreme-villagio/5-bhk-villas`,
-      `https://${host}/supreme-villagio/townhouses`,
-      `https://${host}/supreme-villagio/floor-plans`,
-      `https://${host}/supreme-villagio/master-plan`,
-      `https://${host}/supreme-villagio/possession`,
-      `https://${host}/supreme-villagio/nri-guide`,
-      `https://${host}/supreme-villagio/location`,
-      `https://${host}/supreme-villagio/investment`,
-      `https://${host}/somatane-real-estate`,
-      `https://${host}/talegaon-real-estate`,
-      `https://${host}/luxury-villas-pune`,
-      `https://${host}/villas-in-somatane`,
-      `https://${host}/talegaon-luxury-villas`,
-      `https://${host}/villas-near-mumbai-pune-expressway`,
-      `https://${host}/supreme-villagio-vs-paranjape-forest-trails`,
-      `https://${host}/somatane-vs-hinjewadi`,
-      `https://${host}/somatane-vs-talegaon`,
-      `https://${host}/villas-vs-apartments-pune`,
-    ];
-
-    const indexNowPayload = {
-      host,
-      key,
-      keyLocation,
-      urlList: urls,
+    const payload = {
+      host: HOST,
+      key: INDEXNOW_KEY,
+      keyLocation: `https://${HOST}/${INDEXNOW_KEY}.txt`,
+      urlList: urlsToSubmit,
     };
 
-    // Broadcast to IndexNow API (Bing / Yandex / Naver)
-    const response = await fetch('https://api.indexnow.org/indexnow', {
+    const res = await fetch('https://api.indexnow.org/indexnow', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json; charset=utf-8',
       },
-      body: JSON.stringify(indexNowPayload),
+      body: JSON.stringify(payload),
     });
 
     return NextResponse.json({
-      success: true,
-      status: response.status,
-      submittedCount: urls.length,
-      timestamp: new Date().toISOString(),
+      success: res.ok,
+      status: res.status,
+      submittedCount: urlsToSubmit.length,
     });
-  } catch (error: unknown) {
-    const message = error instanceof Error ? error.message : 'Unknown error';
+  } catch (error) {
     return NextResponse.json(
-      { success: false, error: message },
+      { success: false, error: (error as Error).message },
       { status: 500 }
     );
   }
@@ -68,8 +62,10 @@ export async function POST(request: Request) {
 
 export async function GET() {
   return NextResponse.json({
-    status: 'IndexNow edge endpoint active',
-    host: 'www.supremesvillagio.com',
-    keyLocation: 'https://www.supremesvillagio.com/d66htbxvzotmo.txt',
+    protocol: 'IndexNow',
+    host: HOST,
+    keyConfigured: true,
+    keyLocation: `https://${HOST}/${INDEXNOW_KEY}.txt`,
+    urlsRegistered: CANONICAL_URLS.length,
   });
 }

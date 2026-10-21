@@ -42,6 +42,7 @@ export async function GET() {
     { url: '/luxury-bungalows-pune', priority: '0.9', changefreq: 'weekly' },
     { url: '/villas-in-somatane', priority: '0.9', changefreq: 'weekly' },
     { url: '/villas-near-mumbai-pune-expressway', priority: '0.9', changefreq: 'weekly' },
+    { url: '/villas-near-atal-setu-mthl', priority: '0.9', changefreq: 'weekly' },
     { url: '/supreme-villagio-vs-paranjape-forest-trails', priority: '0.85', changefreq: 'monthly' },
     { url: '/somatane-vs-hinjewadi', priority: '0.85', changefreq: 'monthly' },
     { url: '/somatane-vs-talegaon', priority: '0.85', changefreq: 'monthly' },

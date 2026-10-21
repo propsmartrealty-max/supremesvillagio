@@ -144,6 +144,7 @@ export default function Footer() {
             <Link href="/5-bhk-villas-pune" className="hover:text-primary transition-colors">5 BHK Villas Pune</Link>
             <Link href="/luxury-bungalows-pune" className="hover:text-primary transition-colors">Luxury Bungalows Pune</Link>
             <Link href="/villas-near-mumbai-pune-expressway" className="hover:text-primary transition-colors">Expressway Villas</Link>
+            <Link href="/villas-near-atal-setu-mthl" className="hover:text-primary transition-colors">Atal Setu MTHL Villas</Link>
             <Link href="/supreme-villagio-vs-paranjape-forest-trails" className="hover:text-primary transition-colors">Villagio vs Forest Trails</Link>
             <Link href="/somatane-vs-hinjewadi" className="hover:text-primary transition-colors">Somatane vs Hinjewadi</Link>
             <Link href="/supreme-villagio/phase-1" className="hover:text-primary transition-colors">Phase 1 (OC Received)</Link>

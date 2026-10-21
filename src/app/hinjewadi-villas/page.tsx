@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Laptop, Compass, Clock, ArrowRight, ShieldCheck, Check } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -25,13 +24,39 @@ const hinjewadiSchema = {
   'url': 'https://www.supremesvillagio.com/hinjewadi-villas',
 };
 
+const hinjewadiFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    {
+      '@type': 'Question',
+      'name': 'What is the commute time from Supreme Villagio to Hinjewadi IT Park?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'The drive from Supreme Villagio Somatane to Hinjewadi Phases 1, 2, and 3 takes approximately 20 to 25 minutes via the NH-48 / Mumbai-Pune Expressway bypass, completely avoiding the congested Wakad and Shivaji Chowk bottlenecks.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'What villa configurations are available near Hinjewadi?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Supreme Villagio offers 4 BHK Townhouses (from ₹2.89 Cr*), 4 BHK Twin Villas with 3-side open private lawns (from ₹3.45 Cr*), and 5 BHK Grand Presidential Hillside Villas (from ₹4.85 Cr*).'
+      }
+    }
+  ]
+};
+
 export default function HinjewadiVillasPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="hinjewadi-villas-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(hinjewadiSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(hinjewadiFaqSchema) }}
       />
 
       <div className="container mx-auto max-w-6xl">

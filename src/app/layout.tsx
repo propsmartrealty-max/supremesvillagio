@@ -205,6 +205,40 @@ const realEstateListingSchema = {
         { "@type": "LocationFeatureSpecification", "name": "3 Covered Car Bays", "value": true }
       ]
     }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.supremesvillagio.com/#contact",
+        "inLanguage": "en-IN",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Private Villa Site Tour"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://wa.me/917744009295",
+        "inLanguage": "en-IN",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "recipient": {
+        "@type": "Person",
+        "name": "Supreme Villagio Luxury Concierge"
+      }
+    }
   ]
 };
 
