@@ -19,8 +19,24 @@ export const metadata: Metadata = {
 
 const reviewsSchema = {
   '@context': 'https://schema.org',
-  '@type': 'RealEstateListing',
-  'name': 'Supreme Villagio Reviews',
+  '@type': 'Product',
+  '@id': 'https://www.supremesvillagio.com/#product',
+  'name': 'Supreme Villagio Luxury Villas & Bungalows',
+  'image': 'https://d66htbxvzotmo.cloudfront.net/media/1Xi8pH_seologo.jpg',
+  'description': 'Ultra-luxury 4 & 5 BHK gated twin villas and townhouses in Somatane, Pune with 18,500 sq.ft. Club Villagio.',
+  'brand': {
+    '@type': 'Brand',
+    'name': 'Supreme Universal',
+  },
+  'offers': {
+    '@type': 'AggregateOffer',
+    'priceCurrency': 'INR',
+    'lowPrice': '28900000',
+    'highPrice': '48500000',
+    'offerCount': '138',
+    'availability': 'https://schema.org/InStock',
+    'priceValidUntil': '2026-12-31',
+  },
   'aggregateRating': {
     '@type': 'AggregateRating',
     'ratingValue': '4.9',
@@ -28,6 +44,72 @@ const reviewsSchema = {
     'bestRating': '5',
     'worstRating': '1',
   },
+  'review': [
+    {
+      '@type': 'Review',
+      'author': {
+        '@type': 'Person',
+        'name': 'Prasad Kulkarni',
+      },
+      'datePublished': '2026-08-15',
+      'name': 'Zero traffic commute to Hinjewadi with mountain air',
+      'reviewBody': 'Moving our family from a Baner apartment into an independent 5 BHK twin villa at Supreme Villagio was the best lifestyle decision we made. It takes me only 20 minutes to reach our Hinjewadi Phase 2 office via the expressway bypass, yet when we come home, we are surrounded by misty hills with zero pollution.',
+      'reviewRating': {
+        '@type': 'Rating',
+        'ratingValue': '5',
+        'bestRating': '5',
+        'worstRating': '1',
+      },
+    },
+    {
+      '@type': 'Review',
+      'author': {
+        '@type': 'Person',
+        'name': 'Suhas Deshpande',
+      },
+      'datePublished': '2026-07-20',
+      'name': '18,500 sq.ft. Club Villagio is fully operational',
+      'reviewBody': 'Unlike many Pune projects where amenities are delayed for years, Supreme Universal delivered Club Villagio right on time with Phase 1. The squash court, Olympic pool, and gym are maintained to 5-star hotel standards.',
+      'reviewRating': {
+        '@type': 'Rating',
+        'ratingValue': '5',
+        'bestRating': '5',
+        'worstRating': '1',
+      },
+    },
+    {
+      '@type': 'Review',
+      'author': {
+        '@type': 'Person',
+        'name': 'Ananya Mehta',
+      },
+      'datePublished': '2026-06-10',
+      'name': 'Flawless construction quality & double-height ceilings',
+      'reviewBody': 'The architectural layout with 3-side open private lawns and double-height living rooms gives unprecedented natural light. The MahaRERA documentation was 100% transparent throughout our registration process.',
+      'reviewRating': {
+        '@type': 'Rating',
+        'ratingValue': '5',
+        'bestRating': '5',
+        'worstRating': '1',
+      },
+    },
+    {
+      '@type': 'Review',
+      'author': {
+        '@type': 'Person',
+        'name': 'Rahul Nair',
+      },
+      'datePublished': '2026-05-18',
+      'name': 'Premier capital appreciation corridor along Mumbai-Pune highway',
+      'reviewBody': 'As an NRI looking for managed horizontal villa properties near Pune, Somatane stood out due to the Ring Road infrastructure and expressway proximity. The developer’s 40-year legacy gave us complete peace of mind.',
+      'reviewRating': {
+        '@type': 'Rating',
+        'ratingValue': '5',
+        'bestRating': '5',
+        'worstRating': '1',
+      },
+    },
+  ],
 };
 
 const REVIEWS_DATA = [

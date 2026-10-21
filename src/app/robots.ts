@@ -31,7 +31,8 @@ export default function robots(): MetadataRoute.Robots {
     ],
     sitemap: [
       `${baseUrl}/sitemap.xml`,
-      `${baseUrl}/sitemap-core.xml`
+      `${baseUrl}/sitemap-core.xml`,
+      `${baseUrl}/merchant-feed.xml`,
     ],
     host: baseUrl,
   };

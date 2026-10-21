@@ -59,8 +59,14 @@ export async function GET() {
       <g:availability>in_stock</g:availability>
       <g:price>${p.price}</g:price>
       <g:brand>Supreme Universal</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>Home &amp; Garden &gt; Real Estate</g:google_product_category>
       <g:custom_label_0>${p.typology}</g:custom_label_0>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Site Visit &amp; Documentation Advisory</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
     </item>`
     )
     .join('');

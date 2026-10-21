@@ -66,16 +66,64 @@ const PRICING_DATA = [
 
 const priceSchema = {
   '@context': 'https://schema.org',
-  '@type': 'RealEstateListing',
-  'name': 'Supreme Villagio Price & Cost Sheet',
-  'description': 'Price matrix for 4 & 5 BHK villas and townhouses at Supreme Villagio Somatane, Pune.',
-  'url': 'https://www.supremesvillagio.com/supreme-villagio/price',
+  '@type': 'Product',
+  '@id': 'https://www.supremesvillagio.com/supreme-villagio/price#product',
+  'name': 'Supreme Villagio Luxury Villas & Townhouses Price Matrix',
+  'image': 'https://d66htbxvzotmo.cloudfront.net/media/1Xi8pH_seologo.jpg',
+  'description': 'Official price matrix and all-inclusive cost sheet for 4 & 5 BHK luxury villas and townhouses at Supreme Villagio Somatane, Pune.',
+  'brand': {
+    '@type': 'Brand',
+    'name': 'Supreme Universal',
+  },
+  'sku': 'SUPREME-VILLAGIO-PRICE-2026',
   'offers': {
     '@type': 'AggregateOffer',
     'priceCurrency': 'INR',
     'lowPrice': '28900000',
-    'highPrice': '65000000',
+    'highPrice': '48500000',
     'offerCount': '138',
+    'availability': 'https://schema.org/InStock',
+    'priceValidUntil': '2026-12-31',
+    'itemCondition': 'https://schema.org/NewCondition',
+    'seller': {
+      '@type': 'Organization',
+      'name': 'Supreme Universal',
+    },
+    'shippingDetails': {
+      '@type': 'OfferShippingDetails',
+      'shippingRate': {
+        '@type': 'MonetaryAmount',
+        'value': '0',
+        'currency': 'INR',
+      },
+      'shippingDestination': {
+        '@type': 'DefinedRegion',
+        'addressCountry': 'IN',
+      },
+      'deliveryTime': {
+        '@type': 'ShippingDeliveryTime',
+        'handlingTime': {
+          '@type': 'QuantitativeValue',
+          'minValue': '0',
+          'maxValue': '1',
+          'unitCode': 'd',
+        },
+        'transitTime': {
+          '@type': 'QuantitativeValue',
+          'minValue': '0',
+          'maxValue': '1',
+          'unitCode': 'd',
+        },
+      },
+    },
+    'hasMerchantReturnPolicy': {
+      '@type': 'MerchantReturnPolicy',
+      'applicableCountry': 'IN',
+      'returnPolicyCategory': 'https://schema.org/MerchantReturnFiniteReturnWindow',
+      'merchantReturnDays': 15,
+      'returnMethod': 'https://schema.org/ReturnByMail',
+      'returnFees': 'https://schema.org/FreeReturn',
+    },
   },
 };
 

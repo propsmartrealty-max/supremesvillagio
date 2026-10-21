@@ -447,19 +447,17 @@ const localBusinessSchema = {
   "image": "https://d66htbxvzotmo.cloudfront.net/media/1Xi8pH_seologo.jpg",
   "url": "https://www.supremesvillagio.com/",
   "telephone": "+91 7744009295",
-  "priceRange": "₹2.89 Cr*",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "184"
-  },
+  "priceRange": "₹2.89 Cr - ₹4.85 Cr",
+  "currenciesAccepted": "INR",
+  "paymentAccepted": "Bank Transfer, Cheque, Home Loan",
+  "hasMap": "https://maps.google.com/?cid=1063668383210777524",
   "parentOrganization": {
     "@id": "https://www.supremesvillagio.com/#organization"
   },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Somatane",
-    "addressLocality": "Pune",
+    "streetAddress": "Survey No. 44, Somatane Phata, Near Mumbai-Pune Expressway",
+    "addressLocality": "Somatane, Talegaon Dabhade, Pune",
     "addressRegion": "MH",
     "postalCode": "410506",
     "addressCountry": "IN"
@@ -469,20 +467,27 @@ const localBusinessSchema = {
     "latitude": 18.6936968,
     "longitude": 73.687351
   },
-    "sameAs": [
+  "sameAs": [
+    "https://maps.google.com/?cid=1063668383210777524",
     "https://www.google.com/maps/place/Supreme+Villagio/@18.6936968,73.6847761,17z/",
-    "https://www.facebook.com/SupremeUniversal/",
-    "https://www.instagram.com/supremeuniversal/"
+    "https://en.wikipedia.org/wiki/Somatane",
+    "https://www.wikidata.org/wiki/Q1538",
+    "https://www.facebook.com/SupremeUniversalRealEstate/",
+    "https://www.instagram.com/supreme_universal/",
+    "https://www.linkedin.com/company/supremeuniversal/"
   ],
   "areaServed": [
     {"@type": "City", "name": "Pune"},
     {"@type": "City", "name": "Somatane"},
+    {"@type": "City", "name": "Mumbai"},
+    {"@type": "City", "name": "Navi Mumbai"},
+    {"@type": "City", "name": "Thane"},
     {"@type": "City", "name": "Hinjawadi"},
     {"@type": "City", "name": "Baner"},
     {"@type": "City", "name": "Koregaon Park"},
     {"@type": "City", "name": "Aundh"},
     {"@type": "City", "name": "Wakad"},
-    {"@type": "City", "name": "Talegaon"},
+    {"@type": "City", "name": "Talegaon Dabhade"},
     {"@type": "City", "name": "Balewadi"}
   ],
   "openingHoursSpecification": {
