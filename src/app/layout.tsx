@@ -36,10 +36,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.supremesvillagio.com"),
   title: {
-    default: "Supreme Villagio Somatane | Official 2026 Portal [Ready OC Villas from ₹2.89 Cr*]",
+    default: "Supreme Villagio Somatane | Official Direct Portal [Ready OC Villas from ₹2.89 Cr* • 0% GST]",
     template: "%s | Supreme Villagio Official"
   },
-  description: "Official Project Portal for Supreme Villagio Somatane, Pune. Ultra-luxury 4 & 5 BHK Twin Villas & Townhouses across 16 acres with 18,500 sq.ft. Club Villagio. Phase 1 & 2 OC Received. Download 2026 Price List, Floor Plans & Book Direct Developer Visit.",
+  description: "Official developer portal for Supreme Villagio Somatane, Pune. 4 & 5 BHK luxury gated bungalows & twin villas near PCMC & Mumbai-Pune Expressway. 18,500 sq.ft. Club Villagio. Phase 1 & 2 OC received. Direct developer booking with 0% brokerage: +91 7744009295.",
   keywords: [
     // 1. Core Brand Permutations & Phonetic Misspellings
     "Supreme Villagio", "Supreme Villagio Somatane", "Supreme Villagio Somante", "Supreme Villagio Pune",

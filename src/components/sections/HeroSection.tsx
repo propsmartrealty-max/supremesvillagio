@@ -19,10 +19,10 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({
-  headlineLine1 = "A New Paradigm of",
-  headlineLine2 = "Horizontal Living",
-  subline = "4 & 5 BHK Villas & 4 BHK Townhouses in Somatane, Pune",
-  highlightWords = ["Paradigm", "Horizontal", "Living"],
+  headlineLine1 = "Supreme Villagio Somatane",
+  headlineLine2 = "Luxury Bungalows & Villas in Pune",
+  subline = "4 & 5 BHK Gated Community Villas & Townhouses • Near PCMC & Mumbai-Pune Expressway",
+  highlightWords = ["Somatane", "Bungalows", "Villas"],
   pricing = "₹2.89 Cr*",
   typology = "4 & 5 BHK"
 }: HeroSectionProps = {}) {

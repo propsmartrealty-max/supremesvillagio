@@ -9,13 +9,13 @@ import Magnetic from "@/components/ui/Magnetic";
 import { useModal } from "@/contexts/ModalContext";
 
 const NAV_LINKS = [
-  { label: "Vision", href: "/supreme-villagio/vision" },
-  { label: "Architecture", href: "/supreme-villagio/architecture" },
+  { label: "Somatane Hub", href: "/supreme-villagio-somatane" },
+  { label: "Price 2026", href: "/supreme-villagio/price" },
   { label: "Residences", href: "/supreme-villagio/residences" },
-  { label: "Amenities", href: "/supreme-villagio/amenities" },
-  { label: "Location", href: "/supreme-villagio/location" },
+  { label: "Floor Plans", href: "/supreme-villagio/floor-plans" },
+  { label: "Club Villagio", href: "/supreme-villagio/amenities" },
+  { label: "MahaRERA", href: "/supreme-villagio-rera" },
   { label: "Contact", href: "/supreme-villagio/contact" },
-  { label: "Journal", href: "/blog" },
 ];
 
 export default function Navbar() {

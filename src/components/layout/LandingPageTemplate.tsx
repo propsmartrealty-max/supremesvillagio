@@ -32,10 +32,10 @@ export interface LandingPageProps {
 }
 
 export default function LandingPageTemplate({ 
-  heroHeadline1 = "A New Paradigm of",
-  heroHeadline2 = "Horizontal Living",
-  heroSubline = "4 & 5 BHK Villas & 4 BHK Townhouses in Somatane, Pune",
-  highlightWords = ["Paradigm", "Horizontal", "Living"],
+  heroHeadline1 = "Supreme Villagio Somatane",
+  heroHeadline2 = "Luxury Bungalows & Villas in Pune",
+  heroSubline = "4 & 5 BHK Gated Community Villas & Townhouses • Near PCMC & Mumbai-Pune Expressway",
+  highlightWords = ["Somatane", "Bungalows", "Villas"],
   pricing = "₹2.89 Cr*",
   typology = "4 & 5 BHK",
   intent = "general",
@@ -103,6 +103,39 @@ export default function LandingPageTemplate({
         pricing={pricing}
         typology={typology}
       />
+      
+      {/* Google Knowledge Graph & Featured Snippet Definition Block */}
+      <section className="bg-charcoal text-cream py-10 border-b border-white/10" aria-label="Supreme Villagio Somatane Overview">
+        <div className="container mx-auto px-6 md:px-12 max-w-5xl">
+          <div className="p-6 md:p-8 bg-white/[0.02] border border-white/10 rounded-xl">
+            <h2 className="text-xl md:text-2xl font-heading text-white mb-3">
+              Supreme Villagio Somatane: West Pune&apos;s Benchmark Villa &amp; Bungalow Landmark
+            </h2>
+            <p className="text-stone text-sm md:text-base leading-relaxed mb-5">
+              <strong>Supreme Villagio Somatane</strong> is an ultra-luxury 16-acre horizontal gated residential development situated at Somatane Phata, Pune, along the Mumbai-Pune Expressway corridor. Developed by Supreme Universal with master planning by Site Concepts International (Singapore), the estate offers 4 &amp; 5 BHK Luxury Twin Villas and 4 BHK Townhouses with 100% full Occupation Certificate (OC), zero GST liability, and the operational 18,500 sq.ft. Club Villagio. Conveniently connected within 12 minutes to PCMC / Nigdi Pradhikaran and 20 minutes to Hinjewadi IT Park.
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs pt-4 border-t border-white/10">
+              <div>
+                <span className="text-gold font-semibold block mb-0.5">Starting Price</span>
+                <span className="text-white font-medium">₹2.89 Cr* (0% Brokerage)</span>
+              </div>
+              <div>
+                <span className="text-gold font-semibold block mb-0.5">MahaRERA Reg</span>
+                <span className="text-white font-medium">P52100046867 (Phase 1 OC)</span>
+              </div>
+              <div>
+                <span className="text-gold font-semibold block mb-0.5">Location Access</span>
+                <span className="text-white font-medium">Somatane Phata • NH-48</span>
+              </div>
+              <div>
+                <span className="text-gold font-semibold block mb-0.5">Direct Helpline</span>
+                <a href="tel:+917744009295" className="text-gold hover:underline font-mono font-medium">+91 7744009295</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {dynamicSeoParagraph && (
         <section className="bg-charcoal text-cream py-12 border-b border-white/5">
           <div className="container mx-auto px-6 md:px-12 text-center max-w-4xl">
