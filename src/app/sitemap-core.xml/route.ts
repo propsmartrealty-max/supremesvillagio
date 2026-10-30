@@ -1,5 +1,6 @@
 export const dynamic = 'force-static';
 import { SEO_KEYWORD_MATRIX } from '@/lib/seo-data';
+import { PROGRAMMATIC_TOPICS } from '@/lib/programmatic-villagio';
 
 export async function GET() {
   const baseUrl = 'https://www.supremesvillagio.com';
@@ -11,11 +12,20 @@ export async function GET() {
     changefreq: 'weekly',
   }));
 
+  const programmaticPages = PROGRAMMATIC_TOPICS.map((topic) => ({
+    url: `/supreme-villagio-somatane/${topic.slug}`,
+    priority: '0.95',
+    changefreq: 'weekly',
+  }));
+
   const corePages = [
     { url: '/', priority: '1.0', changefreq: 'daily' },
+    { url: '/supreme-villagio-somatane', priority: '1.0', changefreq: 'daily' },
     { url: '/contact', priority: '1.0', changefreq: 'daily' },
     { url: '/resale', priority: '0.95', changefreq: 'weekly' },
+    { url: '/banks', priority: '0.9', changefreq: 'weekly' },
     { url: '/supreme-villagio/contact', priority: '1.0', changefreq: 'daily' },
+    { url: '/supreme-villagio/banks', priority: '0.9', changefreq: 'weekly' },
     { url: '/ecosystem', priority: '1.0', changefreq: 'daily' },
     { url: '/supreme-villagio-rera', priority: '1.0', changefreq: 'weekly' },
     { url: '/supreme-villagio/price', priority: '1.0', changefreq: 'weekly' },
@@ -61,6 +71,7 @@ export async function GET() {
     { url: '/somatane-vs-talegaon', priority: '0.85', changefreq: 'monthly' },
     { url: '/villas-vs-apartments-pune', priority: '0.85', changefreq: 'monthly' },
     { url: '/locations', priority: '0.7', changefreq: 'monthly' },
+    ...programmaticPages,
     ...locationPages,
     { url: '/privacy', priority: '0.3', changefreq: 'monthly' },
     { url: '/terms', priority: '0.3', changefreq: 'monthly' },

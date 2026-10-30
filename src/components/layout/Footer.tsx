@@ -122,12 +122,17 @@ export default function Footer() {
         <div className="py-12 border-t border-charcoal-light">
           <h3 className="text-sm uppercase tracking-widest text-white mb-8 text-center md:text-left">SEO Silo & Property Directory</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs text-stone">
+            <Link href="/supreme-villagio-somatane" className="hover:text-primary transition-colors font-semibold text-white">Supreme Villagio Somatane Portal</Link>
             <Link href="/ecosystem" className="hover:text-primary transition-colors font-semibold text-white">Supreme Villagio Ecosystem</Link>
             <Link href="/supreme-villagio/contact" className="hover:text-primary transition-colors font-semibold text-white">Contact &amp; Sales Office</Link>
             <Link href="/supreme-villagio-rera" className="hover:text-primary transition-colors font-semibold text-white">MahaRERA Numbers</Link>
             <Link href="/supreme-villagio/price" className="hover:text-primary transition-colors font-semibold text-white">Price &amp; Cost Sheet</Link>
+            <Link href="/supreme-villagio-somatane/price-list-2026" className="hover:text-primary transition-colors font-semibold text-white">Somatane Price 2026</Link>
+            <Link href="/supreme-villagio-somatane/ready-possession-oc-villas" className="hover:text-primary transition-colors font-semibold text-white">Ready OC Villas Somatane</Link>
+            <Link href="/supreme-villagio-somatane/floor-plans-pdf" className="hover:text-primary transition-colors font-semibold text-white">Floor Plans PDF</Link>
             <Link href="/supreme-villagio/resale" className="hover:text-primary transition-colors font-semibold text-white">Resale &amp; Ready OC</Link>
             <Link href="/supreme-villagio/emi-calculator" className="hover:text-primary transition-colors font-semibold text-white">EMI &amp; Stamp Duty</Link>
+            <Link href="/supreme-villagio/banks" className="hover:text-primary transition-colors font-semibold text-white">Bank Approvals (SBI/HDFC)</Link>
             <Link href="/supreme-villagio/4-bhk-villas" className="hover:text-primary transition-colors font-semibold text-white">4 BHK Twin Villas</Link>
             <Link href="/supreme-villagio/5-bhk-villas" className="hover:text-primary transition-colors font-semibold text-white">5 BHK Presidential</Link>
             <Link href="/supreme-villagio/townhouses" className="hover:text-primary transition-colors">4 BHK Townhouses</Link>

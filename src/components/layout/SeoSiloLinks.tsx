@@ -12,6 +12,9 @@ export default function SeoSiloLinks({ currentTypology }: { currentTypology?: st
   ];
 
   const expresswayAndMumbai = [
+    { title: "Supreme Villagio Somatane Portal", href: "/supreme-villagio-somatane", desc: "Master directory & verified project fact sheet" },
+    { title: "Somatane 2026 Price List", href: "/supreme-villagio-somatane/price-list-2026", desc: "Official villa & townhouse cost breakdown" },
+    { title: "Ready OC Villas Somatane", href: "/supreme-villagio-somatane/ready-possession-oc-villas", desc: "Immediate possession & 0% GST liability" },
     { title: "Villas Near Mumbai-Pune Expressway", href: "/villas-near-mumbai-pune-expressway", desc: "3 mins from Expressway toll; ideal for Mumbai buyers" },
     { title: "Villas Near Atal Setu (MTHL)", href: "/villas-near-atal-setu-mthl", desc: "75 mins signal-free drive from Mumbai via Atal Setu & Expressway" },
     { title: "Somatane Real Estate Guide", href: "/somatane-real-estate", desc: "Pune's fastest-growing luxury horizontal estate hub" },
