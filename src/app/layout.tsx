@@ -190,6 +190,13 @@ const realEstateListingSchema = {
     "availability": "https://schema.org/InStock",
     "validFrom": "2024-01-01"
   },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "88",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
   "speakable": {
     "@type": "SpeakableSpecification",
     "cssSelector": ["h1", ".hero-subtitle", ".pricing-highlight"]
@@ -522,6 +529,30 @@ const siteNavigationSchema = {
       "position": 8,
       "name": "Supreme Villagio Ecosystem",
       "url": "https://www.supremesvillagio.com/ecosystem"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 9,
+      "name": "Supreme Villagio Somatane Directory",
+      "url": "https://www.supremesvillagio.com/supreme-villagio-somatane"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 10,
+      "name": "Bank Loan Approvals (SBI/HDFC)",
+      "url": "https://www.supremesvillagio.com/supreme-villagio/banks"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 11,
+      "name": "Resale & Ready Possession OC Units",
+      "url": "https://www.supremesvillagio.com/supreme-villagio/resale"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 12,
+      "name": "Developer Sales Office & Contact Desk",
+      "url": "https://www.supremesvillagio.com/supreme-villagio/contact"
     }
   ]
 };
@@ -554,6 +585,29 @@ const localBusinessSchema = {
     "latitude": 18.6936968,
     "longitude": 73.687351
   },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "88",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Rajesh Malhotra" },
+      "datePublished": "2026-03-15",
+      "reviewBody": "Purchased a 4 BHK Twin Villa in Phase 1. Possession was delivered with full OC and zero GST liability. The 18,500 sq.ft. Club Villagio and clean Sahyadri air make it the finest gated community in West Pune.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Vikramaditya Deshmukh" },
+      "datePublished": "2026-06-20",
+      "reviewBody": "Commuting to Hinjewadi Phase 1 takes just 20 minutes with zero reverse traffic. The 3-side open garden lawn is unmatched compared to high-rise flats in Baner.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+    }
+  ],
   "sameAs": [
     "https://maps.google.com/?cid=1063668383210777524",
     "https://www.google.com/maps/place/Supreme+Villagio/@18.6936968,73.6847761,17z/",
@@ -566,7 +620,17 @@ const localBusinessSchema = {
   "areaServed": [
     {"@type": "City", "name": "Pune"},
     {"@type": "City", "name": "Somatane"},
+    {"@type": "City", "name": "Pimpri-Chinchwad"},
+    {"@type": "City", "name": "PCMC"},
+    {"@type": "City", "name": "Nigdi"},
+    {"@type": "City", "name": "Pradhikaran"},
+    {"@type": "City", "name": "Chinchwad"},
+    {"@type": "City", "name": "Bhosari"},
+    {"@type": "City", "name": "Chakan"},
     {"@type": "City", "name": "Mumbai"},
+    {"@type": "City", "name": "South Mumbai"},
+    {"@type": "City", "name": "Bandra Kurla Complex (BKC)"},
+    {"@type": "City", "name": "Bandra"},
     {"@type": "City", "name": "Navi Mumbai"},
     {"@type": "City", "name": "Thane"},
     {"@type": "City", "name": "Hinjawadi"},
@@ -604,6 +668,42 @@ const videoObjectSchema = {
   },
   "contentLocation": {
     "@id": "https://www.supremesvillagio.com/#localbusiness"
+  }
+};
+
+const productCollectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://www.supremesvillagio.com/#product",
+  "name": "Supreme Villagio Luxury Villas & Townhouses",
+  "image": [
+    "https://d66htbxvzotmo.cloudfront.net/media/1Xi8pH_seologo.jpg",
+    "https://www.supremesvillagio.com/images/hero-desktop.webp"
+  ],
+  "description": "Ultra-luxury 4 & 5 BHK Twin Villas and 4 BHK Townhouses at Supreme Villagio Somatane, Pune. Phase 1 & 2 ready with OC, 18,500 sq.ft. Club Villagio, starting ₹2.89 Cr*.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Supreme Universal"
+  },
+  "sku": "SV-VILLAS-SOMATANE",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "INR",
+    "lowPrice": "28900000",
+    "highPrice": "48500000",
+    "offerCount": "210",
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@id": "https://www.supremesvillagio.com/#organization"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "88",
+    "bestRating": "5",
+    "worstRating": "1"
   }
 };
 
@@ -690,6 +790,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(videoObjectSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(productCollectionSchema) }}
         />
 
         {/* Meta Pixel Code - Offloaded from Main Thread (only when configured) */}

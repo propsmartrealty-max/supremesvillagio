@@ -6,6 +6,14 @@ const HOST = 'www.supremesvillagio.com';
 
 const CANONICAL_URLS = [
   'https://www.supremesvillagio.com/',
+  'https://www.supremesvillagio.com/supreme-villagio-somatane',
+  'https://www.supremesvillagio.com/ecosystem',
+  'https://www.supremesvillagio.com/contact',
+  'https://www.supremesvillagio.com/resale',
+  'https://www.supremesvillagio.com/banks',
+  'https://www.supremesvillagio.com/supreme-villagio/contact',
+  'https://www.supremesvillagio.com/supreme-villagio/banks',
+  'https://www.supremesvillagio.com/supreme-villagio/resale',
   'https://www.supremesvillagio.com/supreme-villagio/reviews',
   'https://www.supremesvillagio.com/supreme-villagio/price',
   'https://www.supremesvillagio.com/supreme-villagio/4-bhk-villas',
@@ -14,11 +22,24 @@ const CANONICAL_URLS = [
   'https://www.supremesvillagio.com/supreme-villagio-rera',
   'https://www.supremesvillagio.com/luxury-bungalows-pune',
   'https://www.supremesvillagio.com/villas-near-mumbai-pune-expressway',
+  'https://www.supremesvillagio.com/villas-near-atal-setu-mthl',
   'https://www.supremesvillagio.com/somatane-villas',
+  'https://www.supremesvillagio.com/somatane-real-estate',
   'https://www.supremesvillagio.com/luxury-villas-pune',
+  'https://www.supremesvillagio.com/pcmc-luxury-villas',
   'https://www.supremesvillagio.com/4-bhk-villas-pune',
   'https://www.supremesvillagio.com/5-bhk-villas-pune',
-  'https://www.supremesvillagio.com/merchant-feed.xml'
+  'https://www.supremesvillagio.com/supreme-villagio-somatane/price-list-2026',
+  'https://www.supremesvillagio.com/supreme-villagio-somatane/for-pune-buyers',
+  'https://www.supremesvillagio.com/supreme-villagio-somatane/for-pimpri-chinchwad-pcmc-buyers',
+  'https://www.supremesvillagio.com/supreme-villagio-somatane/for-mumbai-buyers',
+  'https://www.supremesvillagio.com/supreme-villagio-somatane/weekend-second-homes-mumbai',
+  'https://www.supremesvillagio.com/supreme-villagio-somatane/ready-possession-oc-villas',
+  'https://www.supremesvillagio.com/supreme-villagio-somatane/ready-to-move-villas-zero-gst',
+  'https://www.supremesvillagio.com/supreme-villagio-somatane/floor-plans-pdf',
+  'https://www.supremesvillagio.com/supreme-villagio-somatane/rera-number-and-certificates',
+  'https://www.supremesvillagio.com/supreme-villagio-somatane/club-villagio-amenities',
+  'https://www.supremesvillagio.com/supreme-villagio-somatane/contact-number-sales-office'
 ];
 
 export async function POST(req: Request) {
