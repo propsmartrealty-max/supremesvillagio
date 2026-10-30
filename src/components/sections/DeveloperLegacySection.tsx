@@ -57,7 +57,7 @@ export default function DeveloperLegacySection() {
             className="text-4xl md:text-6xl font-heading font-light leading-tight"
           >
             Four Decades of <br className="hidden md:block"/>
-            <span className="text-foreground/50 italic">Uncompromising Excellence</span>
+            <span className="text-foreground/80 italic font-medium">Uncompromising Excellence</span>
           </motion.h2>
         </div>
 
@@ -89,7 +89,7 @@ export default function DeveloperLegacySection() {
                     >
                       <h3 className="text-4xl font-heading text-gold mb-2">{milestone.year}</h3>
                       <h4 className="text-xl font-medium mb-3">{milestone.title}</h4>
-                      <p className="text-foreground/70 font-light leading-relaxed">
+                      <p className="text-foreground font-light leading-relaxed">
                         {milestone.description}
                       </p>
                     </motion.div>

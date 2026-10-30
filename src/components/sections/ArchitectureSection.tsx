@@ -40,7 +40,7 @@ export default function ArchitectureSection() {
       <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
         <motion.div style={{ scale: imageScale }} className="absolute inset-0 w-full h-full origin-center">
           <Image 
-            src="https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-2_sx0rpm.jpg"
+            src="/images/desktop-banner-2.webp"
             alt="Supreme Villagio Architecture"
             fill
             className="object-cover"

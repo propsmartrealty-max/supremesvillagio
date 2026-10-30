@@ -750,14 +750,8 @@ export default function RootLayout({
         <meta name="classification" content="Real Estate, Luxury Villas, Bungalows, Pune Property" />
 
         {/* Resource Pre-connection for Performance */}
-        <link rel="preconnect" href="https://cdn.supremeuniversal.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://cdn.supremeuniversal.com" />
         <link rel="preconnect" href="https://d66htbxvzotmo.cloudfront.net" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://d66htbxvzotmo.cloudfront.net" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://connect.facebook.net" />
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 
         <script
           type="application/ld+json"

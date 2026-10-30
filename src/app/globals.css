@@ -1,7 +1,16 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
-@import "tw-animate-css";
 @import "shadcn/tailwind.css";
+
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height, var(--accordion-content-height, auto)); }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height, var(--accordion-content-height, auto)); }
+  to { height: 0; }
+}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -97,7 +106,7 @@
   --secondary-foreground: #23362E;
   
   --muted: #DBD9CB;
-  --muted-foreground: #5C635F;
+  --muted-foreground: #1F2E27;
   
   --accent: #E15E3F;
   --accent-foreground: #E4E2D3;
@@ -166,7 +175,7 @@
   --secondary-foreground: #E4E2D3;
   
   --muted: #1A2922;
-  --muted-foreground: #9E9C8D;
+  --muted-foreground: #E4E2D3;
   
   --accent: #E15E3F;
   --accent-foreground: #23362E;
@@ -178,10 +187,10 @@
   --input: rgba(228, 226, 211, 0.2);
   --ring: #E15E3F;
 
-  /* Brand Tokens */
-  --gold: #E15E3F;
-  --gold-light: #F07F63;
-  --gold-dark: #C04A2D;
+  /* Brand Tokens - WCAG AAA Gold on Charcoal */
+  --gold: #F5C469;
+  --gold-light: #FCE1A8;
+  --gold-dark: #E5B250;
   --gold-muted: #E4E2D3;
   
   --emerald: #1A6F44;
@@ -217,7 +226,7 @@
 
 @layer utilities {
   .text-gold-gradient {
-    background: linear-gradient(135deg, #F07F63 0%, #E15E3F 50%, #C04A2D 100%);
+    background: linear-gradient(135deg, #FCE1A8 0%, #F5C469 50%, #E5B250 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

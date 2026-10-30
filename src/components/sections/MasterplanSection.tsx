@@ -40,7 +40,7 @@ export default function MasterplanSection() {
           {/* Parallax Background Map */}
           <motion.div style={{ y }} className="absolute inset-0 w-full h-[120%] -top-[10%]">
             <Image 
-              src="https://cdn.supremeuniversal.com/media/fIAB41_Villagio--KD--Wellness-Spine.jpg"
+              src="/images/wellness-spine.webp"
               alt="Supreme Villagio Masterplan Aerial View"
               fill
               className="object-cover opacity-85"

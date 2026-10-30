@@ -72,7 +72,7 @@ export default function AmenitiesSection() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-4xl md:text-6xl font-heading font-light leading-tight"
           >
-            Discover the <span className="text-foreground/50 italic">Pinnacle</span> of Wellness & Recreation.
+            Discover the <span className="text-foreground/80 italic font-medium">Pinnacle</span> of Wellness & Recreation.
           </motion.h2>
         </div>
 

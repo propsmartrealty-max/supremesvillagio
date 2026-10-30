@@ -91,7 +91,7 @@ export default function EmiCalculatorSection() {
                 onChange={(e) => setPropertyPrice(Number(e.target.value))}
                 className="w-full h-2 bg-charcoal rounded-lg appearance-none cursor-pointer accent-[#E15E3F]"
               />
-              <div className="flex justify-between text-[11px] text-[#E4E2D3]/50 mt-1 font-mono">
+              <div className="flex justify-between text-[11px] text-[#E4E2D3] mt-1 font-mono">
                 <span>₹2.89 Cr (4 BHK Townhouse)</span>
                 <span>₹6.00 Cr (5 BHK Hillside)</span>
               </div>
@@ -100,7 +100,7 @@ export default function EmiCalculatorSection() {
             {/* Down Payment Slider */}
             <div>
               <div className="flex justify-between items-center mb-3">
-                <label className="text-xs uppercase tracking-widest text-[#E4E2D3]/70 font-medium">
+                <label className="text-xs uppercase tracking-widest text-[#E4E2D3] font-medium">
                   Down Payment ({downPaymentPercent}%)
                 </label>
                 <span className="text-base font-heading text-white">
@@ -116,7 +116,7 @@ export default function EmiCalculatorSection() {
                 onChange={(e) => setDownPaymentPercent(Number(e.target.value))}
                 className="w-full h-2 bg-charcoal rounded-lg appearance-none cursor-pointer accent-[#E15E3F]"
               />
-              <div className="flex justify-between text-[11px] text-[#E4E2D3]/50 mt-1 font-mono">
+              <div className="flex justify-between text-[11px] text-[#E4E2D3] mt-1 font-mono">
                 <span>10% (Min RERA Token)</span>
                 <span>50%</span>
               </div>
@@ -170,7 +170,7 @@ export default function EmiCalculatorSection() {
               </p>
               <p className="text-4xl md:text-5xl font-heading text-white mb-6">
                 {formatINR(emi)}
-                <span className="text-sm font-sans font-light text-[#E4E2D3]/60 block mt-1">per month</span>
+                <span className="text-sm font-sans font-light text-[#E4E2D3] block mt-1">per month</span>
               </p>
 
               <div className="space-y-3 py-6 border-y border-[#E4E2D3]/10 text-xs">
