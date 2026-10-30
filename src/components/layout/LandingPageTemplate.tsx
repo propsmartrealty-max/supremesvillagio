@@ -1,22 +1,24 @@
 "use client";
 
 import React, { useMemo, useEffect } from "react";
+import dynamic from "next/dynamic";
 import HeroSection from "@/components/sections/HeroSection";
-import VisionSection from "@/components/sections/VisionSection";
-import ArchitectureSection from "@/components/sections/ArchitectureSection";
-import MasterplanSection from "@/components/sections/MasterplanSection";
-import FeaturesSliderSection from "@/components/sections/FeaturesSliderSection";
-import LocationSection from "@/components/sections/LocationSection";
-import GallerySection from "@/components/sections/GallerySection";
-import FaqSection from "@/components/sections/FaqSection";
-import AmenitiesSection from "@/components/sections/AmenitiesSection";
-import FloorPlanSection from "@/components/sections/FloorPlanSection";
-import DeveloperLegacySection from "@/components/sections/DeveloperLegacySection";
-import TestimonialSection from "@/components/sections/TestimonialSection";
 import PressSection from "@/components/sections/PressSection";
-import ConstructionUpdatesSection from "@/components/sections/ConstructionUpdatesSection";
-import SeoSiloLinks from "@/components/layout/SeoSiloLinks";
 import { useModal } from "@/contexts/ModalContext";
+
+const VisionSection = dynamic(() => import("@/components/sections/VisionSection"));
+const ArchitectureSection = dynamic(() => import("@/components/sections/ArchitectureSection"));
+const MasterplanSection = dynamic(() => import("@/components/sections/MasterplanSection"));
+const FeaturesSliderSection = dynamic(() => import("@/components/sections/FeaturesSliderSection"));
+const LocationSection = dynamic(() => import("@/components/sections/LocationSection"));
+const GallerySection = dynamic(() => import("@/components/sections/GallerySection"));
+const FaqSection = dynamic(() => import("@/components/sections/FaqSection"));
+const AmenitiesSection = dynamic(() => import("@/components/sections/AmenitiesSection"));
+const FloorPlanSection = dynamic(() => import("@/components/sections/FloorPlanSection"));
+const DeveloperLegacySection = dynamic(() => import("@/components/sections/DeveloperLegacySection"));
+const TestimonialSection = dynamic(() => import("@/components/sections/TestimonialSection"));
+const ConstructionUpdatesSection = dynamic(() => import("@/components/sections/ConstructionUpdatesSection"));
+const SeoSiloLinks = dynamic(() => import("@/components/layout/SeoSiloLinks"));
 
 export interface LandingPageProps {
   heroHeadline1?: string;

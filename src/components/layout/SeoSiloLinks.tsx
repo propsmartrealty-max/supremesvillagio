@@ -19,9 +19,12 @@ export default function SeoSiloLinks({ currentTypology }: { currentTypology?: st
     { title: "Somatane vs Hinjewadi IT Park", href: "/somatane-vs-hinjewadi", desc: "20-minute commute to Phase 1, 2 & 3 IT corridors" },
     { title: "Talegaon Luxury Real Estate", href: "/talegaon-luxury-villas", desc: "Connectivity to MIDC & Mumbai-Pune Expressway" },
     { title: "Supreme Villagio vs Forest Trails", href: "/supreme-villagio-vs-paranjape-forest-trails", desc: "Comparative analysis of Pune's premier villa projects" },
+    { title: "Supreme Villagio vs Lodha Belmondo", href: "/supreme-villagio-vs-lodha-belmondo", desc: "Expressway luxury villa & townhouse comparison" },
   ];
 
   const projectPortfolio = [
+    { title: "Official Contact & Sales Office", href: "/supreme-villagio/contact", desc: "Direct developer phone +91 7744009295 & site visit desk" },
+    { title: "Resale & Ready Possession OC Units", href: "/supreme-villagio/resale", desc: "Phase 1 & 2 ready OC villas with 0% brokerage" },
     { title: "MahaRERA Certifications (OC Received)", href: "/supreme-villagio-rera", desc: "Verified RERA P52100046867, P52100049506, P52100055048" },
     { title: "16-Acre Master Plan & Layout", href: "/supreme-villagio/master-plan", desc: "Site Concepts Singapore landscape masterplan" },
     { title: "18,500 Sq.Ft. Club Villagio", href: "/supreme-villagio/amenities", desc: "Infinity pool, gym, yoga pavilion, squash court" },

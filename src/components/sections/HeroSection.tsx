@@ -38,22 +38,17 @@ export default function HeroSection({
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   useEffect(() => {
-    // GSAP Intro Animation
+    // GSAP Intro Enhancement (preserves instantaneous LCP paint)
     const tl = gsap.timeline();
     tl.fromTo(
       ".hero-logo",
-      { opacity: 0, scale: 0.9 },
-      { opacity: 1, scale: 1, duration: 1.5, ease: "power4.out" }
-    ).fromTo(
-      ".hero-text-reveal",
-      { y: 100, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1.5, stagger: 0.2, ease: "power4.out" },
-      "-=1"
+      { scale: 0.96 },
+      { scale: 1, duration: 1.2, ease: "power3.out" }
     ).fromTo(
       ".hero-panel",
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, ease: "power3.out" },
-      "-=1"
+      { y: 20 },
+      { y: 0, duration: 0.8, ease: "power3.out" },
+      "-=0.6"
     );
   }, []);
 

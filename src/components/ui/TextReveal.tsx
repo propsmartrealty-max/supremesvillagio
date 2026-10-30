@@ -23,7 +23,7 @@ export default function TextReveal({
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   const container = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
     visible: (i = 1) => ({
       opacity: 1,
       transition: { staggerChildren: 0.05, delayChildren: delay * i },
@@ -34,20 +34,10 @@ export default function TextReveal({
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        type: "spring" as const,
-        damping: 12,
-        stiffness: 100,
-      },
     },
     hidden: {
-      opacity: 0,
-      y: 20,
-      transition: {
-        type: "spring" as const,
-        damping: 12,
-        stiffness: 100,
-      },
+      opacity: 1,
+      y: 0,
     },
   };
 

@@ -5,9 +5,11 @@ export async function GET() {
 
   const corePages = [
     { url: '/', priority: '1.0', changefreq: 'daily' },
+    { url: '/supreme-villagio/contact', priority: '1.0', changefreq: 'daily' },
     { url: '/ecosystem', priority: '1.0', changefreq: 'daily' },
     { url: '/supreme-villagio-rera', priority: '1.0', changefreq: 'weekly' },
     { url: '/supreme-villagio/price', priority: '1.0', changefreq: 'weekly' },
+    { url: '/supreme-villagio/resale', priority: '0.95', changefreq: 'weekly' },
     { url: '/supreme-villagio/emi-calculator', priority: '0.95', changefreq: 'weekly' },
     { url: '/supreme-villagio/construction-status', priority: '0.95', changefreq: 'weekly' },
     { url: '/supreme-villagio/reviews', priority: '0.95', changefreq: 'weekly' },
@@ -44,6 +46,7 @@ export async function GET() {
     { url: '/villas-near-mumbai-pune-expressway', priority: '0.9', changefreq: 'weekly' },
     { url: '/villas-near-atal-setu-mthl', priority: '0.9', changefreq: 'weekly' },
     { url: '/supreme-villagio-vs-paranjape-forest-trails', priority: '0.85', changefreq: 'monthly' },
+    { url: '/supreme-villagio-vs-lodha-belmondo', priority: '0.85', changefreq: 'monthly' },
     { url: '/somatane-vs-hinjewadi', priority: '0.85', changefreq: 'monthly' },
     { url: '/somatane-vs-talegaon', priority: '0.85', changefreq: 'monthly' },
     { url: '/villas-vs-apartments-pune', priority: '0.85', changefreq: 'monthly' },

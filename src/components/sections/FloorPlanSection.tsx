@@ -13,7 +13,7 @@ const FLOOR_PLANS = [
     plotArea: "Approx. 3,500 sq.ft.",
     highlights: ["Private Garden", "Double-Height Living", "Staff Quarters"],
     description: "Designed for families seeking expansive horizontal living without compromising on privacy. Features a beautifully landscaped private garden and grand double-height living spaces.",
-    coverImage: "/images/floorplan_4bhk_1784120309412.jpg",
+    coverImage: "/images/floorplan_4bhk_1784120309412.webp",
   },
   {
     id: "5-BHK-VILLA",
@@ -22,7 +22,7 @@ const FLOOR_PLANS = [
     plotArea: "Approx. 5,000 sq.ft.",
     highlights: ["Private Elevator", "Terrace Lounge", "Home Theatre Option"],
     description: "The pinnacle of luxury in Somatane. These massive 5-bedroom residences come equipped with space for a private elevator and an expansive terrace lounge for entertaining.",
-    coverImage: "/images/floorplan_5bhk_1784120331220.jpg",
+    coverImage: "/images/floorplan_5bhk_1784120331220.webp",
   },
   {
     id: "ROW-HOUSE",
@@ -31,7 +31,7 @@ const FLOOR_PLANS = [
     plotArea: "Approx. 2,500 sq.ft.",
     highlights: ["Community Living", "Efficient Layout", "Modern Architecture"],
     description: "Perfectly balanced townhouses offering the security of a gated community with the independence of a villa. Smartly designed layouts maximize natural light and ventilation.",
-    coverImage: "/images/floorplan_rowhouse_1784120349629.jpg",
+    coverImage: "/images/floorplan_rowhouse_1784120349629.webp",
   },
 ];
 

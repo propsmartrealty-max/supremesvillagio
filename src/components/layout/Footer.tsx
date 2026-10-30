@@ -89,8 +89,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/supreme-villagio/contact" className="hover:text-gold transition-colors font-semibold text-white">
+                  Contact &amp; Sales Desk
+                </Link>
+              </li>
+              <li>
                 <button onClick={openContactModal} className="hover:text-gold transition-colors text-left">
-                  Contact Us
+                  Schedule Private Tour
                 </button>
               </li>
             </ul>
@@ -118,9 +123,11 @@ export default function Footer() {
           <h3 className="text-sm uppercase tracking-widest text-white mb-8 text-center md:text-left">SEO Silo & Property Directory</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs text-stone">
             <Link href="/ecosystem" className="hover:text-primary transition-colors font-semibold text-white">Supreme Villagio Ecosystem</Link>
+            <Link href="/supreme-villagio/contact" className="hover:text-primary transition-colors font-semibold text-white">Contact &amp; Sales Office</Link>
             <Link href="/supreme-villagio-rera" className="hover:text-primary transition-colors font-semibold text-white">MahaRERA Numbers</Link>
-            <Link href="/supreme-villagio/price" className="hover:text-primary transition-colors font-semibold text-white">Price & Cost Sheet</Link>
-            <Link href="/supreme-villagio/emi-calculator" className="hover:text-primary transition-colors font-semibold text-white">EMI & Stamp Duty</Link>
+            <Link href="/supreme-villagio/price" className="hover:text-primary transition-colors font-semibold text-white">Price &amp; Cost Sheet</Link>
+            <Link href="/supreme-villagio/resale" className="hover:text-primary transition-colors font-semibold text-white">Resale &amp; Ready OC</Link>
+            <Link href="/supreme-villagio/emi-calculator" className="hover:text-primary transition-colors font-semibold text-white">EMI &amp; Stamp Duty</Link>
             <Link href="/supreme-villagio/4-bhk-villas" className="hover:text-primary transition-colors font-semibold text-white">4 BHK Twin Villas</Link>
             <Link href="/supreme-villagio/5-bhk-villas" className="hover:text-primary transition-colors font-semibold text-white">5 BHK Presidential</Link>
             <Link href="/supreme-villagio/townhouses" className="hover:text-primary transition-colors">4 BHK Townhouses</Link>
@@ -147,6 +154,7 @@ export default function Footer() {
             <Link href="/villas-near-mumbai-pune-expressway" className="hover:text-primary transition-colors">Expressway Villas</Link>
             <Link href="/villas-near-atal-setu-mthl" className="hover:text-primary transition-colors">Atal Setu MTHL Villas</Link>
             <Link href="/supreme-villagio-vs-paranjape-forest-trails" className="hover:text-primary transition-colors">Villagio vs Forest Trails</Link>
+            <Link href="/supreme-villagio-vs-lodha-belmondo" className="hover:text-primary transition-colors">Villagio vs Lodha Belmondo</Link>
             <Link href="/somatane-vs-hinjewadi" className="hover:text-primary transition-colors">Somatane vs Hinjewadi</Link>
             <Link href="/supreme-villagio/phase-1" className="hover:text-primary transition-colors">Phase 1 (OC Received)</Link>
             <Link href="/supreme-villagio/phase-2" className="hover:text-primary transition-colors">Phase 2 (OC Received)</Link>

@@ -12,8 +12,6 @@ import { ModalProvider } from "@/contexts/ModalContext";
 import ContactModal from "@/components/layout/ContactModal";
 import BrochureModal from "@/components/layout/BrochureModal";
 import NriBanner from "@/components/layout/NriBanner";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -620,6 +618,24 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <head>
+        {/* Preload High-Priority Hero WebP Assets for Immediate LCP Rendering */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero-mobile.webp"
+          type="image/webp"
+          fetchPriority="high"
+          media="(max-width: 768px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero-desktop.webp"
+          type="image/webp"
+          fetchPriority="high"
+          media="(min-width: 769px)"
+        />
+
         {/* Google Local & Geographic Knowledge Graph Signals */}
         <meta name="geo.region" content="IN-MH" />
         <meta name="geo.placename" content="Somatane, Pune" />
@@ -675,24 +691,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(videoObjectSchema) }}
         />
-        
-        {/* Preload High-Priority Hero WebP Assets for Immediate LCP Rendering */}
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero-mobile.webp"
-          type="image/webp"
-          fetchPriority="high"
-          media="(max-width: 768px)"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero-desktop.webp"
-          type="image/webp"
-          fetchPriority="high"
-          media="(min-width: 769px)"
-        />
 
         {/* Meta Pixel Code - Offloaded from Main Thread (only when configured) */}
         {process.env.NEXT_PUBLIC_FB_PIXEL_ID && (
@@ -740,9 +738,6 @@ export default function RootLayout({
           <ContactModal />
           <BrochureModal />
         </ModalProvider>
-      
-        <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );
