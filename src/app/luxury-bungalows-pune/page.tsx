@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { Sparkles, Home, ShieldCheck, ArrowRight, Check, MapPin, Compass, Trophy, Building, Trees } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Luxury Bungalows in Pune | Gated 4 & 5 BHK Twin Bungalows & Estates',
-  description: 'Discover Pune’s most luxurious gated bungalows at Supreme Villagio Somatane. 4 & 5 BHK twin bungalows with 3-side open lawns, 18,500 sq.ft. clubhouse, and 3-min Expressway access for Mumbai & Pune buyers.',
+  title: 'Luxury Bungalows in Pune [4 & 5 BHK Gated Estates • Ready OC from ₹2.89 Cr*]',
+  description: 'Explore Pune\'s most luxurious gated bungalows at Supreme Villagio Somatane. Independent 4 & 5 BHK twin bungalows, 3-side open lawns, 18,500 sq.ft. Club Villagio & 75 mins to Mumbai. Phase 1 & 2 OC Received. Download 2026 Price List & Brochure.',
   keywords: [
     'luxury bungalows in pune',
     'bungalows in pune',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.supremesvillagio.com/luxury-bungalows-pune',
   },
   openGraph: {
-    title: 'Luxury Bungalows in Pune | Supreme Villagio Somatane',
+    title: 'Luxury Bungalows in Pune [4 & 5 BHK Gated Estates • Ready OC from ₹2.89 Cr*]',
     description: 'Ultra-premium 4 & 5 BHK gated twin bungalows and independent estates in Pune West. 3 mins from Mumbai-Pune Expressway.',
     url: 'https://www.supremesvillagio.com/luxury-bungalows-pune',
     type: 'website',

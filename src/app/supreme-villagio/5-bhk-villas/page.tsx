@@ -1,18 +1,17 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Crown, Check, ArrowRight, Maximize2, Shield, Sparkles } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '5 BHK Luxury Presidential Villas in Somatane Pune | Supreme Villagio',
-  description: 'Ultra-exclusive 5 BHK presidential villas at Supreme Villagio Somatane. 3,400–3,900 sq.ft. carpet area, private elevator provision, panoramic mountain view terraces, starting ₹4.85 Cr*.',
+  title: '5 BHK Luxury Presidential Villas in Pune [Supreme Villagio • Private Elevator from ₹4.85 Cr*]',
+  description: 'Exclusive 19 Grand Presidential 5 BHK Villas at Supreme Villagio Somatane. 3,400–3,900 sq.ft. carpet, private elevator, 3 covered car ports, panoramic Sahyadri views & 18,500 sq.ft. Club Villagio. Download 5 BHK Floor Plans & Cost Sheet.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/5-bhk-villas',
   },
   openGraph: {
-    title: '5 BHK Luxury Presidential Villas in Somatane Pune | Supreme Villagio',
-    description: '19 exclusive 5 BHK presidential villas at Supreme Villagio Somatane Pune with panoramic mountain views and private elevators.',
+    title: '5 BHK Luxury Presidential Villas in Pune [Supreme Villagio]',
+    description: '19 exclusive 5 BHK presidential villas at Supreme Villagio Somatane Pune with panoramic mountain views, private elevators from ₹4.85 Cr*.',
     url: 'https://www.supremesvillagio.com/supreme-villagio/5-bhk-villas',
     type: 'website',
   },
@@ -42,8 +41,7 @@ const presidentialVillaSchema = {
 export default function FiveBhkVillasPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="villa-5bhk-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(presidentialVillaSchema) }}
       />

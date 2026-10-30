@@ -1,16 +1,15 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Home, Compass, ShieldCheck, ArrowRight, Check } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '4 BHK Villas in Pune for Sale | Luxury Gated Villa Estates (2026)',
-  description: 'Explore the best 4 BHK villas in Pune. Independent twin villas and townhouses from ₹2.89 Cr* with private gardens, 18,500 sq.ft. clubhouse, and mountain views at Supreme Villagio.',
+  title: '4 BHK Villas in Pune for Sale [Ready OC Gated Estates • Starting ₹2.89 Cr*]',
+  description: 'Explore luxury 4 BHK villas in Pune for sale. Independent twin villas & townhouses, 3-side open lawns, 18,500 sq.ft. Club Villagio & mountain views at Supreme Villagio Somatane. Phase 1 & 2 OC Received. Download 2026 Floor Plans.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/4-bhk-villas-pune',
   },
   openGraph: {
-    title: '4 BHK Villas in Pune | Luxury Gated Villa Projects',
+    title: '4 BHK Villas in Pune for Sale [Ready OC Gated Estates]',
     description: '4 BHK luxury villas and twin bungalows for sale in Pune West. Starting from ₹2.89 Cr*.',
     url: 'https://www.supremesvillagio.com/4-bhk-villas-pune',
     type: 'website',
@@ -34,8 +33,7 @@ const fourBhkPuneSchema = {
 export default function FourBhkVillasPunePage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="4bhk-pune-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(fourBhkPuneSchema) }}
       />

@@ -1,17 +1,16 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { ShieldCheck, CheckCircle2, AlertCircle, ArrowRight, ExternalLink } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Supreme Villagio RERA Number, Phase Status & Possession Dates | MahaRERA Verified',
-  description: 'Verified MahaRERA registration details for Supreme Villagio Somatane (P52100046867, P52100049506, P52100055048). Phase 1 & 2 OC received, Phase 3 possession schedule.',
+  title: 'Supreme Villagio RERA Numbers & OC Status [P52100046867 • Verified Government Certificates]',
+  description: 'Official MahaRERA Registration & OC Status for Supreme Villagio Somatane (P52100046867, P52100049506, P52100055048). Phase 1 & 2 100% Completed with Occupation Certificate. Download official RERA certificates.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio-rera',
   },
   openGraph: {
-    title: 'Supreme Villagio RERA Number, Phase Status & Possession Dates',
-    description: 'Official MahaRERA registration records and phase-wise completion details for Supreme Villagio Somatane, Pune.',
+    title: 'Supreme Villagio RERA Numbers & OC Status [P52100046867]',
+    description: 'Official MahaRERA registration records and phase-wise completion details for Supreme Villagio Somatane, Pune. Phase 1 & 2 OC Granted.',
     url: 'https://www.supremesvillagio.com/supreme-villagio-rera',
     type: 'website',
   },
@@ -81,8 +80,7 @@ const reraSchema = {
 export default function ReraPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="rera-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reraSchema) }}
       />

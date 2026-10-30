@@ -1,16 +1,15 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Factory, ShieldCheck, ArrowRight, Check } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Luxury Villas near PCMC & Talegaon Pune | 4 & 5 BHK Gated Communities',
-  description: 'Luxury 4 & 5 BHK villas near PCMC, Nigdi, and Talegaon. Discover Supreme Villagio Somatane (10 mins from PCMC/Talegaon) with private gardens and 18,500 sq.ft. clubhouse.',
+  title: 'Luxury Villas Near PCMC & Talegaon [10 Mins Commute • Ready OC from ₹2.89 Cr*]',
+  description: 'Luxury 4 & 5 BHK villas near PCMC, Nigdi, and Talegaon. Discover Supreme Villagio Somatane (10 mins from PCMC/Talegaon) with private gardens and 18,500 sq.ft. clubhouse. Phase 1 & 2 OC Received.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/pcmc-luxury-villas',
   },
   openGraph: {
-    title: 'Luxury Villas near PCMC & Talegaon Pune | Supreme Villagio',
+    title: 'Luxury Villas near PCMC & Talegaon Pune [Ready OC from ₹2.89 Cr*]',
     description: 'Executive villas for PCMC business owners and industrial leaders. 10-min commute, starting ₹2.89 Cr*.',
     url: 'https://www.supremesvillagio.com/pcmc-luxury-villas',
     type: 'website',
@@ -28,8 +27,7 @@ const pcmcSchema = {
 export default function PcmcLuxuryVillasPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="pcmc-villas-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pcmcSchema) }}
       />

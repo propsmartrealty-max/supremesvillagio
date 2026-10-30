@@ -1,17 +1,16 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { FileText, Download, ShieldCheck, Check, ArrowRight, BookOpen } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Download Supreme Villagio Official Brochure & Floor Plan Kit (PDF)',
-  description: 'Download the official Supreme Villagio Somatane brochure PDF. Includes high-resolution 4 & 5 BHK villa floor plans, 16-acre master layout by Site Concepts Singapore, and cost sheet.',
+  title: 'Download Supreme Villagio Official Brochure [Full 2026 PDF Dossier & Master Plan]',
+  description: 'Instant PDF download of the official Supreme Villagio Somatane brochure. Includes high-resolution 4 & 5 BHK floor plans, 16-acre master layout by Site Concepts Singapore, specifications & 2026 price list.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/brochure',
   },
   openGraph: {
-    title: 'Download Supreme Villagio Official Brochure & Master Plan (PDF)',
-    description: 'Instant PDF download of Supreme Villagio Somatane floor plans, pricing matrix, and master plan.',
+    title: 'Download Supreme Villagio Official Brochure [2026 PDF Dossier]',
+    description: 'Instant PDF download of Supreme Villagio Somatane floor plans, pricing matrix, and 16-acre master plan.',
     url: 'https://www.supremesvillagio.com/supreme-villagio/brochure',
     type: 'website',
   },
@@ -32,8 +31,7 @@ const brochureSchema = {
 export default function BrochurePage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="brochure-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(brochureSchema) }}
       />

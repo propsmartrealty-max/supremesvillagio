@@ -1,18 +1,17 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Home, Check, ArrowRight, Compass, Maximize2, Shield } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '4 BHK Luxury Twin Villas in Somatane Pune | Supreme Villagio',
-  description: 'Explore 4 BHK luxury twin villas at Supreme Villagio Somatane. 2,600+ sq.ft. carpet area, 3-side open private garden, mountain views, and ready Club Villagio.',
+  title: '4 BHK Luxury Twin Villas in Pune [Supreme Villagio Somatane • Ready OC from ₹3.45 Cr*]',
+  description: '4 BHK Luxury Twin Villas at Supreme Villagio Somatane, Pune. 2,600–2,900 sq.ft. carpet area, expansive 3-side private garden, double-height ceilings & Sahyadri mountain views. Phase 1 & 2 OC Received. Download 4 BHK Floor Plan & Price Sheet.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/4-bhk-villas',
   },
   openGraph: {
-    title: '4 BHK Luxury Twin Villas in Somatane Pune | Supreme Villagio',
-    description: 'Exclusive 4 BHK twin villas at Supreme Villagio Somatane Pune across 16 scenic acres with private gardens.',
+    title: '4 BHK Luxury Twin Villas in Pune [Supreme Villagio Somatane]',
+    description: 'Exclusive 4 BHK twin villas at Supreme Villagio Somatane Pune across 16 scenic acres with private gardens from ₹3.45 Cr*.',
     url: 'https://www.supremesvillagio.com/supreme-villagio/4-bhk-villas',
     type: 'website',
   },
@@ -42,8 +41,7 @@ const villaSchema = {
 export default function FourBhkVillasPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="villa-4bhk-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(villaSchema) }}
       />

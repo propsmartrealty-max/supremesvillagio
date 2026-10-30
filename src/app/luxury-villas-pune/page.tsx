@@ -3,10 +3,16 @@ import Link from 'next/link';
 import { Home, CheckCircle2, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Luxury Villas in Pune | Gated Community 4 & 5 BHK Bungalows & Townhouses',
-  description: 'Discover the finest luxury villas in Pune. Explore Supreme Villagio Somatane featuring 16 acres of low-rise hillside living, ready clubhouse, starting ₹2.89 Cr*.',
+  title: 'Luxury Villas in Pune [Top Ranked 4 & 5 BHK Gated Estates • Ready OC from ₹2.89 Cr*]',
+  description: 'Discover the finest luxury villas in Pune. Explore Supreme Villagio Somatane featuring 16 acres of low-rise hillside living, 18,500 sq.ft. Club Villagio, ready OC Phase 1 & 2, starting ₹2.89 Cr*. Download 2026 Villa Dossier.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/luxury-villas-pune',
+  },
+  openGraph: {
+    title: 'Luxury Villas in Pune [Top Ranked 4 & 5 BHK Gated Estates]',
+    description: 'Discover the finest luxury villas in Pune at Supreme Villagio Somatane. 16 acres, ready clubhouse, starting ₹2.89 Cr*.',
+    url: 'https://www.supremesvillagio.com/luxury-villas-pune',
+    type: 'website',
   },
 };
 

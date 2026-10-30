@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { Compass, Car, ShieldCheck, ArrowRight, Check, MapPin, Sparkles, Trophy, Trees, Clock, Building } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Luxury Villas near Atal Setu (MTHL) | 75 Mins from Mumbai | Supreme Villagio',
-  description: 'Explore ultra-luxury 4 & 5 BHK gated villas near Atal Setu (MTHL) corridor. Just 75 mins from South/Navi Mumbai via Expressway. Ready 18,500 sq.ft. clubhouse, private gardens, mountain views.',
+  title: 'Luxury Villas Near Atal Setu MTHL [75 Mins from Mumbai • Ready OC from ₹2.89 Cr*]',
+  description: 'Explore ultra-luxury 4 & 5 BHK gated villas near Atal Setu (MTHL) corridor. Just 75 mins from South/Navi Mumbai via Expressway. Ready 18,500 sq.ft. clubhouse, private gardens, mountain views. Download 2026 Price List & Route Guide.',
   keywords: [
     'villas near atal setu',
     'villas near mthl',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.supremesvillagio.com/villas-near-atal-setu-mthl',
   },
   openGraph: {
-    title: 'Luxury Villas near Atal Setu (MTHL) | Supreme Villagio',
+    title: 'Luxury Villas Near Atal Setu MTHL [75 Mins from Mumbai]',
     description: '75-minute signal-free drive from Mumbai via Atal Setu. 4 & 5 BHK luxury hillside twin villas with private lawns.',
     url: 'https://www.supremesvillagio.com/villas-near-atal-setu-mthl',
     type: 'website',

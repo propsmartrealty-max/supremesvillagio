@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { ShieldCheck, CheckCircle2, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Supreme Villagio Phase 1 (OC Received) | MahaRERA P52100046867',
-  description: 'Supreme Villagio Phase 1 Somatane is fully completed with Occupation Certificate (OC) received. Explore ready 4 & 5 BHK twin villas and operational Club Villagio.',
+  title: 'Supreme Villagio Phase 1 [OC Received • Ready Move-In Villas • RERA P52100046867]',
+  description: 'Supreme Villagio Phase 1 Somatane is 100% completed with Occupation Certificate (OC) received. Explore ready 4 & 5 BHK twin villas and operational Club Villagio.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/phase-1',
   },

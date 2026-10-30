@@ -1,16 +1,15 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { TrendingUp, BarChart3, ArrowRight, ShieldCheck, Check } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Somatane Property Prices 2026 | Villa Rates, Land Trends & Growth Matrix',
-  description: 'Comprehensive 2026 pricing analysis for Somatane Pune real estate. Capital values, price per sq.ft. trends (₹4,500 to ₹9,200/sq.ft.), Ring Road impact, and luxury villa returns.',
+  title: 'Somatane Property Prices 2026 [Villa Rates & Ring Road Growth Matrix]',
+  description: 'Comprehensive 2026 pricing analysis for Somatane Pune real estate. Capital values, price per sq.ft. trends (₹4,500 to ₹9,200/sq.ft.), Ring Road impact, and luxury villa returns at Supreme Villagio.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/somatane-property-prices',
   },
   openGraph: {
-    title: 'Somatane Property Prices & Investment Trends (2026)',
+    title: 'Somatane Property Prices & Investment Trends 2026',
     description: 'Somatane real estate price trends, villa cost sheets, and 5-year capital appreciation analysis.',
     url: 'https://www.supremesvillagio.com/somatane-property-prices',
     type: 'website',
@@ -28,8 +27,7 @@ const priceTrendSchema = {
 export default function SomatanePropertyPricesPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="somatane-prices-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(priceTrendSchema) }}
       />

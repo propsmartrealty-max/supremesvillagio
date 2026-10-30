@@ -1,21 +1,28 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Layers, Download, Check, ArrowRight, Maximize2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Supreme Villagio Floor Plans | 4 & 5 BHK Villas & Townhouses Blueprints',
-  description: 'Download official floor plans for Supreme Villagio Somatane. Detailed carpet areas, plot sizes, room dimensions for 4 BHK Townhouses, 4 BHK Twin Villas, and 5 BHK Villas.',
+  title: 'Supreme Villagio Floor Plans [Official PDF Blueprints & Carpet Area Layouts 2026]',
+  description: 'Download official 2026 floor plans for Supreme Villagio Somatane. Room-by-room architectural layouts, carpet area breakdown (2,200 to 3,900 sq.ft.), private lawn dimensions & parking spaces for 4 & 5 BHK villas. View instant blueprints.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/floor-plans',
   },
   openGraph: {
-    title: 'Supreme Villagio Floor Plans | 4 & 5 BHK Villas & Townhouses Blueprints',
-    description: 'Explore room-by-room dimensions and layout blueprints for Supreme Villagio Somatane Pune.',
+    title: 'Supreme Villagio Floor Plans [Official PDF Blueprints & Layouts]',
+    description: 'Explore room-by-room dimensions and layout blueprints for Supreme Villagio Somatane Pune. 4 & 5 BHK villas from ₹2.89 Cr*.',
     url: 'https://www.supremesvillagio.com/supreme-villagio/floor-plans',
     type: 'website',
   },
+};
+
+const floorPlansSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateListing',
+  'name': 'Supreme Villagio Official Floor Plans & Blueprints',
+  'description': 'Architectural layout plans, carpet area breakdowns, and level-by-level floor plans for Supreme Villagio 4 & 5 BHK villas.',
+  'url': 'https://www.supremesvillagio.com/supreme-villagio/floor-plans',
 };
 
 const PLANS = [
@@ -57,6 +64,10 @@ const PLANS = [
 export default function FloorPlansPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(floorPlansSchema) }}
+      />
       <div className="container mx-auto max-w-6xl">
         {/* Header Badge */}
         <div className="flex items-center gap-2 mb-4">

@@ -3,13 +3,13 @@ import Link from 'next/link';
 import { Star, MessageSquare, ShieldCheck, ArrowRight, Quote } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Supreme Villagio Reviews & Homeowner Testimonials (Pune West)',
-  description: 'Read authentic reviews from Phase 1 & 2 residents at Supreme Villagio Somatane Pune. Rated 4.9/5 by 88 verified homebuyers, IT executives, and NRI investors.',
+  title: 'Supreme Villagio Reviews [4.9★ Rated by 88 Homeowners • Verified Resident Ratings]',
+  description: 'Read 88 authentic homeowner reviews & ratings for Supreme Villagio Somatane, Pune. Rated 4.9/5 for construction quality, 18,500 sq.ft. Club Villagio, and serene Sahyadri location. View unedited resident testimonials.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/reviews',
   },
   openGraph: {
-    title: 'Supreme Villagio Reviews & Resident Experiences',
+    title: 'Supreme Villagio Reviews [4.9★ Rated by 88 Homeowners]',
     description: 'Verified homeowner reviews of Supreme Villagio Somatane Pune. 4.9/5 Rating across 88 homeowners.',
     url: 'https://www.supremesvillagio.com/supreme-villagio/reviews',
     type: 'website',

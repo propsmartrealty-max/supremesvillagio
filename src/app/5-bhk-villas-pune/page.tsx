@@ -1,17 +1,16 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Crown, Compass, ShieldCheck, ArrowRight, Check } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '5 BHK Villas in Pune for Sale | Grand Presidential Estates (2026)',
-  description: 'Discover ultra-luxury 5 BHK villas in Pune for sale. 3,400 – 3,900 sq.ft. carpet area, private elevator provision, 3 car bays, and mountain views at Supreme Villagio Somatane (from ₹4.85 Cr*).',
+  title: '5 BHK Villas in Pune for Sale [Grand Presidential Estates • Private Elevator from ₹4.85 Cr*]',
+  description: 'Discover ultra-luxury 5 BHK villas in Pune for sale at Supreme Villagio Somatane. 3,400–3,900 sq.ft. carpet area, private elevator, 3 car ports & panoramic Sahyadri views. 19 limited units. Download 5 BHK Dossier & Cost Sheet.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/5-bhk-villas-pune',
   },
   openGraph: {
-    title: '5 BHK Luxury Villas in Pune | Supreme Villagio Presidential',
-    description: 'Exclusive 19 hillside presidential villas in Pune West. Private elevator, mountain panoramas, ₹4.85 Cr*.',
+    title: '5 BHK Luxury Villas in Pune [Grand Presidential Estates]',
+    description: 'Exclusive 19 hillside presidential villas in Pune West. Private elevator, mountain panoramas, from ₹4.85 Cr*.',
     url: 'https://www.supremesvillagio.com/5-bhk-villas-pune',
     type: 'website',
   },
@@ -34,8 +33,7 @@ const fiveBhkPuneSchema = {
 export default function FiveBhkVillasPunePage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="5bhk-pune-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(fiveBhkPuneSchema) }}
       />

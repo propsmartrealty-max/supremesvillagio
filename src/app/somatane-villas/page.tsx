@@ -1,17 +1,16 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Mountain, Trees, Compass, ArrowRight, ShieldCheck, Check } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Villas in Somatane Pune | Independent Luxury Gated Villas (2026)',
-  description: 'Explore luxury villas for sale in Somatane, Pune. Discover 4 & 5 BHK gated villa developments, 616m elevation, clean mountain air, and 20-min connectivity to Hinjewadi.',
+  title: 'Villas in Somatane Pune [Luxury 4 & 5 BHK Gated Communities • Ready OC from ₹2.89 Cr*]',
+  description: 'Explore luxury villas for sale in Somatane, Pune. Discover 4 & 5 BHK gated villa developments, 616m elevation, clean mountain air, and 20-min connectivity to Hinjewadi. View Supreme Villagio price list & floor plans.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/somatane-villas',
   },
   openGraph: {
-    title: 'Villas in Somatane Pune | Luxury Gated Community Living',
-    description: 'Somatane villa market analysis and luxury gated bungalow developments in Pune West.',
+    title: 'Villas in Somatane Pune [Luxury 4 & 5 BHK Gated Communities]',
+    description: 'Somatane villa market analysis and luxury gated bungalow developments in Pune West from ₹2.89 Cr*.',
     url: 'https://www.supremesvillagio.com/somatane-villas',
     type: 'website',
   },
@@ -33,8 +32,7 @@ const somataneSchema = {
 export default function SomataneVillasPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="somatane-villas-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(somataneSchema) }}
       />

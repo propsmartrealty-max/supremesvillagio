@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { Car, CheckCircle2, ArrowRight, ShieldCheck, MapPin, Sparkles, Trophy, Building2, Trees } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Villas Near Mumbai Pune Expressway | Luxury Weekend Homes & Estates',
-  description: 'Luxury 4 & 5 BHK villas near Mumbai-Pune Expressway at Supreme Villagio Somatane. 3 mins from Expressway toll, 75 mins from Navi Mumbai & Atal Setu. Starting ₹2.89 Cr*.',
+  title: 'Villas Near Mumbai-Pune Expressway [75 Mins from Mumbai • Ready OC from ₹2.89 Cr*]',
+  description: 'Luxury 4 & 5 BHK Villas near Mumbai-Pune Expressway at Supreme Villagio Somatane. 3 mins from expressway, 75 mins from Navi Mumbai via Atal Setu. 18,500 sq.ft. Club Villagio, OC Received. Download 2026 Price List & Driving Route Guide.',
   keywords: [
     'villas near mumbai pune expressway',
     'luxury villas near mumbai',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.supremesvillagio.com/villas-near-mumbai-pune-expressway',
   },
   openGraph: {
-    title: 'Villas Near Mumbai Pune Expressway | Supreme Villagio',
+    title: 'Villas Near Mumbai-Pune Expressway [75 Mins from Mumbai]',
     description: 'Ultra-luxury 4 & 5 BHK villas and weekend retreat bungalows 3 mins from Mumbai-Pune Expressway toll gate. Starting from ₹2.89 Cr*.',
     url: 'https://www.supremesvillagio.com/villas-near-mumbai-pune-expressway',
     type: 'website',

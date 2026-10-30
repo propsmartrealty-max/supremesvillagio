@@ -37,8 +37,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.supremesvillagio.com"),
-  title: "Supreme Villagio Somatane Pune | Luxury 4 & 5 BHK Villas & Townhouses",
-  description: "Supreme Villagio by Supreme Universal in Somatane, Pune. Exclusive 4 & 5 BHK luxury villas and townhouses spread across 16 scenic acres with Club Villagio.",
+  title: {
+    default: "Supreme Villagio Somatane | Official 2026 Portal [Ready OC Villas from ₹2.89 Cr*]",
+    template: "%s | Supreme Villagio Official"
+  },
+  description: "Official Project Portal for Supreme Villagio Somatane, Pune. Ultra-luxury 4 & 5 BHK Twin Villas & Townhouses across 16 acres with 18,500 sq.ft. Club Villagio. Phase 1 & 2 OC Received. Download 2026 Price List, Floor Plans & Book Direct Developer Visit.",
   keywords: [
     "Supreme Villagio", "Supreme Villagio Somatane", "Supreme Villagio Somante",
     "Supreme Villagio Ecosystem", "Supreme Villagio Somatane Ecosystem", "Supreme Villagio Somante Ecosystem",
@@ -90,15 +93,15 @@ export const metadata: Metadata = {
     locale: "en_IN",
     alternateLocale: ["en_US", "en_GB", "en_AE"],
     url: "https://www.supremesvillagio.com/",
-    title: "Supreme Villagio Somatane Pune | Luxury 4 & 5 BHK Villas & Townhouses",
-    description: "Supreme Villagio by Supreme Universal in Somatane, Pune. Exclusive 4 & 5 BHK luxury villas and townhouses spread across 16 scenic acres with Club Villagio.",
+    title: "Supreme Villagio Somatane | Official 2026 Portal [Ready OC Villas from ₹2.89 Cr*]",
+    description: "Official Project Portal for Supreme Villagio Somatane, Pune. Ultra-luxury 4 & 5 BHK Twin Villas & Townhouses across 16 acres with 18,500 sq.ft. Club Villagio. Phase 1 & 2 OC Received. Download 2026 Price List, Floor Plans & Book Direct Developer Visit.",
     siteName: "Supreme Universal",
     images: [
       {
         url: "https://d66htbxvzotmo.cloudfront.net/media/1Xi8pH_seologo.jpg",
         width: 1200,
         height: 630,
-        alt: "Supreme Villagio Logo and View",
+        alt: "Supreme Villagio Luxury Villas Somatane Pune",
       },
     ],
   },
@@ -106,8 +109,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@SupremeUniv",
     creator: "@SupremeUniv",
-    title: "Supreme Villagio Somatane | 4 & 5 BHK Luxury Villas in Pune",
-    description: "Supreme Villagio offers luxury 4 & 5 BHK villas in Somatane Pune on 16 acres. Twin villas & townhouses with Club Villagio, mountain views. Under Construction.",
+    title: "Supreme Villagio Somatane | Official 2026 Portal [Ready OC Villas from ₹2.89 Cr*]",
+    description: "Official Project Portal for Supreme Villagio Somatane, Pune. Ultra-luxury 4 & 5 BHK Twin Villas & Townhouses across 16 acres with 18,500 sq.ft. Club Villagio. Phase 1 & 2 OC Received. Direct Developer Booking.",
     images: ["https://d66htbxvzotmo.cloudfront.net/media/1Xi8pH_seologo.jpg"],
   },
   robots: {

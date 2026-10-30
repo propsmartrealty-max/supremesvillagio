@@ -1,16 +1,15 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { TrendingUp, BarChart3, Landmark, ShieldCheck, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Supreme Villagio Investment Thesis & Capital Appreciation Analysis | Pune Real Estate',
+  title: 'Supreme Villagio Investment Potential [ROI, Ring Road Impact & Villa Yield 2026]',
   description: 'Detailed financial and infrastructure investment analysis for Supreme Villagio Somatane. Pune Ring Road impact, Hinjewadi expansion, rental yield, and land value appreciation.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/investment',
   },
   openGraph: {
-    title: 'Supreme Villagio Investment Thesis & Capital Appreciation Analysis',
+    title: 'Supreme Villagio Investment Potential & Growth Analysis',
     description: 'Data-backed real estate investment analysis for luxury villas in Somatane Pune at Supreme Villagio.',
     url: 'https://www.supremesvillagio.com/supreme-villagio/investment',
     type: 'website',

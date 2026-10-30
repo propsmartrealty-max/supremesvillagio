@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { ShieldCheck, HardHat, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Supreme Villagio Phase 3 (New Launch & Under Construction) | MahaRERA P52100055048',
-  description: 'Supreme Villagio Phase 3 Somatane. Newly launched 4 & 5 BHK luxury hillside twin villas. Active construction stage with MahaRERA revised completion December 2028.',
+  title: 'Supreme Villagio Phase 3 [New Launch Hillside Villas • RERA P52100055048]',
+  description: 'Supreme Villagio Phase 3 Somatane. Newly launched 4 & 5 BHK luxury hillside twin villas. Active construction stage with MahaRERA completion December 2028.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/phase-3',
   },

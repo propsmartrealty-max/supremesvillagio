@@ -1,17 +1,16 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { HardHat, CheckCircle2, Clock, Calendar, ArrowRight, ShieldCheck, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Supreme Villagio Construction Status & Live Progress (September 2026)',
-  description: 'Verified construction updates for Supreme Villagio Somatane. Phase 1 & 2 OC Received and Handed Over. Phase 3 Hillside Villas in active superstructure. MahaRERA P52100055048.',
+  title: 'Supreme Villagio Construction Status [Phase 1 & 2 OC Received • Live 2026 Photos]',
+  description: 'Live construction milestone audit & site photos for Supreme Villagio Somatane. Phase 1 & 2: 100% Completed, OC Granted & Handed Over. Phase 3: Active Superstructure. 18,500 sq.ft. Club Villagio operational. View latest photos.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/construction-status',
   },
   openGraph: {
-    title: 'Supreme Villagio Construction Status & Handover Timeline (2026)',
-    description: 'Real-time construction audit of Supreme Villagio Somatane Pune. Phase 1 & 2 Completed. Phase 3 active progress.',
+    title: 'Supreme Villagio Construction Status [Phase 1 & 2 OC Received]',
+    description: 'Real-time construction audit of Supreme Villagio Somatane Pune. Phase 1 & 2 Completed with OC. Phase 3 active progress.',
     url: 'https://www.supremesvillagio.com/supreme-villagio/construction-status',
     type: 'website',
   },
@@ -23,14 +22,13 @@ const constructionSchema = {
   'name': 'Supreme Villagio Construction Status Update',
   'description': 'Live construction milestone audit for Supreme Villagio Somatane, Pune.',
   'url': 'https://www.supremesvillagio.com/supreme-villagio/construction-status',
-  'datePosted': '2026-09-02',
+  'datePosted': '2026-10-21',
 };
 
 export default function ConstructionStatusPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="construction-status-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(constructionSchema) }}
       />

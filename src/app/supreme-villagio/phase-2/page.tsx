@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ShieldCheck, CheckCircle2, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Supreme Villagio Phase 2 (OC Received) | MahaRERA P52100049506',
+  title: 'Supreme Villagio Phase 2 [OC Received • Luxury Twin Villas • RERA P52100049506]',
   description: 'Supreme Villagio Phase 2 Somatane. Luxury twin villas and townhouses with OC received. Verified MahaRERA registration P52100049506.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/phase-2',

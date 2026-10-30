@@ -3,14 +3,14 @@ import Link from 'next/link';
 import { Calendar, CheckCircle2, AlertCircle, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Supreme Villagio Possession Date, Handover & OC Status | Somatane Pune',
-  description: 'Verified possession dates and Occupation Certificate status for Supreme Villagio Somatane. Phase 1 & 2 handed over with OC, Phase 3 possession schedule December 2028.',
+  title: 'Supreme Villagio Possession Date & OC Handover Status [Phase 1 & 2 Ready OC]',
+  description: 'Verified possession dates and Occupation Certificate status for Supreme Villagio Somatane. Phase 1 & 2 100% Completed, OC Received and Handed Over. Phase 3 active delivery timeline. Download handover report.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/possession',
   },
   openGraph: {
-    title: 'Supreme Villagio Possession Date & Phase Handover Status',
-    description: 'Detailed possession timeline and OC status for Supreme Villagio Somatane Pune.',
+    title: 'Supreme Villagio Possession Date & OC Handover Status',
+    description: 'Detailed possession timeline and OC status for Supreme Villagio Somatane Pune. Phase 1 & 2 handed over with OC.',
     url: 'https://www.supremesvillagio.com/supreme-villagio/possession',
     type: 'website',
   },

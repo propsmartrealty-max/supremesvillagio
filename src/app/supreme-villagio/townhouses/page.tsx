@@ -1,18 +1,17 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Building2, Check, ArrowRight, Maximize2, TreePine } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '4 BHK Luxury Townhouses in Somatane Pune | Supreme Villagio',
-  description: '4 BHK luxury townhouses at Supreme Villagio Somatane Pune. 2,200–2,400 sq.ft. carpet area, independent G+2 low-rise living, private parking, starting ₹2.89 Cr*.',
+  title: '4 BHK Luxury Townhouses in Pune [Supreme Villagio Somatane • Starting ₹2.89 Cr*]',
+  description: 'Gated 4 BHK Luxury Townhouses at Supreme Villagio Somatane, Pune. 2,200–2,400 sq.ft. carpet area, G+2 independent layout, private terrace & garden. 18,500 sq.ft. Club Villagio access. Download Townhouse Floor Plans & Price Sheet.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/townhouses',
   },
   openGraph: {
-    title: '4 BHK Luxury Townhouses in Somatane Pune | Supreme Villagio',
-    description: 'Exclusive 4 BHK townhouses in Somatane Pune at Supreme Villagio with ready clubhouse and resort amenities.',
+    title: '4 BHK Luxury Townhouses in Pune [Supreme Villagio Somatane]',
+    description: 'Exclusive 4 BHK townhouses in Somatane Pune at Supreme Villagio with ready clubhouse and resort amenities from ₹2.89 Cr*.',
     url: 'https://www.supremesvillagio.com/supreme-villagio/townhouses',
     type: 'website',
   },
@@ -42,8 +41,7 @@ const townhouseSchema = {
 export default function TownhousesPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="townhouse-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(townhouseSchema) }}
       />

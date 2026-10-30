@@ -2,8 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Supreme Villagio Somatane Ecosystem | Complete Master Directory & Authority Hub",
-  description: "The authoritative master ecosystem directory for Supreme Villagio in Somatane, Pune. Explore 16 acres of luxury 4 & 5 BHK twin villas, Club Villagio, price matrices, MahaRERA registrations, and regional connectivity.",
+  title: "Supreme Villagio Somatane Ecosystem [Official 16-Acre Master Project Directory]",
+  description: "The authoritative master directory for Supreme Villagio Somatane & Somante. Explore 16 acres of 4 & 5 BHK luxury villas, 18,500 sq.ft. Club Villagio, MahaRERA certifications, 2026 pricing matrix & Mumbai-Pune commute maps.",
   keywords: [
     "Supreme Villagio Somatane Ecosystem",
     "Supreme Villagio Somante Ecosystem",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     canonical: "https://www.supremesvillagio.com/ecosystem",
   },
   openGraph: {
-    title: "Supreme Villagio Somatane Ecosystem | Complete Master Directory",
+    title: "Supreme Villagio Somatane Ecosystem [Official 16-Acre Master Project Directory]",
     description: "The official master ecosystem hub for Supreme Villagio in Somatane, Pune. 16 acres of low-rise luxury villas, Club Villagio, and MahaRERA compliance.",
     url: "https://www.supremesvillagio.com/ecosystem",
     type: "website",

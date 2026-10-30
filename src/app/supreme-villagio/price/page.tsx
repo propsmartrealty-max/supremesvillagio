@@ -4,14 +4,14 @@ import { Tag, ArrowRight, ShieldCheck, Check, Calculator, Download } from 'lucid
 import EmiCalculatorSection from '@/components/sections/EmiCalculatorSection';
 
 export const metadata: Metadata = {
-  title: 'Supreme Villagio Price, Cost Sheet & Payment Schedule | Somatane Pune',
-  description: 'Official price breakdown for Supreme Villagio Somatane. 4 & 5 BHK luxury twin villas and townhouses starting from ₹2.89 Cr*. Request all-inclusive cost sheet.',
+  title: 'Supreme Villagio Price & Cost Sheet 2026 [Starting ₹2.89 Cr* Official Payment Plan]',
+  description: 'Verified 2026 Price List & Cost Sheet for Supreme Villagio Somatane. 4 & 5 BHK Luxury Villas starting ₹2.89 Cr*. 0% Brokerage, Ready OC units, 7% Stamp Duty calculation & payment schedule. Download official cost sheet.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/price',
   },
   openGraph: {
-    title: 'Supreme Villagio Price, Cost Sheet & Payment Schedule',
-    description: 'Detailed price breakdown for 4 & 5 BHK villas and townhouses in Supreme Villagio, Somatane Pune.',
+    title: 'Supreme Villagio Price & Cost Sheet 2026 [Starting ₹2.89 Cr*]',
+    description: 'Detailed price breakdown & cost sheet for 4 & 5 BHK luxury villas and townhouses in Supreme Villagio, Somatane Pune. Direct developer rates.',
     url: 'https://www.supremesvillagio.com/supreme-villagio/price',
     type: 'website',
   },

@@ -1,17 +1,16 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Dumbbell, Trees, Sparkles, ShieldCheck, ArrowRight, Check } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Club Villagio & 16-Acre Lifestyle Amenities | Supreme Villagio Somatane',
-  description: 'Explore the 18,500 sq.ft. operational Club Villagio and 16-acre Singapore-designed landscape amenities at Supreme Villagio Somatane. Olympic pool, squash court, gym, and wellness trails.',
+  title: 'Club Villagio & 16-Acre Amenities [18,500 Sq.Ft. Ready Operational Clubhouse]',
+  description: 'Explore the 18,500 sq.ft. operational Club Villagio at Supreme Villagio Somatane. Olympic-length swimming pool, squash court, state-of-the-art gymnasium, Singapore-landscaped wellness spines & party lawns. View amenities tour.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/amenities',
   },
   openGraph: {
-    title: 'Club Villagio & Lifestyle Amenities | Supreme Villagio',
-    description: '18,500 sq.ft. operational clubhouse, Olympic pool, squash court, and Singapore-designed gardens.',
+    title: 'Club Villagio & Lifestyle Amenities [18,500 Sq.Ft. Ready Clubhouse]',
+    description: '18,500 sq.ft. operational clubhouse, Olympic pool, squash court, and Singapore-designed gardens at Supreme Villagio Somatane.',
     url: 'https://www.supremesvillagio.com/supreme-villagio/amenities',
     type: 'website',
   },
@@ -34,8 +33,7 @@ const amenitiesSchema = {
 export default function AmenitiesPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="amenities-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(amenitiesSchema) }}
       />

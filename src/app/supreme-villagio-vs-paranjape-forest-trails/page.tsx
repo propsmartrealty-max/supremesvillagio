@@ -1,10 +1,9 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { Scale, CheckCircle2, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Supreme Villagio vs Paranjape Forest Trails | Pune Luxury Villa Comparison Guide',
+  title: 'Supreme Villagio vs Paranjape Forest Trails [2026 Pune Luxury Villa Comparison]',
   description: 'Objective buyer comparison between Supreme Villagio (Somatane) and Paranjape Forest Trails (Bhugaon). Compare location, altitude, expressway connectivity, price per sq.ft., and villa layouts.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio-vs-paranjape-forest-trails',

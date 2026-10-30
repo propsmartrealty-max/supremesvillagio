@@ -1,17 +1,16 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { MapPin, Navigation, Car, Train, Plane, Clock, ShieldCheck, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Supreme Villagio Location, Distance Matrix & Connectivity | Somatane Pune',
-  description: 'Verified driving times from Supreme Villagio Somatane to Hinjewadi IT Park (20m), Baner (25m), Talegaon (10m), Lonavala (30m), and Mumbai-Pune Expressway.',
+  title: 'Supreme Villagio Location & Driving Map [20 Mins Hinjewadi • 75 Mins Mumbai]',
+  description: 'Explore Supreme Villagio location in Somatane, Pune. 3 mins from Mumbai-Pune Expressway, 20 mins to Hinjewadi Phase 1, 25 mins to Baner & 75 mins to Mumbai. 616m hill station altitude. View live GPS map & driving times.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/location',
   },
   openGraph: {
-    title: 'Supreme Villagio Location & Commute Matrix | Somatane Pune',
-    description: 'Detailed connectivity guide for Supreme Villagio Somatane to Pune IT hubs, schools, hospitals, and Mumbai.',
+    title: 'Supreme Villagio Location & Driving Map [20 Mins Hinjewadi]',
+    description: 'Detailed connectivity guide for Supreme Villagio Somatane to Pune IT hubs, schools, hospitals, and Mumbai via Expressway.',
     url: 'https://www.supremesvillagio.com/supreme-villagio/location',
     type: 'website',
   },
@@ -69,8 +68,7 @@ const placeSchema = {
 export default function LocationPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="location-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
       />

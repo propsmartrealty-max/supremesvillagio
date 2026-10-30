@@ -1,16 +1,15 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import { HelpCircle, ArrowRight, ShieldCheck, Check } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Supreme Villagio FAQ — 20+ Critical Questions Answered (Price, RERA, Possession)',
-  description: 'Complete FAQ directory for Supreme Villagio Somatane Pune. Get verified factual answers on villa pricing, MahaRERA registrations, carpet areas, Club Villagio, and possession dates.',
+  title: 'Supreme Villagio FAQ [20+ Verified Answers • Price, MahaRERA & Possession]',
+  description: 'Get immediate answers to the top 20 questions on Supreme Villagio Somatane. Starting prices (₹2.89 Cr*), MahaRERA certificates (P52100046867), Phase 1 & 2 ready OC, maintenance fees & Clubhouse rules. View complete buyer FAQ.',
   alternates: {
     canonical: 'https://www.supremesvillagio.com/supreme-villagio/faq',
   },
   openGraph: {
-    title: 'Supreme Villagio FAQ — Complete Buyer Guide & Answers',
+    title: 'Supreme Villagio FAQ [20+ Verified Buyer Answers]',
     description: 'Frequently asked questions regarding Supreme Villagio Somatane pricing, RERA numbers, possession, and floor plans.',
     url: 'https://www.supremesvillagio.com/supreme-villagio/faq',
     type: 'website',
@@ -76,8 +75,7 @@ const faqPageSchema = {
 export default function FaqPage() {
   return (
     <main className="min-h-screen bg-[#23362E] text-[#E4E2D3] pt-32 pb-24 px-6 md:px-12 lg:px-24">
-      <Script
-        id="faq-page-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
       />
