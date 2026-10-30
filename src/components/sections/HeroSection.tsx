@@ -117,7 +117,9 @@ export default function HeroSection({
               highlightWords={highlightWords}
               highlightClass="text-gold-gradient italic font-light font-heading"
             />
-            <span className="sr-only">Supreme Villagio Somatane | Luxury 4 &amp; 5 BHK Villas &amp; Townhouses in Pune</span>
+            <span className="sr-only">
+              Supreme Villagio Somatane (Somante) | Official Luxury 4 &amp; 5 BHK Twin Villas, Townhouses, and Gated Bungalows in Pune West near Mumbai-Pune Expressway | MahaRERA Verified P52100046867 | 18,500 Sq.Ft. Club Villagio
+            </span>
           </h1>
           
           <div className="overflow-hidden mb-12">

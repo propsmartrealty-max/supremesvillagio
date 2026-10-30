@@ -43,14 +43,40 @@ export const metadata: Metadata = {
   },
   description: "Official Project Portal for Supreme Villagio Somatane, Pune. Ultra-luxury 4 & 5 BHK Twin Villas & Townhouses across 16 acres with 18,500 sq.ft. Club Villagio. Phase 1 & 2 OC Received. Download 2026 Price List, Floor Plans & Book Direct Developer Visit.",
   keywords: [
-    "Supreme Villagio", "Supreme Villagio Somatane", "Supreme Villagio Somante",
-    "Supreme Villagio Ecosystem", "Supreme Villagio Somatane Ecosystem", "Supreme Villagio Somante Ecosystem",
-    "Villagio Somatane", "Villagio Somatane Ecosystem", "Club Villagio", "Club Villagio Somatane",
-    "Supreme Universal Somatane", "Supreme Villagio Pune", "Premium Bungalows in Pune", 
-    "Villas in Pune", "Luxury Villas Pune", "4 BHK Luxury Villas", "5 BHK Luxury Villas",
-    "Supreme Villagio 4 BHK", "Supreme Villagio 5 BHK", "Supreme Villagio Price",
-    "Supreme Villagio MahaRERA", "Supreme Villagio Reviews", "Supreme Villagio Floor Plans",
-    "Supreme Villagio Master Plan", "Pune Real Estate Market"
+    // 1. Core Brand Permutations & Phonetic Misspellings
+    "Supreme Villagio", "Supreme Villagio Somatane", "Supreme Villagio Somante", "Supreme Villagio Pune",
+    "Villagio Somatane", "Villagio Somante", "Villagio Pune", "Club Villagio", "Club Villagio Somatane",
+    "Supreme Universal Somatane", "Supreme Villagio Ecosystem", "Supreme Villagio Somatane Ecosystem",
+    "Supreme Villagio Somante Ecosystem", "Supreme Villagio Contact Number", "Supreme Villagio Sales Office",
+
+    // 2. High-Intent Commercial, Price & Booking Queries
+    "Supreme Villagio Price", "Supreme Villagio Cost Sheet", "Supreme Villagio 4 BHK Price", 
+    "Supreme Villagio 5 BHK Price", "Supreme Villagio Payment Plan", "Supreme Villagio Booking",
+    "Supreme Villagio 4 BHK", "Supreme Villagio 5 BHK", "Supreme Villagio Townhouses", "Supreme Villagio Twin Villas",
+
+    // 3. Due Diligence, RERA & Possession Queries
+    "Supreme Villagio MahaRERA", "Supreme Villagio RERA Number", "Supreme Villagio RERA", 
+    "Supreme Villagio Possession Date", "Supreme Villagio OC Status", "Supreme Villagio Construction Status",
+    "P52100046867", "P52100049506", "P52100055048",
+
+    // 4. Reputation, Sentiment & Review Queries (Targeting #1 Rank)
+    "Supreme Villagio Reviews", "Supreme Villagio Ratings", "Supreme Villagio Testimonials", 
+    "Supreme Villagio Feedback", "Supreme Villagio Complaints", "Supreme Villagio Resident Reviews",
+
+    // 5. Architectural & Technical Layout Queries
+    "Supreme Villagio Floor Plans", "Supreme Villagio Master Plan", "Supreme Villagio Brochure PDF",
+    "Supreme Villagio 4 BHK Floor Plan", "Supreme Villagio 5 BHK Floor Plan", "Supreme Villagio Layout",
+
+    // 6. High-Volume Pune Luxury Real Estate Commercial Categories
+    "Luxury Bungalows in Pune", "Bungalows in Pune", "Villas in Pune", "Luxury Villas Pune",
+    "4 BHK Villa in Pune", "5 BHK Villa in Pune", "Gated Community Villas Pune", "Independent Villa in Pune",
+    "Ready Possession Villas in Pune", "OC Received Villas Pune", "Twin Villas Pune", "Townhouse in Pune",
+    "Hillside Villas Pune", "Pune Real Estate Market", "Pune Luxury Property",
+
+    // 7. Mumbai Buyer, Expressway & Regional Connectivity Queries
+    "Villas Near Mumbai Pune Expressway", "Villas Near Expressway Pune", "Weekend Villas Near Mumbai",
+    "Second Homes Near Mumbai", "Villas Near Atal Setu MTHL", "Villas in Somatane", "Villas in Somatane Phata",
+    "Villas Near Hinjewadi IT Park", "Villas Near Hinjewadi Phase 1", "Talegaon Luxury Villas", "PCMC Luxury Villas"
   ],
   authors: [{ name: "Supreme Universal" }],
   creator: "Supreme Universal",
@@ -131,6 +157,14 @@ const realEstateListingSchema = {
   "@type": "RealEstateListing",
   "@id": "https://www.supremesvillagio.com/#realestate",
   "name": "Supreme Villagio Luxury Villas & Townhouses",
+  "alternateName": [
+    "Supreme Villagio",
+    "Supreme Villagio Somatane",
+    "Supreme Villagio Somante",
+    "Villagio Somatane",
+    "Club Villagio Somatane"
+  ],
+  "keywords": "Supreme Villagio, Supreme Villagio Somatane, Supreme Villagio Somante, Supreme Villagio Price, Supreme Villagio Reviews, Supreme Villagio Floor Plans, Supreme Villagio RERA, Luxury Bungalows in Pune, Luxury Villas Pune, 4 BHK Villa in Pune, 5 BHK Villa in Pune, Villas Near Mumbai Pune Expressway, Atal Setu MTHL Villas, Ready Possession Villas Pune",
   "description": "Ultra-luxury 3, 4 & 5 BHK Twin Villas and Townhouses in Somatane, Pune across 16 scenic acres with Club Villagio.",
   "url": "https://www.supremesvillagio.com/",
   "datePosted": "2024-01-01",
@@ -364,6 +398,12 @@ const organizationSchema = {
   "name": "Supreme Universal",
   "url": "https://www.supremeuniversal.com/",
   "logo": "https://d66htbxvzotmo.cloudfront.net/media/1Xi8pH_seologo.jpg",
+  "knowsAbout": [
+    "Supreme Villagio", "Supreme Villagio Somatane", "Supreme Villagio Somante",
+    "Luxury Bungalows in Pune", "Luxury Villas in Pune", "4 BHK Luxury Twin Villas", 
+    "5 BHK Grand Presidential Villas", "Villas near Mumbai-Pune Expressway",
+    "Club Villagio", "Somatane Real Estate", "MahaRERA Real Estate Compliance"
+  ],
   "sameAs": [
     "https://www.facebook.com/SupremeUniversalRealEstate/",
     "https://www.instagram.com/supreme_universal/",
