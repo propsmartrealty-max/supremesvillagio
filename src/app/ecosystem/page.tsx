@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { PROGRAMMATIC_TOPICS } from '@/lib/programmatic-villagio';
+import SeoSiloLinks from '@/components/layout/SeoSiloLinks';
+import { MapPin, Building2, Home, ShieldCheck, Sparkles, Phone, ArrowRight, ChevronRight, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: "Supreme Villagio Somatane Ecosystem [Official 16-Acre Master Project Directory]",
@@ -19,7 +22,13 @@ export const metadata: Metadata = {
     "Supreme Villagio MahaRERA",
     "Supreme Universal Somatane",
     "Supreme Villagio Floor Plans",
-    "Supreme Villagio Reviews"
+    "Supreme Villagio Reviews",
+    "Luxury Villas in Somatane",
+    "Luxury Bungalows Somatane",
+    "Villas Near Mumbai Pune Expressway",
+    "Villas for Mumbai Buyers Atal Setu",
+    "Villas Near Hinjewadi IT Park",
+    "Villas in PCMC Pimpri Chinchwad"
   ],
   alternates: {
     canonical: "https://www.supremesvillagio.com/ecosystem",
@@ -223,10 +232,157 @@ export default function EcosystemHub() {
             ))}
           </div>
 
+          {/* Geographic Buyer Corridors: Pune, PCMC & Mumbai */}
+          <div className="mb-20">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-gold/10 border border-gold/30 rounded-full text-gold text-xs uppercase tracking-widest mb-4">
+              Core Geographic Demand Silos
+            </div>
+            <h2 className="text-3xl font-heading text-white mb-4">
+              Target Buyer Corridors: Pune, PCMC &amp; Mumbai
+            </h2>
+            <p className="text-stone text-sm max-w-3xl mb-8">
+              Supreme Villagio Somatane serves as the pinnacle horizontal residential landmark across three distinct luxury buyer markets, providing tailored advantages for primary residences and holiday second homes.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Corridor 1: Pune */}
+              <div className="p-6 bg-white/[0.03] border border-white/10 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-2 text-gold text-xs font-semibold uppercase tracking-wider mb-3">
+                    <MapPin className="w-4 h-4" />
+                    Pune Tech &amp; CXO Belt
+                  </div>
+                  <h3 className="text-xl font-heading text-white mb-2">
+                    Primary Residences for Pune Buyers
+                  </h3>
+                  <p className="text-stone text-xs leading-relaxed mb-4">
+                    20 minutes from Hinjewadi IT Park (Phases 1, 2, 3) and 25 minutes from Baner &amp; Balewadi. Effortless reverse-traffic commute, 616m elevation clean mountain air, and authentic 4 &amp; 5 BHK landed villa ownership vs. congested high-rises.
+                  </p>
+                  <ul className="space-y-1.5 text-xs text-stone/80 mb-6">
+                    <li>• Hinjewadi, Wakad, Baner, Aundh, Kothrud</li>
+                    <li>• Reverse-traffic expressway commute</li>
+                    <li>• Ready OC inventory with 0% GST liability</li>
+                  </ul>
+                </div>
+                <Link
+                  href="/supreme-villagio-somatane/for-pune-buyers"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold hover:text-white transition-colors"
+                >
+                  Explore Pune Buyer Guide <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+
+              {/* Corridor 2: PCMC */}
+              <div className="p-6 bg-white/[0.03] border border-white/10 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-2 text-gold text-xs font-semibold uppercase tracking-wider mb-3">
+                    <Building2 className="w-4 h-4" />
+                    PCMC Industrialist Belt
+                  </div>
+                  <h3 className="text-xl font-heading text-white mb-2">
+                    Generational Bungalows for PCMC
+                  </h3>
+                  <p className="text-stone text-xs leading-relaxed mb-4">
+                    12 minutes from Nigdi Pradhikaran and Ravet via 6-lane NH-48. 20 minutes from Chakan Auto Hub, Talawade IT SEZ, and Bhosari MIDC. Private 3-car parking, 3-side open lawns, and 5-tier gated security for joint business families.
+                  </p>
+                  <ul className="space-y-1.5 text-xs text-stone/80 mb-6">
+                    <li>• Nigdi, Pradhikaran, Chinchwad, Ravet</li>
+                    <li>• Chakan, Bhosari, Talawade MIDC connectivity</li>
+                    <li>• Spacious plots with multi-car family parking</li>
+                  </ul>
+                </div>
+                <Link
+                  href="/supreme-villagio-somatane/for-pimpri-chinchwad-pcmc-buyers"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold hover:text-white transition-colors"
+                >
+                  Explore PCMC Buyer Guide <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+
+              {/* Corridor 3: Mumbai */}
+              <div className="p-6 bg-white/[0.03] border border-white/10 rounded-xl flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-2 text-gold text-xs font-semibold uppercase tracking-wider mb-3">
+                    <Sparkles className="w-4 h-4" />
+                    Mumbai Weekend Getaway
+                  </div>
+                  <h3 className="text-xl font-heading text-white mb-2">
+                    75-Min Weekend &amp; Second Home
+                  </h3>
+                  <p className="text-stone text-xs leading-relaxed mb-4">
+                    75-minute signal-free highway drive from South Mumbai / BKC via Atal Setu (MTHL) &amp; Expressway. 3 minutes from Somatane toll gate without Lonavala traffic jams. 18,500 sq.ft. operational clubhouse with temperature-regulated pool.
+                  </p>
+                  <ul className="space-y-1.5 text-xs text-stone/80 mb-6">
+                    <li>• South Mumbai, BKC, Bandra, Powai, Thane</li>
+                    <li>• 75 mins via Atal Setu MTHL &amp; Expressway</li>
+                    <li>• Resort living, high rental yields &amp; clean air</li>
+                  </ul>
+                </div>
+                <Link
+                  href="/supreme-villagio-somatane/weekend-second-homes-mumbai"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-gold hover:text-white transition-colors"
+                >
+                  Explore Mumbai Second Home Guide <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Complete 25 Programmatic Topics Cluster */}
+          <div className="mb-20">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-white/10">
+              <div>
+                <span className="text-xs font-semibold text-gold uppercase tracking-widest block mb-2">
+                  Specialized Buyer Search Network
+                </span>
+                <h2 className="text-3xl font-heading text-white">
+                  Supreme Villagio Somatane Programmatic Topic Portals
+                </h2>
+              </div>
+              <Link
+                href="/supreme-villagio-somatane"
+                className="mt-4 md:mt-0 text-xs font-semibold text-gold hover:text-white transition-colors flex items-center gap-1"
+              >
+                View Full Somatane Directory Hub <ChevronRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {PROGRAMMATIC_TOPICS.map((topic) => (
+                <Link
+                  key={topic.slug}
+                  href={`/supreme-villagio-somatane/${topic.slug}`}
+                  className="group p-5 bg-white/[0.02] border border-white/10 hover:border-gold/40 hover:bg-white/[0.04] transition-all rounded-xl flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-[11px] font-semibold text-gold uppercase tracking-wider">
+                        {topic.badge}
+                      </span>
+                      <span className="text-xs text-stone font-mono">
+                        {topic.highlightMetric.value}
+                      </span>
+                    </div>
+                    <h3 className="text-sm font-medium text-white group-hover:text-gold transition-colors mb-2">
+                      {topic.query}
+                    </h3>
+                    <p className="text-xs text-stone/70 line-clamp-2 leading-relaxed">
+                      {topic.summary}
+                    </p>
+                  </div>
+                  <div className="mt-4 pt-3 border-t border-white/5 flex items-center justify-between text-xs text-gold">
+                    <span className="font-medium group-hover:underline">Access Verified Details</span>
+                    <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
           {/* Permutations & Typo Knowledge Panel */}
-          <div className="p-8 border border-gold/30 bg-gold/5 rounded-sm mb-16">
+          <div className="p-8 border border-gold/30 bg-gold/5 rounded-xl mb-16">
             <h2 className="text-2xl font-heading text-gold mb-4">
-              Addressing Search Permutations: Somatane & Somante
+              Addressing Search Permutations: Somatane &amp; Somante
             </h2>
             <p className="text-sm text-stone/80 leading-relaxed mb-4">
               Whether you are searching for <strong>Supreme Villagio Somatane</strong>, <strong>Supreme Villagio Somante</strong>, <strong>Villagio Somatane Ecosystem</strong>, 
@@ -235,20 +391,28 @@ export default function EcosystemHub() {
               and 20 minutes from Hinjewadi IT Park Phase 1.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link href="/supreme-villagio/price" className="bg-gold text-charcoal text-xs uppercase tracking-widest px-4 py-2 font-semibold hover:bg-white transition-colors">
+              <Link href="/supreme-villagio/price" className="bg-gold text-charcoal text-xs uppercase tracking-widest px-4 py-2 font-semibold hover:bg-white transition-colors rounded">
                 View Pricing Sheet
               </Link>
-              <Link href="/supreme-villagio/floor-plans" className="border border-cream/30 text-cream text-xs uppercase tracking-widest px-4 py-2 font-semibold hover:bg-white/10 transition-colors">
+              <Link href="/supreme-villagio/floor-plans" className="border border-cream/30 text-cream text-xs uppercase tracking-widest px-4 py-2 font-semibold hover:bg-white/10 transition-colors rounded">
                 Download Floor Plans
               </Link>
-              <Link href="/supreme-villagio-rera" className="border border-cream/30 text-cream text-xs uppercase tracking-widest px-4 py-2 font-semibold hover:bg-white/10 transition-colors">
+              <Link href="/supreme-villagio-rera" className="border border-cream/30 text-cream text-xs uppercase tracking-widest px-4 py-2 font-semibold hover:bg-white/10 transition-colors rounded">
                 Verify MahaRERA Numbers
               </Link>
+              <a href="tel:+917744009295" className="bg-emerald-600 text-white text-xs uppercase tracking-widest px-4 py-2 font-semibold hover:bg-emerald-500 transition-colors rounded inline-flex items-center gap-1.5">
+                <Phone className="w-3.5 h-3.5" /> Direct Sales Desk
+              </a>
             </div>
           </div>
 
+          {/* SEO Silo Directory */}
+          <div className="mb-12">
+            <SeoSiloLinks />
+          </div>
+
           {/* Footer Navigation Links */}
-          <div className="border-t border-white/10 pt-12 flex flex-wrap gap-6 items-center justify-between">
+          <div className="border-t border-white/10 pt-8 flex flex-wrap gap-6 items-center justify-between">
             <Link href="/locations" className="text-sm text-stone hover:text-gold uppercase tracking-widest transition-colors">
               &larr; Back to Location Matrix
             </Link>

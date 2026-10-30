@@ -432,6 +432,286 @@ export const PROGRAMMATIC_TOPICS: ProgrammaticTopic[] = [
       }
     ],
     highlightMetric: { value: "65%+", label: "Open Green Space Ratio" }
+  },
+  {
+    slug: "for-pune-buyers",
+    query: "Supreme Villagio Somatane for Pune Buyers",
+    h1: "Supreme Villagio Somatane for Pune Luxury Buyers: 20 Mins from Baner & Hinjewadi",
+    metaTitle: "Supreme Villagio Somatane for Pune Buyers [20 Mins from Baner & Hinjewadi • Ready OC]",
+    metaDescription: "Why Pune homebuyers, tech executives, and doctors are choosing Supreme Villagio Somatane over crowded Baner & Wakad high-rises. 4 & 5 BHK luxury villas from ₹2.89 Cr*.",
+    badge: "Pune Primary Residences",
+    summary: "A world away from congested Pune traffic, yet just 20 minutes from West Pune's prime business districts. Supreme Villagio Somatane offers true landed bungalow luxury with pure air and 18,500 sq.ft. Club Villagio amenities.",
+    keyPoints: [
+      "Smooth 20-minute reverse-traffic drive from Hinjewadi Phase 1 and 25 minutes from Baner",
+      "True independent land ownership with 3-side open lawns vs. congested high-rise apartments",
+      "Sahyadri foothill air quality index (AQI < 50) and 616m elevation for healthy family living",
+      "Phase 1 & 2 100% OC received with 88+ resident Pune families already living",
+      "Pre-approved preferential corporate loans from SBI, HDFC, and ICICI Bank"
+    ],
+    canonicalTarget: "/luxury-villas-pune",
+    faqs: [
+      {
+        q: "Why do Pune residents prefer Supreme Villagio Somatane over apartments in Baner or Balewadi?",
+        a: "At ₹2.89 Cr*, buyers in Baner only get compact 3 or 4 BHK apartments with fractional land share. At Supreme Villagio Somatane, you own an expansive 2,200 to 3,900 sq.ft. independent villa with private gardens and zero noise pollution."
+      },
+      {
+        q: "What is the daily school and hospital commute like from Somatane?",
+        a: "Premier CBSE/ICSE schools like Symbiosis International, BK Birla Centre, and premier hospitals like Aditya Birla Memorial and Pawana Hospital are within 10 to 20 minutes."
+      }
+    ],
+    highlightMetric: { value: "20 Mins", label: "Drive from West Pune / Baner" }
+  },
+  {
+    slug: "for-pimpri-chinchwad-pcmc-buyers",
+    query: "Supreme Villagio Somatane for Pimpri Chinchwad PCMC Buyers",
+    h1: "Supreme Villagio Somatane for PCMC & Pimpri Chinchwad Industrialists & Business Families",
+    metaTitle: "Supreme Villagio Somatane for PCMC Buyers [Nigdi, Pradhikaran, Chinchwad, Chakan MIDC]",
+    metaDescription: "Luxury gated villas for Pimpri-Chinchwad business owners and industrialists. 12 mins from Nigdi Pradhikaran, 20 mins from Chakan & Talawade MIDC. Ready OC from ₹2.89 Cr*.",
+    badge: "PCMC Industrial Elite",
+    summary: "The preferred residential enclave for PCMC industrialists, automotive leaders, and manufacturing families. Located right at Somatane Phata with direct 12-minute connectivity to Nigdi-Pradhikaran and Chakan MIDC.",
+    keyPoints: [
+      "Just 12 minutes from Nigdi Pradhikaran and Ravet via Old Mumbai-Pune Highway (NH-48)",
+      "Direct 20-minute connection to Chakan Auto Hub, Talawade IT SEZ, and Bhosari MIDC",
+      "Private 3-car parking per villa for business families with multi-vehicle fleets",
+      "Multi-tier 24/7 security with RFID boom barriers and biometric clubhouse entry",
+      "Large plot footprints ideal for joint families seeking generational horizontal living"
+    ],
+    canonicalTarget: "/pcmc-luxury-villas",
+    faqs: [
+      {
+        q: "How far is Supreme Villagio Somatane from Nigdi and Chinchwad?",
+        a: "Supreme Villagio is just 10 to 12 km (12 to 15 minutes) from Nigdi Pradhikaran and Chinchwad along the 6-lane NH-48 corridor."
+      },
+      {
+        q: "Are business families from PCMC already residing at Supreme Villagio?",
+        a: "Yes, numerous prominent business owners and industrialists from Chakan, Bhosari, and PCMC have made Supreme Villagio their permanent family home."
+      }
+    ],
+    highlightMetric: { value: "12 Mins", label: "Commute to Nigdi Pradhikaran" }
+  },
+  {
+    slug: "weekend-second-homes-mumbai",
+    query: "Supreme Villagio Somatane Weekend Second Homes Mumbai",
+    h1: "Supreme Villagio Somatane: The Ultimate Luxury Weekend & Second Home for Mumbai HNIs",
+    metaTitle: "Supreme Villagio Somatane Weekend Homes Mumbai [75 Mins via Atal Setu • 0% GST Ready OC]",
+    metaDescription: "The premier weekend villa getaway for Mumbai HNIs. 75 minutes from South Mumbai via Atal Setu MTHL & Expressway. Resort amenities, temperature-controlled pool, clean Sahyadri air.",
+    badge: "Mumbai Weekend Villa",
+    summary: "Forget the bumper-to-bumper traffic jams to Alibaug or Lonavala. Supreme Villagio Somatane offers high-speed signal-free access in 75 minutes from BKC, complete with 18,500 sq.ft. resort clubhouse, olympic pool, and 24/7 estate concierge.",
+    keyPoints: [
+      "75-minute signal-free highway drive from Mumbai / Navi Mumbai via Atal Setu (MTHL) & Expressway",
+      "Situated at 616m elevation with year-round hill-station breezes and zero industrial humidity",
+      "Complete 5-star resort infrastructure: temperature-regulated pool, squash court, chef cafe, and spa",
+      "Lock-and-leave gated community security with round-the-clock estate maintenance",
+      "Immediate ready OC handover with zero GST and high holiday rental yield potential"
+    ],
+    canonicalTarget: "/villas-near-atal-setu-mthl",
+    faqs: [
+      {
+        q: "Why is Somatane a better weekend home investment than Lonavala or Alibaug?",
+        a: "Somatane is accessible via high-speed Expressway without the weekend mountain bottlenecks of Lonavala or jetty waits of Alibaug. It provides full municipal utilities and freehold land titles."
+      },
+      {
+        q: "Can I generate rental income from my villa when not in personal use?",
+        a: "Yes. Gated luxury villas in this corridor command premium weekend holiday tariffs (₹25,000 to ₹45,000 per night for 4/5 BHK formats) from Mumbai corporate retreats and families."
+      }
+    ],
+    highlightMetric: { value: "75 Mins", label: "Door-to-Door Drive from BKC" }
+  },
+  {
+    slug: "luxury-bungalows-somatane",
+    query: "Luxury Bungalows in Somatane Supreme Villagio",
+    h1: "Luxury Independent Bungalows & Twin Bungalows in Somatane",
+    metaTitle: "Luxury Bungalows in Somatane [4 & 5 BHK Independent Gated Bungalows from ₹2.89 Cr*]",
+    metaDescription: "Exclusive 4 & 5 BHK luxury bungalows in Somatane, Pune at Supreme Villagio. 3-side open lawns, private terraces, modern architecture by Site Concepts Singapore. Ready OC.",
+    badge: "Luxury Gated Bungalows",
+    summary: "Experience authentic independent bungalow living inside a secure 16-acre master planned estate. Private gardens on three sides, double-height ceilings, and high acoustic separation.",
+    keyPoints: [
+      "Spacious 4 & 5 BHK independent and twin bungalow footprints ranging from 2,200 to 3,900 sq.ft.",
+      "Private landscaped lawn wrapping around three sides of the residence",
+      "Expansive private rooftop terrace with unobstructed views of the Sahyadri mountains",
+      "Architectural planning eliminating common living walls for supreme acoustic serenity",
+      "Covered multi-car porch with EV fast-charger power points"
+    ],
+    canonicalTarget: "/luxury-bungalows-pune",
+    faqs: [
+      {
+        q: "What makes bungalows at Supreme Villagio Somatane unique?",
+        a: "Unlike standalone plots requiring complicated construction permits, Supreme Villagio delivers fully built, ready OC bungalows with world-class clubhouse amenities and 24/7 security."
+      },
+      {
+        q: "Are customized interior finishes available for the bungalows?",
+        a: "Yes, sample bungalows are ready for inspection and owners have full architectural flexibility for private interior customization."
+      }
+    ],
+    highlightMetric: { value: "3-Side Open", label: "Private Garden Wrap-Around" }
+  },
+  {
+    slug: "ready-to-move-villas-zero-gst",
+    query: "Ready to Move Villas in Somatane Pune Zero GST",
+    h1: "Ready to Move Luxury Villas in Somatane with 100% OC & Zero GST Advantage",
+    metaTitle: "Ready to Move Villas in Somatane Pune [100% OC Received • Zero GST Savings Up to ₹25 Lakhs]",
+    metaDescription: "Certified ready to move luxury villas in Somatane, Pune at Supreme Villagio. Phase 1 & 2 full Occupation Certificate (OC) granted. 0% GST liability. Immediate possession.",
+    badge: "Zero GST & Ready OC",
+    summary: "Eliminate project delivery risk and save millions in taxes. Ready-to-move villas at Supreme Villagio Somatane carry a 100% full Occupation Certificate, exempting buyers from 5% GST liability.",
+    keyPoints: [
+      "Save ₹15 Lakh to ₹25 Lakh on total acquisition costs thanks to statutory 0% GST exemption",
+      "Full Occupation Certificate (OC) verified on MahaRERA portal for Phase 1 & 2",
+      "88+ families already residing with active resident welfare association and security",
+      "Immediate registration and key handover within 7 to 14 days of mortgage sanction",
+      "Walk through the exact physical villa you will purchase, not an artist impression"
+    ],
+    canonicalTarget: "/supreme-villagio/resale",
+    faqs: [
+      {
+        q: "How much money does the 0% GST advantage save on a villa?",
+        a: "Under Indian GST tax rules, properties with a completed Occupation Certificate attract 0% GST, saving between ₹15 Lakhs and ₹25 Lakhs compared to under-construction projects."
+      },
+      {
+        q: "Are ready OC units available for immediate interior fit-out?",
+        a: "Yes, keys are handed over immediately upon deed registration, allowing your interior teams to commence work without delay."
+      }
+    ],
+    highlightMetric: { value: "₹25 Lakhs*", label: "Average GST Tax Savings" }
+  },
+  {
+    slug: "independent-villas-with-private-garden",
+    query: "Supreme Villagio Villas with Private Garden Somatane",
+    h1: "Independent Villas with 3-Side Open Private Lawns & Botanical Gardens",
+    metaTitle: "Villas with Private Garden in Somatane [3-Side Open Lawns • Supreme Villagio Pune]",
+    metaDescription: "Discover luxury villas with expansive 3-side open private gardens at Supreme Villagio Somatane. Outdoor dining deck, manicured lawns, botanical landscaping from ₹3.45 Cr*.",
+    badge: "Private Lawn & Deck",
+    summary: "Rediscover the joy of bare-foot morning grass walks and open-air family barbecues. Each 4 BHK Twin Villa and 5 BHK Presidential Villa is enveloped by private manicured green lawns.",
+    keyPoints: [
+      "Up to 1,200 sq.ft. of dedicated private garden lawn space wrapping around your home",
+      "Floor-to-ceiling sliding glass doors connecting living rooms directly to the garden deck",
+      "Automated drip irrigation and landscape maintenance managed by the estate facility team",
+      "Pet-friendly open grounds for pets to roam freely within the private property boundary",
+      "Ideal micro-setting for organic herb gardening and tranquil outdoor meditation"
+    ],
+    canonicalTarget: "/supreme-villagio/4-bhk-villas",
+    faqs: [
+      {
+        q: "Who maintains the private garden lawns at Supreme Villagio?",
+        a: "The resident facility management team provides professional horticulture services, keeping all private lawns and boundary landscaping lush year-round."
+      },
+      {
+        q: "Can I install an outdoor plunge pool or jacuzzi in the private garden?",
+        a: "Yes, the private garden layout offers ample structural footprint for custom jacuzzi, plunge pool, or gazebo installations."
+      }
+    ],
+    highlightMetric: { value: "1,200 Sq.Ft.", label: "Private Garden Space" }
+  },
+  {
+    slug: "presidential-villas-with-private-elevator",
+    query: "5 BHK Presidential Villas with Private Elevator Somatane",
+    h1: "5 BHK Presidential Hillside Villas with Private Hydraulic Elevator & 3-Car Parking",
+    metaTitle: "5 BHK Presidential Villas with Private Elevator [3,900 Sq.Ft. • Supreme Villagio Somatane]",
+    metaDescription: "Flagship 5 BHK Presidential Villas at Supreme Villagio Somatane. Dedicated internal private elevator shaft connecting all 3 levels, 3 covered car parks, panoramic mountain horizons.",
+    badge: "Flagship Presidential",
+    summary: "Built without compromise for generational luxury. The 5 BHK Presidential residences feature dedicated hydraulic elevator shafts connecting ground to private terrace lounge, ensuring barrier-free comfort for senior parents and children.",
+    keyPoints: [
+      "Grand 3,400 to 3,900 sq.ft. carpet area across ground, first, and second levels",
+      "Dedicated internal elevator shaft connecting all floors seamlessly",
+      "3 covered car parking bays with expansive driveway footprint",
+      "Panoramic 270-degree view of the verdant Sahyadri mountain ranges",
+      "Top-floor private sky lounge and open-air stargazing entertainment terrace"
+    ],
+    canonicalTarget: "/supreme-villagio/5-bhk-villas",
+    faqs: [
+      {
+        q: "What type of elevator can be installed in the 5 BHK Presidential Villa?",
+        a: "The villa is engineered with a standard shaft accommodating luxury hydraulic or gearless panoramic glass elevators."
+      },
+      {
+        q: "Is there separate accommodation for household staff and drivers?",
+        a: "Yes, presidential villas include dedicated staff quarters with independent washrooms and private service entries."
+      }
+    ],
+    highlightMetric: { value: "3,900 Sq.Ft.", label: "Grand Presidential Footprint" }
+  },
+  {
+    slug: "gated-community-security-features",
+    query: "Supreme Villagio Somatane Gated Community Security",
+    h1: "16-Acre Multi-Tier Gated Community Security & Surveillance at Supreme Villagio",
+    metaTitle: "Supreme Villagio Somatane Security [Multi-Tier Gated Protection • 24/7 CCTV & RFID]",
+    metaDescription: "State-of-the-art security architecture at Supreme Villagio Somatane. 24/7 manned security guards, RFID automated boom barriers, peripheral solar fencing, and HD CCTV coverage.",
+    badge: "Multi-Tier Security",
+    summary: "Uncompromising peace of mind for you and your family. Supreme Villagio Somatane operates a 5-tier security apparatus combining perimeter intrusion detection, smart visitor management, and 24/7 patrolling guards.",
+    keyPoints: [
+      "Perimeter security with 8-foot masonry boundary walls and anti-climb solar fencing",
+      "RFID automated boom barriers for authorized resident vehicles",
+      "High-definition night-vision CCTV coverage across all internal boulevards and clubhouse",
+      "Smart digital app-based visitor verification system with intercom connectivity",
+      "24/7 active security patrol vehicles and emergency response protocols"
+    ],
+    canonicalTarget: "/supreme-villagio/master-plan",
+    faqs: [
+      {
+        q: "Is Supreme Villagio Somatane safe for children and senior citizens?",
+        a: "Yes. With complete vehicular segregation along internal boulevards, 24/7 guard stations, and app-based guest clearance, the community provides the highest safety standards in West Pune."
+      },
+      {
+        q: "How are deliveries and couriers managed within the estate?",
+        a: "All couriers and service providers are logged with digital OTP authorization at the main gate before being granted escort access."
+      }
+    ],
+    highlightMetric: { value: "24/7", label: "Manned Security & Surveillance" }
+  },
+  {
+    slug: "maintenance-charges-club-villagio",
+    query: "Supreme Villagio Somatane Maintenance Charges",
+    h1: "Supreme Villagio Somatane Maintenance Charges & Clubhouse Operations",
+    metaTitle: "Supreme Villagio Maintenance Charges [Official Cost Breakdown & Resident Operations]",
+    metaDescription: "Clear breakdown of maintenance charges at Supreme Villagio Somatane. Covers 18,500 sq.ft. Club Villagio upkeep, 24/7 security, landscaping, pool filtration, and streetlighting.",
+    badge: "Transparent Maintenance",
+    summary: "Professional estate management ensuring long-term asset value and pristine upkeep. Understand monthly maintenance charges, clubhouse operational reserves, and municipal services.",
+    keyPoints: [
+      "Predictable and transparent per-square-foot monthly maintenance rates",
+      "Covers 100% operation of 18,500 sq.ft. Club Villagio, gym, and swimming pool filtration",
+      "Includes 24/7 security personnel, horticulture teams, and boulevard street lighting",
+      "Dedicated sinking fund for long-term infrastructure repairs and road resurfacing",
+      "Managed by professional facility management agency with active resident oversight"
+    ],
+    canonicalTarget: "/supreme-villagio/amenities",
+    faqs: [
+      {
+        q: "What is included in the Supreme Villagio maintenance fee?",
+        a: "The fee covers 24/7 security, daily garbage collection, street lighting, landscape gardening, clubhouse equipment upkeep, swimming pool chemicals, and common area power backup."
+      },
+      {
+        q: "Is there a resident welfare association (RWA) formed?",
+        a: "Yes, resident families in Phase 1 & 2 have an active advisory committee working directly with Supreme Universal facility management."
+      }
+    ],
+    highlightMetric: { value: "100%", label: "Operational Transparency" }
+  },
+  {
+    slug: "sample-villa-walkthrough-site-visit",
+    query: "Supreme Villagio Somatane Sample Villa Site Visit",
+    h1: "Book Sample Villa Walkthrough & Private Site Visit at Supreme Villagio Somatane",
+    metaTitle: "Book Supreme Villagio Somatane Site Visit [Sample Villa Walkthrough • Developer Desk]",
+    metaDescription: "Experience horizontal luxury firsthand. Book your private walkthrough of the 4 & 5 BHK designer sample villas at Supreme Villagio Somatane. Open daily 9:30 AM to 7:00 PM.",
+    badge: "VIP Site Walkthrough",
+    summary: "Touch the European marble, step into the double-height living room, and experience the tranquil breeze on the private lawn. Schedule a private site visit with our senior luxury advisors today.",
+    keyPoints: [
+      "Designer sample villas fully furnished and open for private family walkthroughs",
+      "Guided electric buggy tour of the 16-acre estate and 18,500 sq.ft. Club Villagio",
+      "One-on-one consultation with developer pricing specialists and mortgage advisors",
+      "Open daily from 9:30 AM to 7:00 PM (including Saturdays, Sundays, and public holidays)",
+      "Complimentary pickup and drop service from Baner / Hinjewadi on advance booking"
+    ],
+    canonicalTarget: "/supreme-villagio/contact",
+    faqs: [
+      {
+        q: "How do I book a private site visit to Supreme Villagio Somatane?",
+        a: "Call the official sales desk at +91 7744009295 or message us on WhatsApp to confirm your preferred date and time slot."
+      },
+      {
+        q: "What is the physical address of the site experience centre?",
+        a: "Supreme Villagio Experience Centre, Survey No. 44, Somatane Phata, Old Mumbai-Pune Highway, Somatane, Pune 410506."
+      }
+    ],
+    highlightMetric: { value: "Daily 9:30 AM", label: "Walkthrough Availability" }
   }
 ];
 
