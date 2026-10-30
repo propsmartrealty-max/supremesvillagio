@@ -120,6 +120,41 @@ export default function LocationPage() {
           ))}
         </div>
 
+        {/* Live Interactive Google Maps & GPS Navigation Module */}
+        <div className="bg-[#1C2C25] border border-[#E4E2D3]/15 p-6 md:p-10 rounded-sm mb-16 shadow-2xl">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+            <div>
+              <span className="text-[#E15E3F] text-xs font-semibold uppercase tracking-widest block mb-1">Live GPS Coordinates: 18.693697° N, 73.687351° E</span>
+              <h3 className="text-2xl font-heading text-white">Supreme Villagio Live Location &amp; Satellite Map</h3>
+            </div>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=18.693697,73.687351"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#E15E3F] hover:bg-[#F07F63] text-white text-xs font-bold uppercase tracking-wider rounded transition-colors self-start md:self-auto shadow-lg"
+            >
+              <Navigation className="w-4 h-4" /> Start GPS Navigation
+            </a>
+          </div>
+
+          <div className="w-full h-[360px] md:h-[450px] rounded overflow-hidden border border-white/10 relative">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15121.218556637841!2d73.6786016149463!3d18.693697047781075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b19280dcb807%3A0xc3cfc314051d9546!2sSupreme%20Villagio!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Supreme Villagio Somatane Google Maps Location"
+              className="w-full h-full filter saturate-[1.1] contrast-[1.05]"
+            ></iframe>
+          </div>
+          <p className="text-xs text-[#E4E2D3]/60 mt-4 flex items-center gap-2">
+            <MapPin className="w-3.5 h-3.5 text-[#E15E3F]" /> Supreme Villagio Experience Centre, Sector 1, Somatane Phata, Old Mumbai-Pune Highway, Pune 410506.
+          </p>
+        </div>
+
         {/* Macro Location Advantages */}
         <div className="bg-[#1C2C25] border border-[#E4E2D3]/15 p-8 md:p-12 rounded-sm mb-16">
           <h3 className="text-2xl font-heading text-white mb-6">Why Somatane is Pune&apos;s Fastest-Growing Villa Destination</h3>

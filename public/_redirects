@@ -68,3 +68,27 @@
 /villagio-rera                           /supreme-villagio-rera                 301
 /villagio-somatane                       /                                      301
 /villagio-pune                           /                                      301
+
+# 3. Phonetic Single 'L' Typo Engine (vilagio vs villagio)
+/supreme-vilagio                         /                                      301
+/supreme-vilagio-somatane                /                                      301
+/supreme-vilagio-somante                 /                                      301
+/supreme-vilagio-pune                    /                                      301
+/vilagio                                 /                                      301
+/vilagio-somatane                        /                                      301
+/vilagio-somante                         /                                      301
+/vilagio-pune                            /                                      301
+/supreme-vilagio/price                   /supreme-villagio/price                301
+/vilagio-price                           /supreme-villagio/price                301
+/supreme-vilagio/floor-plans             /supreme-villagio/floor-plans          301
+/vilagio-floorplans                      /supreme-villagio/floor-plans          301
+/supreme-vilagio/contact                 /supreme-villagio/contact              301
+/vilagio-contact                         /supreme-villagio/contact              301
+/supreme-vilagio/reviews                 /supreme-villagio/reviews              301
+/vilagio-reviews                         /supreme-villagio/reviews              301
+/supreme-vilagio-rera                    /supreme-villagio-rera                 301
+/vilagio-rera                            /supreme-villagio-rera                 301
+/supreme-vilagio/resale                  /supreme-villagio/resale               301
+/vilagio-resale                          /supreme-villagio/resale               301
+/club-vilagio                            /supreme-villagio/amenities            301
+/club-vilagio-somatane                   /supreme-villagio/amenities            301
