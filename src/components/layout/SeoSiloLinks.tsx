@@ -8,6 +8,7 @@ export default function SeoSiloLinks({ currentTypology }: { currentTypology?: st
     { title: "4 BHK Luxury Villas", href: "/4-bhk-villas-pune", desc: "Double-height living rooms and private gardens" },
     { title: "5 BHK Presidential Hillside Villas", href: "/5-bhk-villas-pune", desc: "Private elevator, 3-car parking, panoramic views" },
     { title: "4 BHK Townhouses", href: "/supreme-villagio/townhouses", desc: "G+2 luxury residences with private terrace" },
+    { title: "Ready Bungalows Pune (100% OC)", href: "/supreme-villagio-somatane/ready-to-move-independent-bungalows-pune", desc: "Ready to move villas with zero GST liability" },
     { title: "Villas vs Apartments in Pune", href: "/villas-vs-apartments-pune", desc: "Why HNI buyers prefer land ownership over flats" },
   ];
 
@@ -21,12 +22,16 @@ export default function SeoSiloLinks({ currentTypology }: { currentTypology?: st
     { title: "Villas in Somatane", href: "/somatane-villas", desc: "616m elevation, hill-station microclimate & clean air" },
     { title: "Somatane vs Hinjewadi IT Park", href: "/somatane-vs-hinjewadi", desc: "20-minute commute to Phase 1, 2 & 3 IT corridors" },
     { title: "Talegaon Luxury Real Estate", href: "/talegaon-luxury-villas", desc: "Connectivity to MIDC & Mumbai-Pune Expressway" },
+    { title: "Villas Near Chakan MIDC", href: "/supreme-villagio-somatane/villas-near-chakan-midc", desc: "20 mins to Mercedes, Bajaj & Mahindra auto hub" },
     { title: "Supreme Villagio vs Forest Trails", href: "/supreme-villagio-vs-paranjape-forest-trails", desc: "Comparative analysis of Pune's premier villa projects" },
     { title: "Supreme Villagio vs Lodha Belmondo", href: "/supreme-villagio-vs-lodha-belmondo", desc: "Expressway luxury villa & townhouse comparison" },
+    { title: "Supreme Villagio vs Belmondo 2026", href: "/supreme-villagio-somatane/vs-lodha-belmondo-comparison", desc: "Horizontal landed villas vs township high-rise" },
   ];
 
   const projectPortfolio = [
     { title: "Official Contact & Sales Office", href: "/supreme-villagio/contact", desc: "Direct developer phone +91 7744009295 & site visit desk" },
+    { title: "Official Brochure PDF Download", href: "/supreme-villagio-somatane/brochure-download-pdf-2026", desc: "Download high-resolution e-brochure & layouts" },
+    { title: "Exact Address & GPS Location", href: "/supreme-villagio-somatane/address-location-directions-map", desc: "Survey 44, Somatane Phata (3 mins to Toll)" },
     { title: "Resale & Ready Possession OC Units", href: "/supreme-villagio/resale", desc: "Phase 1 & 2 ready OC villas with 0% brokerage" },
     { title: "MahaRERA Certifications (OC Received)", href: "/supreme-villagio-rera", desc: "Verified RERA P52100046867, P52100049506, P52100055048" },
     { title: "16-Acre Master Plan & Layout", href: "/supreme-villagio/master-plan", desc: "Site Concepts Singapore landscape masterplan" },

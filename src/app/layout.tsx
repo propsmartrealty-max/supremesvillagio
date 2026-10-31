@@ -43,38 +43,49 @@ export const metadata: Metadata = {
   keywords: [
     // 1. Core Brand Permutations & Phonetic Misspellings
     "Supreme Villagio", "Supreme Villagio Somatane", "Supreme Villagio Somante", "Supreme Villagio Pune",
-    "Villagio Somatane", "Villagio Somante", "Villagio Pune", "Club Villagio", "Club Villagio Somatane",
-    "Supreme Universal Somatane", "Supreme Villagio Ecosystem", "Supreme Villagio Somatane Ecosystem",
+    "Supreme Villagio Talegaon", "Supreme Villagio Maval", "Villagio Somatane", "Villagio Somante",
+    "Villagio Pune", "Club Villagio", "Club Villagio Somatane", "Supreme Universal Somatane",
+    "Supreme Universal Pune", "Supreme Villagio Ecosystem", "Supreme Villagio Somatane Ecosystem",
     "Supreme Villagio Somante Ecosystem", "Supreme Villagio Contact Number", "Supreme Villagio Sales Office",
 
-    // 2. High-Intent Commercial, Price & Booking Queries
-    "Supreme Villagio Price", "Supreme Villagio Cost Sheet", "Supreme Villagio 4 BHK Price", 
-    "Supreme Villagio 5 BHK Price", "Supreme Villagio Payment Plan", "Supreme Villagio Booking",
-    "Supreme Villagio 4 BHK", "Supreme Villagio 5 BHK", "Supreme Villagio Townhouses", "Supreme Villagio Twin Villas",
+    // 2. High-Intent Commercial, Price, Resale & Booking Queries
+    "Supreme Villagio Price", "Supreme Villagio Cost Sheet", "Supreme Villagio Price List 2026",
+    "Supreme Villagio 4 BHK Price", "Supreme Villagio 5 BHK Price", "Supreme Villagio Payment Plan",
+    "Supreme Villagio Booking", "Supreme Villagio Resale", "Supreme Villagio Resale Villas",
+    "Supreme Villagio Rent", "Supreme Villagio Villas for Rent", "Supreme Villagio 4 BHK",
+    "Supreme Villagio 5 BHK", "Supreme Villagio Townhouses", "Supreme Villagio Twin Villas",
+    "Supreme Villagio Presidential Villa", "Ready Possession Villas 0 GST",
 
     // 3. Due Diligence, RERA & Possession Queries
     "Supreme Villagio MahaRERA", "Supreme Villagio RERA Number", "Supreme Villagio RERA", 
-    "Supreme Villagio Possession Date", "Supreme Villagio OC Status", "Supreme Villagio Construction Status",
+    "Supreme Villagio Possession Date", "Supreme Villagio OC Status", "Supreme Villagio OC Received",
+    "Supreme Villagio Construction Status", "Supreme Villagio Bank Approvals SBI HDFC",
     "P52100046867", "P52100049506", "P52100055048",
 
-    // 4. Reputation, Sentiment & Review Queries (Targeting #1 Rank)
+    // 4. Reputation, Sentiment, Head-to-Head Comparisons & Review Queries
     "Supreme Villagio Reviews", "Supreme Villagio Ratings", "Supreme Villagio Testimonials", 
     "Supreme Villagio Feedback", "Supreme Villagio Complaints", "Supreme Villagio Resident Reviews",
+    "Supreme Villagio vs Lodha Belmondo", "Supreme Villagio vs Paranjape Forest Trails",
 
-    // 5. Architectural & Technical Layout Queries
+    // 5. Architectural & Technical Layout, Brochure, Photos & Location Queries
     "Supreme Villagio Floor Plans", "Supreme Villagio Master Plan", "Supreme Villagio Brochure PDF",
-    "Supreme Villagio 4 BHK Floor Plan", "Supreme Villagio 5 BHK Floor Plan", "Supreme Villagio Layout",
+    "Supreme Villagio Download Brochure", "Supreme Villagio 4 BHK Floor Plan", "Supreme Villagio 5 BHK Floor Plan",
+    "Supreme Villagio Layout", "Supreme Villagio Actual Photos", "Supreme Villagio Sample Villa",
+    "Supreme Villagio Address", "Supreme Villagio Location", "Supreme Villagio Directions",
 
-    // 6. High-Volume Pune Luxury Real Estate Commercial Categories
+    // 6. High-Volume Pune & PCMC Luxury Real Estate Commercial Categories
     "Luxury Bungalows in Pune", "Bungalows in Pune", "Villas in Pune", "Luxury Villas Pune",
     "4 BHK Villa in Pune", "5 BHK Villa in Pune", "Gated Community Villas Pune", "Independent Villa in Pune",
     "Ready Possession Villas in Pune", "OC Received Villas Pune", "Twin Villas Pune", "Townhouse in Pune",
-    "Hillside Villas Pune", "Pune Real Estate Market", "Pune Luxury Property",
+    "Row Houses Pune", "Hillside Villas Pune", "Pune Real Estate Market", "Pune Luxury Property",
+    "Luxury Bungalows Near PCMC", "Villas Near Nigdi Pradhikaran", "Villas Near Chakan MIDC",
+    "Villas Near Ravet Kiwale", "Villas Near Wakad Baner", "Talegaon Luxury Villas", "Villas Near Talegaon Dabhade",
 
-    // 7. Mumbai Buyer, Expressway & Regional Connectivity Queries
-    "Villas Near Mumbai Pune Expressway", "Villas Near Expressway Pune", "Weekend Villas Near Mumbai",
-    "Second Homes Near Mumbai", "Villas Near Atal Setu MTHL", "Villas in Somatane", "Villas in Somatane Phata",
-    "Villas Near Hinjewadi IT Park", "Villas Near Hinjewadi Phase 1", "Talegaon Luxury Villas", "PCMC Luxury Villas"
+    // 7. Mumbai Buyer, Expressway, Atal Setu (MTHL) & Regional Connectivity Queries
+    "Villas Near Mumbai Pune Expressway", "Bungalows Near Mumbai Pune Expressway", "Villas Near Expressway Pune",
+    "Weekend Villas Near Mumbai", "Second Homes Near Mumbai", "Villas Near Atal Setu MTHL",
+    "Second Homes Near Lonavala Khandala", "Villas in Somatane", "Villas in Somatane Phata",
+    "Villas Near Hinjewadi IT Park", "Villas Near Hinjewadi Phase 1", "75 Mins Drive Villa From Mumbai"
   ],
   authors: [{ name: "Supreme Universal" }],
   creator: "Supreme Universal",
@@ -553,6 +564,30 @@ const siteNavigationSchema = {
       "position": 12,
       "name": "Developer Sales Office & Contact Desk",
       "url": "https://www.supremesvillagio.com/supreme-villagio/contact"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 13,
+      "name": "Official Brochure PDF Download",
+      "url": "https://www.supremesvillagio.com/supreme-villagio-somatane/brochure-download-pdf-2026"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 14,
+      "name": "Exact Address & GPS Location",
+      "url": "https://www.supremesvillagio.com/supreme-villagio-somatane/address-location-directions-map"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 15,
+      "name": "Supreme Villagio vs Lodha Belmondo",
+      "url": "https://www.supremesvillagio.com/supreme-villagio-somatane/vs-lodha-belmondo-comparison"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "position": 16,
+      "name": "Ready to Move Bungalows Pune (100% OC)",
+      "url": "https://www.supremesvillagio.com/supreme-villagio-somatane/ready-to-move-independent-bungalows-pune"
     }
   ]
 };

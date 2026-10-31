@@ -160,6 +160,11 @@ export default function Footer() {
             <Link href="/villas-near-atal-setu-mthl" className="hover:text-primary transition-colors">Atal Setu MTHL Villas</Link>
             <Link href="/supreme-villagio-vs-paranjape-forest-trails" className="hover:text-primary transition-colors">Villagio vs Forest Trails</Link>
             <Link href="/supreme-villagio-vs-lodha-belmondo" className="hover:text-primary transition-colors">Villagio vs Lodha Belmondo</Link>
+            <Link href="/supreme-villagio-somatane/brochure-download-pdf-2026" className="hover:text-primary transition-colors font-semibold text-white">Brochure PDF Download</Link>
+            <Link href="/supreme-villagio-somatane/address-location-directions-map" className="hover:text-primary transition-colors font-semibold text-white">Exact Address &amp; Map</Link>
+            <Link href="/supreme-villagio-somatane/villas-near-chakan-midc" className="hover:text-primary transition-colors">Villas Near Chakan MIDC</Link>
+            <Link href="/supreme-villagio-somatane/villas-near-ravet-kiwale-pcmc" className="hover:text-primary transition-colors">Villas Near Ravet Kiwale</Link>
+            <Link href="/supreme-villagio-somatane/second-homes-near-lonavala-khandala" className="hover:text-primary transition-colors">Second Homes Near Lonavala</Link>
             <Link href="/somatane-vs-hinjewadi" className="hover:text-primary transition-colors">Somatane vs Hinjewadi</Link>
             <Link href="/supreme-villagio/phase-1" className="hover:text-primary transition-colors">Phase 1 (OC Received)</Link>
             <Link href="/supreme-villagio/phase-2" className="hover:text-primary transition-colors">Phase 2 (OC Received)</Link>

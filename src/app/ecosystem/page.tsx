@@ -14,21 +14,29 @@ export const metadata: Metadata = {
     "Supreme Villagio Somatane",
     "Supreme Villagio Somante",
     "Villagio Somatane",
+    "Villagio Pune",
     "Club Villagio Somatane",
     "Supreme Villagio 4 BHK",
     "Supreme Villagio 5 BHK",
     "Supreme Villagio Villas",
     "Supreme Villagio Price",
+    "Supreme Villagio Resale",
+    "Supreme Villagio Rent",
     "Supreme Villagio MahaRERA",
     "Supreme Universal Somatane",
     "Supreme Villagio Floor Plans",
+    "Supreme Villagio Brochure PDF",
+    "Supreme Villagio vs Lodha Belmondo",
     "Supreme Villagio Reviews",
+    "Supreme Villagio Address",
     "Luxury Villas in Somatane",
     "Luxury Bungalows Somatane",
     "Villas Near Mumbai Pune Expressway",
     "Villas for Mumbai Buyers Atal Setu",
     "Villas Near Hinjewadi IT Park",
-    "Villas in PCMC Pimpri Chinchwad"
+    "Villas in PCMC Pimpri Chinchwad",
+    "Villas Near Chakan MIDC",
+    "Villas Near Talegaon Dabhade"
   ],
   alternates: {
     canonical: "https://www.supremesvillagio.com/ecosystem",
@@ -328,7 +336,7 @@ export default function EcosystemHub() {
             </div>
           </div>
 
-          {/* Complete 25 Programmatic Topics Cluster */}
+          {/* Complete 40 Programmatic Topics Cluster */}
           <div className="mb-20">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-white/10">
               <div>

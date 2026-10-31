@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useMemo, useEffect } from "react";
+import Link from "next/link";
 import dynamic from "next/dynamic";
+import { ArrowRight, Sparkles, Building2, MapPin, ShieldCheck, Compass } from "lucide-react";
 import HeroSection from "@/components/sections/HeroSection";
 import PressSection from "@/components/sections/PressSection";
 import { useModal } from "@/contexts/ModalContext";
@@ -146,6 +148,215 @@ export default function LandingPageTemplate({
         </section>
       )}
       {sections}
+
+      {/* Enterprise Keyword Authority Matrix */}
+      <section className="bg-charcoal text-cream py-16 border-t border-white/10" aria-label="Supreme Villagio Somatane Search Knowledge Matrix">
+        <div className="container mx-auto px-6 md:px-12 max-w-6xl">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-white/10">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-gold/10 border border-gold/30 rounded-full text-gold text-xs uppercase tracking-widest mb-3">
+                <Sparkles className="w-3.5 h-3.5" />
+                Google Search &amp; Buyer Knowledge Matrix
+              </div>
+              <h2 className="text-2xl md:text-3xl font-heading text-white">
+                Supreme Villagio Somatane: Authoritative Project Directory
+              </h2>
+            </div>
+            <Link
+              href="/supreme-villagio-somatane"
+              className="mt-4 md:mt-0 text-xs font-semibold text-gold hover:text-white transition-colors flex items-center gap-1.5"
+            >
+              Explore Full Somatane Directory Hub <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Column 1: Brand & Official Docs */}
+            <div className="p-6 bg-white/[0.02] border border-white/10 rounded-xl space-y-4">
+              <div className="flex items-center gap-2 text-gold text-xs font-semibold uppercase tracking-wider pb-2 border-b border-white/10">
+                <Building2 className="w-4 h-4" />
+                Official Documentation
+              </div>
+              <ul className="space-y-3 text-xs">
+                <li>
+                  <Link href="/supreme-villagio-somatane/price-list-2026" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • 2026 Price List &amp; Cost Sheet
+                  </Link>
+                  <span className="text-stone text-[11px]">Starting ₹2.89 Cr* with 0% brokerage</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/brochure-download-pdf-2026" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Official Brochure PDF Download
+                  </Link>
+                  <span className="text-stone text-[11px]">High-res e-deck &amp; specifications</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/floor-plans-pdf" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Architectural Floor Plans PDF
+                  </Link>
+                  <span className="text-stone text-[11px]">RERA approved carpet area blueprints</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/rera-number-and-certificates" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • MahaRERA Numbers &amp; Clear Title
+                  </Link>
+                  <span className="text-stone text-[11px]">P52100046867, P52100049506, P52100055048</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/actual-photos-and-construction-gallery" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Actual Photos &amp; Completed Gallery
+                  </Link>
+                  <span className="text-stone text-[11px]">Real photographs of delivered villas</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/address-location-directions-map" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Exact GPS Address &amp; Map
+                  </Link>
+                  <span className="text-stone text-[11px]">Sector 1, Somatane Phata (3 mins to Toll)</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 2: Residences & Typologies */}
+            <div className="p-6 bg-white/[0.02] border border-white/10 rounded-xl space-y-4">
+              <div className="flex items-center gap-2 text-gold text-xs font-semibold uppercase tracking-wider pb-2 border-b border-white/10">
+                <Compass className="w-4 h-4" />
+                Residences &amp; Typologies
+              </div>
+              <ul className="space-y-3 text-xs">
+                <li>
+                  <Link href="/supreme-villagio-somatane/4-bhk-twin-villas" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • 4 BHK Luxury Twin Villas
+                  </Link>
+                  <span className="text-stone text-[11px]">2,600 – 2,900 sq.ft. with 3-side lawn</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/5-bhk-presidential-villas" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • 5 BHK Presidential Hillside Villas
+                  </Link>
+                  <span className="text-stone text-[11px]">3,400 – 3,900 sq.ft. with private elevator</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/townhouses-and-row-houses" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • 4 BHK Luxury Townhouses
+                  </Link>
+                  <span className="text-stone text-[11px]">G+2 residences with private terrace</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/ready-possession-oc-villas" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Ready Possession OC Units
+                  </Link>
+                  <span className="text-stone text-[11px]">Phase 1 &amp; 2 OC with 0% GST liability</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/resale-villas-and-townhouses" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Resale Villas &amp; Ready Units
+                  </Link>
+                  <span className="text-stone text-[11px]">Verified inventory with 0% brokerage</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/villas-for-rent-somatane" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Villas for Rent &amp; Rental Yields
+                  </Link>
+                  <span className="text-stone text-[11px]">₹85k - ₹1.25L monthly executive leases</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 3: Regional Corridors */}
+            <div className="p-6 bg-white/[0.02] border border-white/10 rounded-xl space-y-4">
+              <div className="flex items-center gap-2 text-gold text-xs font-semibold uppercase tracking-wider pb-2 border-b border-white/10">
+                <MapPin className="w-4 h-4" />
+                Regional Commute Corridors
+              </div>
+              <ul className="space-y-3 text-xs">
+                <li>
+                  <Link href="/supreme-villagio-somatane/for-pune-buyers" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Pune Primary Buyers (Hinjewadi/Baner)
+                  </Link>
+                  <span className="text-stone text-[11px]">20-minute reverse commute to IT Park</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/for-pimpri-chinchwad-pcmc-buyers" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • PCMC Industrialists (Nigdi/Chinchwad)
+                  </Link>
+                  <span className="text-stone text-[11px]">12 mins from Nigdi Pradhikaran via NH-48</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/villas-near-chakan-midc" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Executive Villas near Chakan MIDC
+                  </Link>
+                  <span className="text-stone text-[11px]">20 mins to Mercedes, Bajaj &amp; Mahindra hubs</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/villas-near-ravet-kiwale-pcmc" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Villas near Ravet &amp; Kiwale Gateway
+                  </Link>
+                  <span className="text-stone text-[11px]">Landed living at apartment prices</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/villas-near-wakad-baner-pune" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Villas near Wakad &amp; Baner West Pune
+                  </Link>
+                  <span className="text-stone text-[11px]">22 mins to Balewadi High Street</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/villas-near-talegaon-dabhade" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Villas near Talegaon Dabhade
+                  </Link>
+                  <span className="text-stone text-[11px]">5 mins to Talegaon MIDC &amp; Station</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 4: Mumbai & Comparisons */}
+            <div className="p-6 bg-white/[0.02] border border-white/10 rounded-xl space-y-4">
+              <div className="flex items-center gap-2 text-gold text-xs font-semibold uppercase tracking-wider pb-2 border-b border-white/10">
+                <ShieldCheck className="w-4 h-4" />
+                Mumbai Weekend &amp; Benchmarks
+              </div>
+              <ul className="space-y-3 text-xs">
+                <li>
+                  <Link href="/supreme-villagio-somatane/weekend-second-homes-mumbai" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Mumbai 75-Min Weekend Homes
+                  </Link>
+                  <span className="text-stone text-[11px]">Direct signal-free highway transit</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/villas-near-atal-setu-mthl" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Villas via Atal Setu (MTHL)
+                  </Link>
+                  <span className="text-stone text-[11px]">Fast connectivity from BKC / South Mumbai</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/second-homes-near-lonavala-khandala" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Second Homes near Lonavala
+                  </Link>
+                  <span className="text-stone text-[11px]">Bypass Khandala ghat monsoon traffic</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/vs-lodha-belmondo-comparison" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • Supreme Villagio vs Lodha Belmondo
+                  </Link>
+                  <span className="text-stone text-[11px]">Landed private lawns vs high-rise towers</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/club-villagio-amenities" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • 18,500 Sq.Ft. Club Villagio
+                  </Link>
+                  <span className="text-stone text-[11px]">Operational pool, gym, banquet &amp; sports</span>
+                </li>
+                <li>
+                  <Link href="/supreme-villagio-somatane/master-plan-layout-map" className="text-cream hover:text-gold transition-colors font-medium block">
+                    • 16-Acre Master Layout &amp; Zoning
+                  </Link>
+                  <span className="text-stone text-[11px]">65% open green landscape by Singapore firm</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <SeoSiloLinks currentTypology={typology} />
     </>
   );
