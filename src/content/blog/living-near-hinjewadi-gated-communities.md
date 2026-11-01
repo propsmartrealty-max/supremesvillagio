@@ -2,7 +2,7 @@
 title: 'Living Near Hinjewadi: Why Top IT Executives are Choosing Gated Horizontal Communities'
 date: '2026-07-24'
 description: 'Discover why IT leaders working in Hinjewadi are abandoning high-rise apartments for luxury bungalows and row houses in nearby Somatane.'
-image: 'https://cdn.supremeuniversal.com/media/Q9b1g7_Supreme-Villagio-Logo.svg'
+image: '/images/supreme-villagio-logo.svg'
 ---
 
 Hinjewadi is the beating heart of Pune's IT and tech sector, housing global giants and thousands of top-tier executives. For years, the default housing choice for these professionals was the luxury high-rise apartments located in Baner, Wakad, or within Hinjewadi itself. 

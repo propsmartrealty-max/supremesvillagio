@@ -72,6 +72,8 @@ export default function HeroSection({
               src="/images/hero-mobile.webp"
               alt={`${headlineLine1} ${headlineLine2} - ${subline}`}
               title={`${headlineLine1} ${headlineLine2}`}
+              width={768}
+              height={1024}
               fetchPriority="high"
               loading="eager"
               decoding="async"
@@ -89,10 +91,11 @@ export default function HeroSection({
         >
           <div className="mb-12 hero-logo">
             <Image 
-              src="https://cdn.supremeuniversal.com/media/Q9b1g7_Supreme-Villagio-Logo.svg"
+              src="/images/supreme-villagio-logo.svg"
               alt="Supreme Villagio Somatane Logo"
               width={300}
               height={100}
+              priority
               className="mx-auto drop-shadow-[0_10px_20px_rgba(245,184,27,0.15)] brightness-0 invert" 
             />
           </div>

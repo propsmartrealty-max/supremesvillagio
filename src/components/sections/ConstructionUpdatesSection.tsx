@@ -9,19 +9,19 @@ const UPDATES = [
     date: "OC Granted • Phase 1 & 2 Delivered",
     title: "Phase 1 & 2: Handed Over to Residents",
     description: "Physical execution is 100% complete with full Occupation Certificates (P52100046867 & P52100049506). Homeowners are currently residing in the low-density estate.",
-    image: "https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-2_sx0rpm.jpg"
+    image: "/images/desktop-banner-2.webp"
   },
   {
     date: "Ready & Operational",
     title: "18,500 Sq.Ft. Club Villagio Ready",
     description: "The grand clubhouse is fully operational featuring an Olympic-length pool, badminton and squash courts, banquet halls, and a state-of-the-art wellness gym.",
-    image: "https://cdn.supremeuniversal.com/media/Villagio-L--KD--Club-housemin.jpg"
+    image: "/images/clubhouse.webp"
   },
   {
     date: "Active Launch • Dec 2028 Schedule",
     title: "Phase 3: Hillside Villas Under Construction",
     description: "Structural plinth and superstructure works are actively progressing for Phase 3 hillside 4 & 5 BHK villas under MahaRERA registration P52100055048.",
-    image: "https://cdn.supremeuniversal.com/media/fIAB41_Villagio--KD--Wellness-Spine.jpg"
+    image: "/images/wellness-spine.webp"
   }
 ];
 
@@ -33,9 +33,9 @@ export default function ConstructionUpdatesSection() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
-            <p className="text-[#E15E3F] uppercase tracking-[0.2em] text-sm font-semibold mb-4">MahaRERA Live Status</p>
+            <p className="text-[#8A2D17] uppercase tracking-[0.2em] text-sm font-semibold mb-4">MahaRERA Live Status</p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-light">
-              Construction & <span className="italic text-[#E15E3F]">Delivery</span> Milestones
+              Construction & <span className="italic text-[#8A2D17]">Delivery</span> Milestones
             </h2>
           </div>
           <p className="text-charcoal max-w-md text-sm md:text-base leading-relaxed font-normal">
@@ -58,6 +58,8 @@ export default function ConstructionUpdatesSection() {
                   <img 
                     src={update.image} 
                     alt={update.title}
+                    width={600}
+                    height={400}
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"

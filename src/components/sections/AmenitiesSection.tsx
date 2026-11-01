@@ -10,35 +10,35 @@ const AMENITIES = [
     description: "18,500 sq. ft. of exclusive recreation and wellness.",
     colSpan: "col-span-12 md:col-span-8",
     rowSpan: "row-span-2",
-    image: "https://cdn.supremeuniversal.com/media/jfpM5D_Villagio-L--KD--Club-housemin.jpg",
+    image: "/images/clubhouse.webp",
   },
   {
     title: "Infinity Pool",
     description: "Temperature-controlled swimming pool overlooking the hills.",
     colSpan: "col-span-12 md:col-span-4",
     rowSpan: "row-span-1",
-    image: "https://cdn.supremeuniversal.com/media/tIaHE6_Villagio-L--Club-housemin.jpg",
+    image: "/images/infinity-pool.webp",
   },
   {
     title: "Yoga Pavilion",
     description: "Find inner peace in our dedicated meditation zones.",
     colSpan: "col-span-12 md:col-span-4",
     rowSpan: "row-span-1",
-    image: "https://cdn.supremeuniversal.com/media/fIAB41_Villagio--KD--Wellness-Spine.jpg",
+    image: "/images/wellness-spine.webp",
   },
   {
     title: "Organic Gardens",
     description: "Stroll through meticulously landscaped green spaces.",
     colSpan: "col-span-12 md:col-span-4",
     rowSpan: "row-span-1",
-    image: "https://cdn.supremeuniversal.com/media/Bc6Vxj_Grand-Central-Boulevard_880-X-900_Villagio-08.jpg",
+    image: "/images/boulevard.webp",
   },
   {
     title: "State-of-the-Art Gym",
     description: "Equipped with the latest fitness technology.",
     colSpan: "col-span-12 md:col-span-8",
     rowSpan: "row-span-1",
-    image: "https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-5_H7lC84.jpg",
+    image: "/images/gym.webp",
   }
 ];
 
@@ -97,6 +97,8 @@ export default function AmenitiesSection() {
                 <img
                   src={amenity.image}
                   alt={amenity.title}
+                  width={800}
+                  height={600}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover scale-105 group-hover:scale-110 transition-transform duration-1000 ease-out"

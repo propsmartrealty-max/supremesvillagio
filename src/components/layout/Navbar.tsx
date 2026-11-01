@@ -44,7 +44,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="relative z-50 group flex items-center">
           <NextImage 
-            src="https://www.supremeuniversal.com/front/img/logo.svg" 
+            src="/images/developer-logo.svg" 
             alt="Supreme Universal" 
             width={121} 
             height={37}

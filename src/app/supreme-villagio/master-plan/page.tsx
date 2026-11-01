@@ -38,7 +38,7 @@ export default function MasterPlanPage() {
 
         <div className="relative w-full h-[450px] md:h-[600px] rounded-sm overflow-hidden mb-16 shadow-2xl border border-[#E4E2D3]/15">
           <Image
-            src="https://cdn.supremeuniversal.com/media/fIAB41_Villagio--KD--Wellness-Spine.jpg"
+            src="/images/wellness-spine.webp"
             alt="Supreme Villagio 16 Acre Master Plan and Wellness Spine"
             fill
             className="object-cover"

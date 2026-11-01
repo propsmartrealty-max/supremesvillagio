@@ -197,7 +197,7 @@ Under the Foreign Exchange Management Act (FEMA), NRIs can freely purchase resid
     description: "A deep dive financial analysis into capital appreciation, rental yields, and lifestyle value between independent villas and high-rise apartments in Pune.",
     date: "2026-08-27",
     author: "Supreme Universal Research",
-    image: "https://cdn.supremeuniversal.com/images/villagio-render.jpg",
+    image: "/images/desktop-banner-2.webp",
     tags: ["villas-vs-apartments", "roi-analysis", "luxury"],
     content: `
 ## The Shift in Buyer Preferences Post-2024

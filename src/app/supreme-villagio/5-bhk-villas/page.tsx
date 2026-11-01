@@ -66,7 +66,7 @@ export default function FiveBhkVillasPage() {
         {/* Hero Visual Banner */}
         <div className="relative w-full h-[400px] md:h-[500px] rounded-sm overflow-hidden mb-16 shadow-2xl border border-[#E4E2D3]/15">
           <Image
-            src="https://cdn.supremeuniversal.com/media/Villagio-L--KD--Club-housemin.jpg"
+            src="/images/clubhouse.webp"
             alt="5 BHK Grand Presidential Villa at Supreme Villagio Somatane"
             fill
             className="object-cover"

@@ -68,7 +68,7 @@ export default function FourBhkVillasPage() {
         {/* Hero Visual Banner */}
         <div className="relative w-full h-[400px] md:h-[500px] rounded-sm overflow-hidden mb-16 shadow-2xl border border-[#E4E2D3]/15">
           <Image
-            src="https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-2_sx0rpm.jpg"
+            src="/images/desktop-banner-2.webp"
             alt="4 BHK Luxury Twin Villa Exterior at Supreme Villagio Somatane"
             fill
             className="object-cover"

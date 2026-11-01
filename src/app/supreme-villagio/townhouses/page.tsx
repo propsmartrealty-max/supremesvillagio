@@ -67,7 +67,7 @@ export default function TownhousesPage() {
         {/* Hero Visual Banner */}
         <div className="relative w-full h-[400px] md:h-[500px] rounded-sm overflow-hidden mb-16 shadow-2xl border border-[#E4E2D3]/15">
           <Image
-            src="https://cdn.supremeuniversal.com/media/fIAB41_Villagio--KD--Wellness-Spine.jpg"
+            src="/images/wellness-spine.webp"
             alt="4 BHK Townhouse Row and Landscaped Wellness Spine at Supreme Villagio"
             fill
             className="object-cover"

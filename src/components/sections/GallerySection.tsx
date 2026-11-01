@@ -6,12 +6,12 @@ import NextImage from "next/image";
 import AnimatedLine from "@/components/ui/AnimatedLine";
 
 const GALLERY_IMAGES = [
-  "https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-3_IOrvdm.jpg",
-  "https://cdn.supremeuniversal.com/media/jfpM5D_Villagio-L--KD--Club-housemin.jpg",
-  "https://cdn.supremeuniversal.com/media/tIaHE6_Villagio-L--Club-housemin.jpg",
-  "https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-5_H7lC84.jpg",
-  "https://cdn.supremeuniversal.com/media/fIAB41_Villagio--KD--Wellness-Spine.jpg",
-  "https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-2_sx0rpm.jpg",
+  "/images/gallery-3.webp",
+  "/images/clubhouse.webp",
+  "/images/infinity-pool.webp",
+  "/images/gym.webp",
+  "/images/wellness-spine.webp",
+  "/images/desktop-banner-2.webp",
 ];
 
 export default function GallerySection() {

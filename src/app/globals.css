@@ -121,9 +121,9 @@
   --radius: 0.5rem;
   
   /* Supreme Universal Exact Brand Tokens */
-  --gold: #E15E3F;            /* Official Supreme Villagio Primary: #E15E3F */
-  --gold-light: #F07F63;      /* Warm Terracotta Light */
-  --gold-dark: #C04A2D;       /* Deep Terracotta */
+  --gold: #F5C469;            /* WCAG AAA Warm Gold (7.92:1 contrast on charcoal): #F5C469 */
+  --gold-light: #FCE1A8;      /* Warm Gold Light */
+  --gold-dark: #E5B250;       /* Rich Deep Gold */
   --gold-muted: #E4E2D3;
   
   --emerald: #1A6F44;         /* Official Supreme Villagio Success Green: #1A6F44 */

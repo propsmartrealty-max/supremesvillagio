@@ -30,7 +30,7 @@ const PLANS = [
     name: '4 BHK Luxury Twin Villa (Type A)',
     carpetArea: '2,750 Sq. Ft.',
     plotArea: '3,200 – 3,600 Sq. Ft.',
-    image: 'https://cdn.supremeuniversal.com/media/Supreme-Villagio--Desktop-Banner-2_sx0rpm.jpg',
+    image: '/images/desktop-banner-2.webp',
     levels: [
       'Ground Floor: Double-height living, dining, show kitchen, guest bedroom, garden deck, 2 car ports.',
       'First Floor: Master suite with walk-in dressing, kids bedroom with attached bath, family lounge.',
@@ -41,7 +41,7 @@ const PLANS = [
     name: '4 BHK Premium Townhouse (Type B)',
     carpetArea: '2,300 Sq. Ft.',
     plotArea: 'Independent G+2 Plot',
-    image: 'https://cdn.supremeuniversal.com/media/fIAB41_Villagio--KD--Wellness-Spine.jpg',
+    image: '/images/wellness-spine.webp',
     levels: [
       'Ground Floor: Living & dining area opening to patio, modular kitchen, powder room, covered parking.',
       'First Floor: 2 master bedrooms with dedicated ensuite baths and sit-out balconies.',
@@ -52,7 +52,7 @@ const PLANS = [
     name: '5 BHK Grand Presidential Villa (Type C)',
     carpetArea: '3,650 Sq. Ft.',
     plotArea: '4,500+ Sq. Ft. Hillside Plot',
-    image: 'https://cdn.supremeuniversal.com/media/Villagio-L--KD--Club-housemin.jpg',
+    image: '/images/clubhouse.webp',
     levels: [
       'Ground Floor: Formal & informal living halls, private lift lobby, guest suite, servant room, 3 car bays.',
       'First Floor: Ultra-luxury master suite with jacuzzi bath, 2 additional bedrooms with dressing rooms.',
