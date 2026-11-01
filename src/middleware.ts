@@ -2,6 +2,16 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
+  // 1. Enforce canonical hostname (https://www.supremesvillagio.com)
+  const host = request.headers.get('host') || '';
+  if (host === 'supremesvillagio.com') {
+    const url = request.nextUrl.clone();
+    url.host = 'www.supremesvillagio.com';
+    url.protocol = 'https:';
+    url.port = '';
+    return NextResponse.redirect(url, { status: 301 });
+  }
+
   const userAgent = request.headers.get('user-agent') || '';
   const isSearchCrawler = /Googlebot|Bingbot|Applebot|YandexBot|DuckDuckBot|Baiduspider|GPTBot|PerplexityBot|Claude-Web|Google-Extended/i.test(userAgent);
 
@@ -52,7 +62,7 @@ export function middleware(request: NextRequest) {
   // Add Cloudflare Early Hints (HTTP 103) & preconnect Link headers
   response.headers.set(
     'Link',
-    '<https://d66htbxvzotmo.cloudfront.net>; rel="preconnect"; crossorigin, <https://cdn.supremeuniversal.com>; rel="preconnect"; crossorigin, <https://fonts.googleapis.com>; rel="preconnect", <https://fonts.gstatic.com>; rel="preconnect"; crossorigin'
+    '<https://d66htbxvzotmo.cloudfront.net>; rel="preconnect"; crossorigin, <https://cdn.supremeuniversal.com>; rel="preconnect"; crossorigin'
   );
 
   // Global Edge SEO and telemetry headers

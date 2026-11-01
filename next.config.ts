@@ -76,7 +76,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'X-Frame-Options',
-            value: 'DENY',
+            value: 'SAMEORIGIN',
           },
           {
             key: 'Referrer-Policy',
@@ -109,10 +109,6 @@ const nextConfig: NextConfig = {
           {
             key: 'Cache-Tag',
             value: 'supreme-villagio, real-estate, somatane-villas, property-pricing',
-          },
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=0, must-revalidate',
           },
         ],
       },
