@@ -201,13 +201,6 @@ const realEstateListingSchema = {
     "availability": "https://schema.org/InStock",
     "validFrom": "2024-01-01"
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "88",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
   "speakable": {
     "@type": "SpeakableSpecification",
     "cssSelector": ["h1", ".hero-subtitle", ".pricing-highlight"]
@@ -633,14 +626,14 @@ const localBusinessSchema = {
       "author": { "@type": "Person", "name": "Rajesh Malhotra" },
       "datePublished": "2026-03-15",
       "reviewBody": "Purchased a 4 BHK Twin Villa in Phase 1. Possession was delivered with full OC and zero GST liability. The 18,500 sq.ft. Club Villagio and clean Sahyadri air make it the finest gated community in West Pune.",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
     },
     {
       "@type": "Review",
       "author": { "@type": "Person", "name": "Vikramaditya Deshmukh" },
       "datePublished": "2026-06-20",
       "reviewBody": "Commuting to Hinjewadi Phase 1 takes just 20 minutes with zero reverse traffic. The 3-side open garden lawn is unmatched compared to high-rise flats in Baner.",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
     }
   ],
   "sameAs": [
@@ -739,7 +732,23 @@ const productCollectionSchema = {
     "reviewCount": "88",
     "bestRating": "5",
     "worstRating": "1"
-  }
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Rajesh Malhotra" },
+      "datePublished": "2026-03-15",
+      "reviewBody": "Purchased a 4 BHK Twin Villa in Phase 1. Possession was delivered with full OC and zero GST liability. The 18,500 sq.ft. Club Villagio and clean Sahyadri air make it the finest gated community in West Pune.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Vikramaditya Deshmukh" },
+      "datePublished": "2026-06-20",
+      "reviewBody": "Commuting to Hinjewadi Phase 1 takes just 20 minutes with zero reverse traffic. The 3-side open garden lawn is unmatched compared to high-rise flats in Baner.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    }
+  ]
 };
 
 export default function RootLayout({
