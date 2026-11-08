@@ -166,6 +166,13 @@ export default function Footer() {
             <Link href="/supreme-villagio-somatane/villas-near-ravet-kiwale-pcmc" className="hover:text-primary transition-colors">Villas Near Ravet Kiwale</Link>
             <Link href="/supreme-villagio-somatane/second-homes-near-lonavala-khandala" className="hover:text-primary transition-colors">Second Homes Near Lonavala</Link>
             <Link href="/somatane-vs-hinjewadi" className="hover:text-primary transition-colors">Somatane vs Hinjewadi</Link>
+            <Link href="/supreme-villagio-somatane/supreme-villagio-vs-godrej-hillside-mahalunge" className="hover:text-primary transition-colors">Villagio vs Godrej Hillside</Link>
+            <Link href="/supreme-villagio-somatane/villas-near-baner-balewadi-high-street" className="hover:text-primary transition-colors">Villas Near Baner Balewadi</Link>
+            <Link href="/supreme-villagio-somatane/independent-bungalows-near-hinjewadi-phase-1-2-3" className="hover:text-primary transition-colors">Bungalows Near Hinjewadi 1-3</Link>
+            <Link href="/supreme-villagio-somatane/second-homes-near-mumbai-via-atal-setu-mthl" className="hover:text-primary transition-colors">Second Homes via Atal Setu</Link>
+            <Link href="/supreme-villagio-somatane/bungalows-for-industrialists-chakan-bhosari-midc" className="hover:text-primary transition-colors">Bungalows Chakan MIDC</Link>
+            <Link href="/supreme-villagio-somatane/sbi-approved-villas-pune-home-loan" className="hover:text-primary transition-colors">SBI Approved Villas Loan</Link>
+            <Link href="/supreme-villagio-somatane/18500-sqft-club-villagio-sports-and-wellness" className="hover:text-primary transition-colors">Club Villagio Amenities</Link>
             <Link href="/supreme-villagio/phase-1" className="hover:text-primary transition-colors">Phase 1 (OC Received)</Link>
             <Link href="/supreme-villagio/phase-2" className="hover:text-primary transition-colors">Phase 2 (OC Received)</Link>
             <Link href="/supreme-villagio/phase-3" className="hover:text-primary transition-colors">Phase 3 (New Launch)</Link>
