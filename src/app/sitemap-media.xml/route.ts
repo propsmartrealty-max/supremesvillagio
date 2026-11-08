@@ -36,7 +36,7 @@ export async function GET() {
     },
     {
       pageUrl: '/supreme-villagio/amenities',
-      imageUrl: 'https://d66htbxvzotmo.cloudfront.net/media/1Xi8pH_seologo.jpg',
+      imageUrl: `${baseUrl}/images/clubhouse.webp`,
       title: 'Club Villagio 18,500 Sq.Ft. Operational Clubhouse',
       caption: 'Finished and operational grand lifestyle clubhouse with Olympic-length pool, gymnasium, and squash courts',
     },

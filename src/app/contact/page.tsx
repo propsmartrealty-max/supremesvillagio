@@ -1,1 +1,5 @@
-export { metadata, default } from '../supreme-villagio/contact/page';
+import { permanentRedirect } from 'next/navigation';
+
+export default function ContactRedirect() {
+  permanentRedirect('/supreme-villagio/contact');
+}

@@ -9,6 +9,9 @@ export const runtime = 'edge';
 export const metadata: Metadata = {
   title: 'Search Properties & Articles | Supreme Villagio',
   description: 'Search luxury villas, townhouses, micro-market pricing, and investment guides at Supreme Villagio, Somatane Pune.',
+  alternates: {
+    canonical: 'https://www.supremesvillagio.com/search',
+  },
   robots: {
     index: false,
     follow: true,

@@ -4,8 +4,15 @@ import { ArrowLeft } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Supreme Villagio',
-  description: 'Privacy Policy for Supreme Villagio in Somatane, Pune.',
+  title: 'Privacy Policy | Supreme Villagio Somatane',
+  description: 'Privacy Policy and client data protection commitments for Supreme Villagio in Somatane, Pune.',
+  alternates: {
+    canonical: 'https://www.supremesvillagio.com/privacy',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function PrivacyPolicyPage() {

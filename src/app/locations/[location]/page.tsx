@@ -13,8 +13,17 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
   const resolvedParams = await params;
   const locReadable = resolvedParams.location.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
   return {
-    title: `Luxury Villas in ${locReadable} | Supreme Villagio`,
-    description: `Explore all premium luxury properties, twin bungalows, and 5 BHK villas targeted for the ${locReadable} real estate market.`,
+    title: `Luxury Villas for Buyers in ${locReadable} | Supreme Villagio Somatane`,
+    description: `Explore premium 4 & 5 BHK twin villas and luxury bungalows at Supreme Villagio Somatane with convenient commute access from ${locReadable}.`,
+    alternates: {
+      canonical: `https://www.supremesvillagio.com/locations/${resolvedParams.location}`,
+    },
+    openGraph: {
+      title: `Luxury Villas for Buyers in ${locReadable} | Supreme Villagio`,
+      description: `Explore premium 4 & 5 BHK luxury villas at Supreme Villagio Somatane near ${locReadable}.`,
+      url: `https://www.supremesvillagio.com/locations/${resolvedParams.location}`,
+      type: "website",
+    },
   };
 }
 
@@ -22,6 +31,31 @@ export default async function LocationSubSitemapPage({ params }: { params: Promi
   const resolvedParams = await params;
   const location = resolvedParams.location;
   const locReadable = location.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.supremesvillagio.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Locations",
+        "item": "https://www.supremesvillagio.com/locations"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": locReadable,
+        "item": `https://www.supremesvillagio.com/locations/${location}`
+      }
+    ]
+  };
 
   const canonicalCategories = [
     { name: `4 BHK Luxury Twin Villas near ${locReadable}`, href: "/supreme-villagio/4-bhk-villas", desc: "Private gardens, double-height living, 2800 sq.ft." },
@@ -36,6 +70,10 @@ export default async function LocationSubSitemapPage({ params }: { params: Promi
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="bg-charcoal pt-32 pb-20 min-h-screen">
         <div className="container mx-auto px-6 md:px-12">
           <Link href="/locations" className="text-gold hover:text-white text-sm mb-8 inline-block">&larr; Back to All Locations</Link>

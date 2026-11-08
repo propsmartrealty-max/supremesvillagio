@@ -21,9 +21,6 @@ export async function GET() {
   const corePages = [
     { url: '/', priority: '1.0', changefreq: 'daily' },
     { url: '/supreme-villagio-somatane', priority: '1.0', changefreq: 'daily' },
-    { url: '/contact', priority: '1.0', changefreq: 'daily' },
-    { url: '/resale', priority: '0.95', changefreq: 'weekly' },
-    { url: '/banks', priority: '0.9', changefreq: 'weekly' },
     { url: '/supreme-villagio/contact', priority: '1.0', changefreq: 'daily' },
     { url: '/supreme-villagio/banks', priority: '0.9', changefreq: 'weekly' },
     { url: '/ecosystem', priority: '1.0', changefreq: 'daily' },

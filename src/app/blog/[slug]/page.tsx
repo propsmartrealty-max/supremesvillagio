@@ -17,15 +17,25 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!post) return {};
   
   return {
-    title: post.title,
+    title: `${post.title} | Supreme Villagio Journal`,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://www.supremesvillagio.com/blog/${resolvedParams.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: "article",
+      url: `https://www.supremesvillagio.com/blog/${resolvedParams.slug}`,
       publishedTime: post.date,
       authors: [post.author],
       images: [{ url: post.image, width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
     }
   };
 }
@@ -38,14 +48,54 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.supremesvillagio.com/blog/${resolvedParams.slug}`
+    },
     "headline": post.title,
+    "description": post.excerpt,
     "image": [post.image],
     "datePublished": post.date,
-    "author": [{
-        "@type": "Organization",
-        "name": post.author,
-        "url": "https://www.supremesvillagio.com/"
-      }]
+    "dateModified": post.date,
+    "author": {
+      "@type": "Organization",
+      "name": post.author,
+      "url": "https://www.supremesvillagio.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Supreme Villagio",
+      "url": "https://www.supremesvillagio.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.supremesvillagio.com/images/supreme-villagio-logo.svg"
+      }
+    }
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.supremesvillagio.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Journal",
+        "item": "https://www.supremesvillagio.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": `https://www.supremesvillagio.com/blog/${resolvedParams.slug}`
+      }
+    ]
   };
 
   return (
@@ -53,6 +103,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <article className="pt-32 pb-20 px-4 md:px-8 max-w-4xl mx-auto min-h-screen">
         <div className="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-gold mb-6">

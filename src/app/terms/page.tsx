@@ -4,8 +4,15 @@ import { ArrowLeft } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Supreme Villagio',
-  description: 'Terms of Service for Supreme Villagio in Somatane, Pune.',
+  title: 'Terms of Service | Supreme Villagio Somatane',
+  description: 'Terms of Service, intellectual property, and statutory real estate disclaimers for Supreme Villagio in Somatane, Pune.',
+  alternates: {
+    canonical: 'https://www.supremesvillagio.com/terms',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function TermsOfServicePage() {

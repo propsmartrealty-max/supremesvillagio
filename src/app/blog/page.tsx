@@ -5,13 +5,46 @@ import { PILLAR_POSTS } from '@/lib/blog-data';
 import Image from "next/image";
 
 export const metadata = {
-  title: "Journal | Supreme Villagio Real Estate Market Insights",
-  description: "Read the latest insights, investment guides, and real estate market trends for luxury villas and premium bungalows in Pune.",
+  title: "Supreme Villagio Journal | Real Estate Market Trends & Villa Living Insights",
+  description: "Read the latest market insights, investment analyses, and lifestyle guides for luxury villas and twin bungalows in Somatane, Pune.",
+  alternates: {
+    canonical: "https://www.supremesvillagio.com/blog",
+  },
+  openGraph: {
+    title: "Supreme Villagio Journal | Pune Real Estate Insights",
+    description: "Read the latest market insights, investment analyses, and lifestyle guides for luxury villas in Pune.",
+    url: "https://www.supremesvillagio.com/blog",
+    type: "website",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.supremesvillagio.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Journal",
+      "item": "https://www.supremesvillagio.com/blog"
+    }
+  ]
 };
 
 export default function BlogIndex() {
   return (
-    <div className="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div className="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto min-h-screen">
       <h1 className="font-heading text-4xl md:text-5xl text-forest mb-6">Real Estate Journal</h1>
       <p className="text-forest/70 mb-12 max-w-3xl">Expert insights, investment guides, and market trends for the Pune luxury real estate sector.</p>
       
@@ -35,6 +68,7 @@ export default function BlogIndex() {
           </Link>
         ))}
       </div>
-    </div>
+      </div>
+    </>
   );
 }

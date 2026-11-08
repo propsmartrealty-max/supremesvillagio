@@ -53,6 +53,9 @@ const nextConfig: NextConfig = {
       { source: '/supreme-vilagio/reviews', destination: '/supreme-villagio/reviews', permanent: true },
       { source: '/supreme-vilagio/resale', destination: '/supreme-villagio/resale', permanent: true },
       // High-Intent Shortcuts
+      { source: '/contact', destination: '/supreme-villagio/contact', permanent: true },
+      { source: '/resale', destination: '/supreme-villagio/resale', permanent: true },
+      { source: '/banks', destination: '/supreme-villagio/banks', permanent: true },
       { source: '/price', destination: '/supreme-villagio/price', permanent: true },
       { source: '/cost-sheet', destination: '/supreme-villagio/price', permanent: true },
       { source: '/rera', destination: '/supreme-villagio-rera', permanent: true },

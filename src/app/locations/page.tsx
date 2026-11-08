@@ -3,13 +3,46 @@ import Link from 'next/link';
 import { SEO_KEYWORD_MATRIX } from '@/lib/seo-data';
 
 export const metadata = {
-  title: "Supreme Villagio | All Locations & Topologies",
-  description: "Browse all available luxury villas and premium bungalows by Supreme Universal across Pune's top real estate micro-markets.",
+  title: "Supreme Villagio Locations | Pune & PCMC Luxury Micro-Market Corridors",
+  description: "Browse all available luxury villas and premium bungalows by Supreme Universal across Pune, PCMC, Talegaon, and Mumbai Expressway micro-markets.",
+  alternates: {
+    canonical: "https://www.supremesvillagio.com/locations",
+  },
+  openGraph: {
+    title: "Supreme Villagio Locations & Corridors",
+    description: "Explore all luxury villa micro-markets and connectivity corridors for Supreme Villagio Somatane.",
+    url: "https://www.supremesvillagio.com/locations",
+    type: "website",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.supremesvillagio.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Locations",
+      "item": "https://www.supremesvillagio.com/locations"
+    }
+  ]
 };
 
 export default function LocationsSitemap() {
   return (
-    <div className="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div className="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto min-h-screen">
       <h1 className="font-heading text-4xl md:text-5xl text-forest mb-6">Property Locations & Configurations</h1>
       <p className="text-forest/70 mb-12 max-w-3xl">Explore our vast portfolio of premium luxury real estate across Pune. Select a category below to find the perfect home in the perfect micro-market.</p>
       
@@ -122,6 +155,7 @@ export default function LocationsSitemap() {
           </ul>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

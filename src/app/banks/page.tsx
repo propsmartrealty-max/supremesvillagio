@@ -1,1 +1,5 @@
-export { metadata, default } from '../supreme-villagio/banks/page';
+import { permanentRedirect } from 'next/navigation';
+
+export default function BanksRedirect() {
+  permanentRedirect('/supreme-villagio/banks');
+}
