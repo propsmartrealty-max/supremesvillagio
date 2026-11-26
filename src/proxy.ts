@@ -1,7 +1,11 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export function middleware(request: NextRequest) {
+/**
+ * Next.js 16 Proxy Convention
+ * Handles canonical redirects, crawler detection, edge headers, and geo/currency customization.
+ */
+export function proxy(request: NextRequest) {
   // 1. Enforce canonical hostname (https://www.supremesvillagio.com)
   const host = request.headers.get('host') || '';
   if (host === 'supremesvillagio.com') {
@@ -15,7 +19,7 @@ export function middleware(request: NextRequest) {
   const userAgent = request.headers.get('user-agent') || '';
   const isSearchCrawler = /Googlebot|Bingbot|Applebot|YandexBot|DuckDuckBot|Baiduspider|GPTBot|PerplexityBot|Claude-Web|Google-Extended/i.test(userAgent);
 
-  // Extract country from Cloudflare/Vercel Edge headers (fallback to 'IN' for local dev)
+  // Extract country from Cloudflare Edge headers (fallback to 'IN')
   const country = request.headers.get('cf-ipcountry') || request.headers.get('x-vercel-ip-country') || 'IN';
 
   // Determine currency based on HNI/NRI target regions
