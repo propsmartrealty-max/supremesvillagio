@@ -72,6 +72,11 @@ export function middleware(request: NextRequest) {
   response.headers.set('x-robots-tag', 'all, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
   response.headers.set('x-edge-seo-engine', 'cloudflare-active');
 
+  // Enterprise Edge Cache Header: 4h browser cache, 24h Cloudflare edge cache, 7d stale-while-revalidate
+  if (isSearchCrawler || request.method === 'GET') {
+    response.headers.set('Cache-Control', 'public, max-age=14400, s-maxage=86400, stale-while-revalidate=604800');
+  }
+
   return response;
 }
 

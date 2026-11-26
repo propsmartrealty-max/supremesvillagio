@@ -111,13 +111,13 @@ export const metadata: Metadata = {
     shortcut: ["/favicon.ico"]
   },
   alternates: {
-    canonical: "https://www.supremesvillagio.com/",
+    canonical: "https://www.supremesvillagio.com",
     languages: {
-      "en-US": "https://www.supremesvillagio.com/",
-      "en-GB": "https://www.supremesvillagio.com/",
-      "en-AE": "https://www.supremesvillagio.com/",
-      "en-IN": "https://www.supremesvillagio.com/",
-      "x-default": "https://www.supremesvillagio.com/"
+      "en-US": "https://www.supremesvillagio.com",
+      "en-GB": "https://www.supremesvillagio.com",
+      "en-AE": "https://www.supremesvillagio.com",
+      "en-IN": "https://www.supremesvillagio.com",
+      "x-default": "https://www.supremesvillagio.com"
     }
   },
   verification: {
@@ -127,7 +127,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     alternateLocale: ["en_US", "en_GB", "en_AE"],
-    url: "https://www.supremesvillagio.com/",
+    url: "https://www.supremesvillagio.com",
     title: "Supreme Villagio Somatane | Official 2026 Portal [Ready OC Villas from ₹2.89 Cr*]",
     description: "Official Project Portal for Supreme Villagio Somatane, Pune. Ultra-luxury 4 & 5 BHK Twin Villas & Townhouses across 16 acres with 18,500 sq.ft. Club Villagio. Phase 1 & 2 OC Received. Download 2026 Price List, Floor Plans & Book Direct Developer Visit.",
     siteName: "Supreme Universal",

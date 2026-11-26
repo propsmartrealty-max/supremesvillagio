@@ -53,12 +53,12 @@ export const metadata: Metadata = {
     "Second Homes Near Lonavala Khandala", "75 Mins Drive Villa From Mumbai", "Mumbai Second Home Villas"
   ],
   alternates: {
-    canonical: "https://www.supremesvillagio.com/",
+    canonical: "https://www.supremesvillagio.com",
   },
   openGraph: {
     title: "Supreme Villagio Somatane | Official Direct Portal [Ready OC Villas from ₹2.89 Cr* • 0% GST]",
     description: "Official developer portal for Supreme Villagio Somatane, Pune. 4 & 5 BHK luxury gated bungalows & twin villas near PCMC & Mumbai-Pune Expressway. Phase 1 & 2 OC received. 0% Brokerage.",
-    url: "https://www.supremesvillagio.com/",
+    url: "https://www.supremesvillagio.com",
     type: "website",
     images: [
       {

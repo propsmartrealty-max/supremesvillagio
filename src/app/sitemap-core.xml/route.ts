@@ -80,7 +80,7 @@ export async function GET() {
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   ${corePages
     .map((page) => {
-      const pageUrl = `${baseUrl}${page.url}`;
+      const pageUrl = page.url === '/' ? baseUrl : `${baseUrl}${page.url}`;
       return `
     <url>
       <loc>${pageUrl}</loc>
